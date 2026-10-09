@@ -270,13 +270,14 @@
                     ДО & ПІСЛЯ
                   </span>
                 </div>
-
-                <!-- Video Frame -->
-                <div class="relative rounded-2xl overflow-hidden bg-black aspect-[9/14] sm:aspect-[9/13] flex flex-col justify-between group select-none shadow-inner">
+                
+               <!-- Video Frame with Clean Autoplay -->
+                <div class="relative rounded-2xl overflow-hidden bg-black aspect-[9/14] sm:aspect-[9/13] flex flex-col justify-between group select-none shadow-inner" onclick="toggleAudioPreview(event)">
                   
-                  <!-- Real HTML5 Video Element -->
+                  <!-- Real HTML5 Video Element (Autoplay Muted) -->
                   <video id="hero-native-video" 
                          class="absolute inset-0 w-full h-full object-cover z-0" 
+                         autoplay 
                          playsinline 
                          loop 
                          muted 
@@ -286,15 +287,29 @@
                     Ваш браузер не підтримує відео.
                   </video>
 
-                  <!-- Play Button Overlay -->
-                  <div id="play-button-overlay" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/40 transition-opacity duration-300">
-                    <button onclick="toggleHeroPlay()" id="hero-play-btn" class="btn-press mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-amber-400 hover:bg-amber-300 text-neutral-950 flex items-center justify-center shadow-xl shadow-amber-400/40 transition-all duration-300 hover:scale-110 border-2 border-amber-200 group/play">
-                      <i id="hero-play-icon" class="fa-solid fa-play text-xl sm:text-2xl ml-1 text-neutral-950 group-hover/play:scale-110 transition-transform"></i>
+                  <!-- TOP BUTTON: Включение / выключение звука в 1 клик -->
+                  <div class="relative z-20 flex items-center justify-end p-4 pointer-events-none">
+                    <button onclick="toggleAudioPreview(event)" id="audio-toggle-btn" class="px-3.5 py-1.5 rounded-full bg-black/70 backdrop-blur-md text-white border border-white/20 flex items-center gap-2 hover:bg-white hover:text-black transition-all pointer-events-auto text-xs font-bold shadow-lg" title="Звук">
+                      <i id="audio-toggle-icon" class="fa-solid fa-volume-xmark text-xs"></i>
+                      <span id="audio-toggle-text">Увімкнути звук</span>
                     </button>
-                    <div id="video-status-text" class="text-xs text-white/95 font-black mt-3 tracking-wide drop-shadow-md bg-black/60 px-3 py-1 rounded-full inline-block backdrop-blur-sm border border-white/10 pointer-events-none">
-                      Натисни для перегляду розбору
+                  </div>
+                  
+                  <!-- Spacer -->
+                  <div class="flex-grow pointer-events-none"></div>
+
+                  <!-- BOTTOM CONTROLS: Полоса прогресса и таймер -->
+                  <div class="relative z-20 space-y-1 p-4 pointer-events-none bg-gradient-to-t from-black/60 to-transparent">
+                    <div class="w-full bg-white/20 h-1.5 rounded-full overflow-hidden cursor-pointer pointer-events-auto" onclick="scrubVideo(event)">
+                      <div id="video-progress-fill" class="bg-gradient-to-r from-amber-400 via-rose-500 to-studio-accent h-full rounded-full transition-all duration-200" style="width: 0%"></div>
+                    </div>
+                    <div class="flex justify-between text-[10px] text-neutral-300 font-mono pointer-events-auto">
+                      <span id="timecode-current">0:00</span>
+                      <span id="timecode-total">0:00</span>
                     </div>
                   </div>
+
+                </div>
                   
                   <!-- Clickable area to toggle play/pause when running -->
                   <div id="video-click-area" class="absolute inset-0 z-0 cursor-pointer hidden" onclick="toggleHeroPlay()"></div>
@@ -1787,17 +1802,21 @@
     let audioSynthContext = null;
     let isAudioPlaying = false;
 
-    function initHeroVideoEngine() {
+   function initHeroVideoEngine() {
       const video = document.getElementById('hero-native-video');
       if (video) {
+        // Запуск видео без звука при открытии страницы
+        video.muted = true;
+        video.play().catch(err => console.log('Autoplay waiting for interaction:', err));
+
         video.addEventListener('timeupdate', () => {
           if (video.duration) {
             updateTimelineUI(video.currentTime, video.duration);
           }
         });
         video.addEventListener('ended', () => {
-          updateVideoPlayState(false);
           video.currentTime = 0;
+          video.play();
         });
       }
       updateTimelineUI(0, totalVideoDuration);
@@ -1805,117 +1824,40 @@
 
     function toggleHeroPlay() {
       const video = document.getElementById('hero-native-video');
-      
       if (video) {
         if (video.paused) {
-          video.play().then(() => updateVideoPlayState(true)).catch(e => console.error("Error playing video:", e));
+          video.play().catch(e => console.error(e));
         } else {
           video.pause();
-          updateVideoPlayState(false);
-        }
-      }
-    }
-
-    function updateVideoPlayState(playing) {
-      isPlaying = playing;
-      const overlay = document.getElementById('play-button-overlay');
-      const clickArea = document.getElementById('video-click-area');
-
-      if (playing) {
-        overlay.classList.add('play-overlay-hidden');
-        clickArea.classList.remove('hidden');
-      } else {
-        overlay.classList.remove('play-overlay-hidden');
-        clickArea.classList.add('hidden');
-      }
-    }
-
-    function jumpToChapter(sec) {
-      const video = document.getElementById('hero-native-video');
-      if (video) {
-        video.currentTime = sec;
-        video.play().then(() => updateVideoPlayState(true)).catch(e => console.error("Error playing video:", e));
-      }
-    }
-
-    function scrubVideo(event) {
-      const rect = event.currentTarget.getBoundingClientRect();
-      const clickX = event.clientX - rect.left;
-      const pct = Math.max(0, Math.min(1, clickX / rect.width));
-      const targetTime = pct * totalVideoDuration;
-      
-      jumpToChapter(targetTime);
-    }
-
-    function updateTimelineUI(time, duration) {
-      currentVideoTime = time;
-      const pct = (time / duration) * 100;
-      
-      const fill = document.getElementById('video-progress-fill');
-      if (fill) fill.style.width = pct + '%';
-
-      const tcCurrent = document.getElementById('timecode-current');
-      const tcTotal = document.getElementById('timecode-total');
-      
-      if (tcCurrent) {
-        const mins = Math.floor(time / 60);
-        const secs = Math.floor(time % 60);
-        tcCurrent.textContent = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
-      }
-      if (tcTotal) {
-        const tMins = Math.floor(duration / 60);
-        const tSecs = Math.floor(duration % 60);
-        tcTotal.textContent = `${tMins}:${tSecs < 10 ? '0' : ''}${tSecs}`;
-      }
-
-      let activeChapter = VIDEO_CHAPTERS[0];
-      let activeIndex = 0;
-      for (let i = 0; i < VIDEO_CHAPTERS.length; i++) {
-        if (time >= VIDEO_CHAPTERS[i].start && time < VIDEO_CHAPTERS[i].end) {
-          activeChapter = VIDEO_CHAPTERS[i];
-          activeIndex = i;
-          break;
-        }
-      }
-
-      const capTimestamp = document.getElementById('caption-timestamp');
-      const capTitle = document.getElementById('caption-title');
-      const capBody = document.getElementById('caption-body');
-
-      if (capTimestamp) capTimestamp.innerHTML = `<i class="fa-solid fa-circle text-[6px] text-rose-500 animate-pulse"></i> ${activeChapter.step}`;
-      if (capTitle) capTitle.textContent = activeChapter.title;
-      if (capBody) capBody.textContent = activeChapter.subtitle;
-
-      for (let i = 0; i < 4; i++) {
-        const btn = document.getElementById(`chapter-${i}`);
-        if (btn) {
-          if (i === activeIndex) {
-            btn.className = 'py-1 px-1 rounded-lg bg-studio-accent text-white truncate shadow-sm transition-all';
-          } else {
-            btn.className = 'py-1 px-1 rounded-lg bg-neutral-800 text-neutral-300 hover:text-white truncate transition-all';
-          }
         }
       }
     }
 
     function toggleAudioPreview(event) {
-        event.stopPropagation(); 
+      if (event) event.stopPropagation();
       const btn = document.getElementById('audio-toggle-btn');
       const icon = document.getElementById('audio-toggle-icon');
+      const text = document.getElementById('audio-toggle-text');
       const video = document.getElementById('hero-native-video');
 
-      if (!isAudioPlaying) {
-        isAudioPlaying = true;
-        if (video) video.muted = false;
-        icon.className = 'fa-solid fa-volume-high text-xs text-rose-400';
-        btn.classList.add('bg-white', 'text-black');
-        btn.classList.remove('bg-black/60', 'text-white');
+      if (!video) return;
+
+      if (video.muted) {
+        video.muted = false;
+        if (icon) icon.className = 'fa-solid fa-volume-high text-xs text-rose-400';
+        if (text) text.textContent = 'Вимкнути звук';
+        if (btn) {
+          btn.classList.add('bg-white', 'text-black');
+          btn.classList.remove('bg-black/70', 'text-white');
+        }
       } else {
-        isAudioPlaying = false;
-        if (video) video.muted = true;
-        icon.className = 'fa-solid fa-volume-xmark text-xs text-white';
-        btn.classList.remove('bg-white', 'text-black');
-        btn.classList.add('bg-black/60', 'text-white');
+        video.muted = true;
+        if (icon) icon.className = 'fa-solid fa-volume-xmark text-xs text-white';
+        if (text) text.textContent = 'Увімкнути звук';
+        if (btn) {
+          btn.classList.remove('bg-white', 'text-black');
+          btn.classList.add('bg-black/70', 'text-white');
+        }
       }
     }
 
