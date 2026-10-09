@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дякуємо за заявку! | Творчий простір Катерини Жанько</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ================= META PIXEL CODE ================= -->
+  <!-- Вставьте ваш Pixel ID вместо 0000000000000000 -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '0000000000000000'); 
+    fbq('track', 'PageView');
+    fbq('track', 'Lead'); // <--- ФИКСИРУЕТ КОНВЕРСИЮ ЗАЯВКИ ДЛЯ META ADS
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" 
+         src="https://www.facebook.com/tr?id=0000000000000000&ev=Lead&noscript=1"/>
+  </noscript>
+  <!-- =================================================== -->
+
+  <style>
+    body { font-family: 'Manrope', sans-serif; background-color: #FAF7F2; color: #221F1D; }
+  </style>
+</head>
+<body>
+
+  <header class="bg-white border-b border-neutral-200 py-4 px-4 sticky top-0 z-30">
+    <div class="max-w-4xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-full bg-amber-400 text-neutral-950 font-black flex items-center justify-center text-sm">
+          КЖ
+        </div>
+        <div>
+          <div class="font-black text-sm text-neutral-900 leading-none">Катерина Жанько</div>
+          <div class="text-[10px] text-neutral-500 font-semibold mt-0.5">Музичний простір • Київ</div>
+        </div>
+      </div>
+      <a href="/" class="text-xs font-bold text-neutral-700 hover:text-neutral-900 flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-neutral-100 transition-colors">
+        <i class="fa-solid fa-arrow-left"></i>
+        <span>На головну</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-8 sm:py-12">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 border border-neutral-200/90 shadow-sm text-center mb-8">
+      
+      <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-amber-400 shadow-xl mx-auto mb-4 bg-neutral-900">
+        <img src="kateryna.jpg" alt="Катерина Жанько" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='/kateryna.jpg';" />
+      </div>
+
+      <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-3.5 py-1 rounded-full uppercase tracking-wider inline-flex items-center gap-1.5 border border-emerald-200">
+        <i class="fa-solid fa-circle-check text-emerald-500"></i> Заявку успішно прийнято!
+      </span>
+
+      <h1 class="text-2xl sm:text-4xl font-black text-neutral-900 mt-3 mb-2">
+        Вітаємо! Ваш запис підтверджено 🎉
+      </h1>
+
+      <p class="text-sm sm:text-base text-neutral-600 max-w-lg mx-auto leading-relaxed mb-6">
+        Ваше індивідуальне пробне заняття зафіксовано за акційною ціною <strong class="text-neutral-900">400 грн</strong> (-50%). Ми зв'яжемося з вами найближчим часом для узгодження часу.
+      </p>
+
+      <div class="p-4 rounded-2xl bg-neutral-50 border border-neutral-200 max-w-md mx-auto mb-6 text-left">
+        <div class="text-xs font-bold text-neutral-800 uppercase tracking-wider mb-2">
+          Хочете швидше обрати час?
+        </div>
+        <p class="text-xs text-neutral-600 mb-3">
+          Напишіть нам у Telegram, ми відповімо за 5–10 хвилин:
+        </p>
+        <a href="https://t.me/vocalcoach_zhanko" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-3 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs flex items-center justify-center gap-2 shadow-sm transition-all">
+          <i class="fa-brands fa-telegram text-base"></i>
+          <span>Написати особисто в Telegram</span>
+        </a>
+      </div>
+
+      <div class="flex items-center justify-center gap-2 text-xs text-neutral-500 font-medium">
+        <i class="fa-solid fa-location-dot text-rose-500"></i>
+        <span>Чекаємо за адресою: <strong>Київ, вул. Максима Кривоноса 27</strong> (Солом'янка)</span>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
