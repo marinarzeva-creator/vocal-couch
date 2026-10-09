@@ -105,66 +105,70 @@
   </style>
 </head>
 <body class="selection:bg-studio-accent selection:text-white noise-bg">
+  
+<!-- STICKY WRAPPER: Баннер и шапка в одном контейнере — наложение исключено -->
+  <div class="sticky top-0 z-50">
 
-  <!-- TOP ANNOUNCEMENT BANNER -->
-  <div class="bg-studio-dark text-white text-xs sm:text-sm py-2 px-4 sticky top-0 z-50 border-b border-neutral-800 shadow-sm">
-    <div class="max-w-6xl mx-auto flex items-center justify-between gap-2">
-      <div class="flex items-center gap-2 truncate">
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-black bg-amber-400 text-neutral-950 animate-pulse">
-          АКЦІЯ МІСЯЦЯ
-        </span>
-        <span class="truncate font-medium text-neutral-200">
-          Пробне індивідуальне заняття (45 хв) — <strong class="text-amber-400 font-bold">400 грн</strong> замість 800 грн + 3 відеоуроки у подарунок!
-        </span>
-      </div>
-      <div class="hidden md:flex items-center gap-3 shrink-0 text-xs text-neutral-400">
-        <span class="flex items-center gap-1.5 font-bold text-amber-300">
-          <i class="fa-solid fa-fire text-amber-400"></i> Залишилось 3 місця з 7
-        </span>
-        <span class="text-neutral-500">|</span>
-        <a href="#godfather-offer" class="px-2.5 py-0.5 rounded-md bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black transition-colors">
-          Зайняти місце &rarr;
-        </a>
+    <!-- TOP ANNOUNCEMENT BANNER -->
+    <div class="bg-studio-dark text-white text-xs sm:text-sm py-2 px-4 border-b border-neutral-800 shadow-sm">
+      <div class="max-w-6xl mx-auto flex items-center justify-between gap-2">
+        <div class="flex items-center gap-2 truncate">
+          <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-black bg-amber-400 text-neutral-950 animate-pulse shrink-0">
+            АКЦІЯ МІСЯЦЯ
+          </span>
+          <span class="truncate font-medium text-neutral-200">
+            Пробне індивідуальне заняття (45 хв) — <strong class="text-amber-400 font-bold">400 грн</strong> замість 800 грн + 3 відеоуроки у подарунок!
+          </span>
+        </div>
+        <div class="hidden md:flex items-center gap-3 shrink-0 text-xs text-neutral-400">
+          <span class="flex items-center gap-1.5 font-bold text-amber-300">
+            <i class="fa-solid fa-fire text-amber-400"></i> Залишилось 3 місця з 7
+          </span>
+          <span class="text-neutral-500">|</span>
+          <a href="#godfather-offer" class="px-2.5 py-0.5 rounded-md bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black transition-colors">
+            Зайняти місце &rarr;
+          </a>
+        </div>
       </div>
     </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="bg-white/95 backdrop-blur-md border-b border-neutral-200/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-4">
+        
+        <!-- Logo & Brand (Зафиксирован от сжатия, ровно 2 аккуратные строки) -->
+        <a href="#" class="flex items-center shrink-0 group">
+          <span class="font-sans text-sm sm:text-base lg:text-lg font-black tracking-tight text-neutral-900 leading-tight group-hover:text-amber-500 transition-colors whitespace-nowrap">
+            Творчий простір<br>Катерини Жанько
+          </span>
+        </a>
+
+        <!-- Desktop Nav Links (Компактные отступы, не вытесняют логотип) -->
+        <nav class="hidden lg:flex items-center gap-3.5 xl:gap-6 text-xs xl:text-sm font-bold text-neutral-700 whitespace-nowrap">
+          <a href="#about-offer" class="hover:text-studio-accent transition-colors">Чому ми</a>
+          <a href="#for-who" class="hover:text-studio-accent transition-colors">Кому підійде</a>
+          <a href="#hero-mechanism" class="hover:text-studio-accent transition-colors">Методика</a>
+          <a href="#about-kateryna" class="hover:text-studio-accent transition-colors">Про Катерину</a>
+          <a href="#reviews" class="hover:text-studio-accent transition-colors">Відгуки учнів</a>
+          <a href="#faq" class="hover:text-studio-accent transition-colors">Часті запитання</a>
+        </nav>
+
+        <!-- Right CTAs -->
+        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+          <a href="https://t.me/vocalcoach_zhanko" target="_blank" rel="noopener noreferrer" class="hidden xl:inline-flex items-center gap-2 text-xs font-bold px-3 py-2 rounded-xl bg-neutral-100 text-neutral-800 hover:bg-neutral-200 transition-colors whitespace-nowrap">
+            <i class="fa-brands fa-telegram text-sky-500 text-sm"></i>
+            <span>@vocalcoach_zhanko</span>
+          </a>
+          <button onclick="openBookingModal('header')" class="btn-press inline-flex items-center gap-1.5 sm:gap-2 px-3.5 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all duration-200 shadow-md border border-amber-300 whitespace-nowrap">
+            <span>Записатися за 400 грн</span>
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </button>
+        </div>
+
+      </div>
+    </header>
+
   </div>
-
-  <!-- MAIN NAVIGATION -->
-  <header class="bg-white/90 backdrop-blur-md border-b border-neutral-200/80 sticky top-9 z-40">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
-      
-      <!-- Logo & Brand -->
-     <!-- Logo & Brand -->
-   <a href="#" class="flex items-center group">
-     <span class="font-sans text-base sm:text-lg lg:text-xl font-black tracking-tight text-neutral-900 leading-tight group-hover:text-amber-500 transition-colors">
-       Творчий простір<br>Катерини Жанько
-     </span>
-   </a>
-
-      <!-- Desktop Nav Links -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-bold text-neutral-700">
-        <a href="#about-offer" class="hover:text-studio-accent transition-colors">Чому ми</a>
-        <a href="#for-who" class="hover:text-studio-accent transition-colors">Кому підійде</a>
-        <a href="#hero-mechanism" class="hover:text-studio-accent transition-colors">Методика</a>
-        <a href="#about-kateryna" class="hover:text-studio-accent transition-colors">Про Катерину</a>
-        <a href="#reviews" class="hover:text-studio-accent transition-colors">Відгуки учнів</a>
-        <a href="#faq" class="hover:text-studio-accent transition-colors">Часті запитання</a>
-      </nav>
-
-      <!-- Right CTAs -->
-      <div class="flex items-center gap-3">
-        <a href="https://t.me/vocalcoach_zhanko" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold px-3 py-2 rounded-xl bg-neutral-100 text-neutral-800 hover:bg-neutral-200 transition-colors">
-          <i class="fa-brands fa-telegram text-sky-500 text-sm"></i>
-          <span>@vocalcoach_zhanko</span>
-        </a>
-        <button onclick="openBookingModal('header')" class="btn-press inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all duration-200 shadow-md border border-amber-300">
-          <span>Записатися за 400 грн</span>
-          <i class="fa-solid fa-arrow-right text-xs"></i>
-        </button>
-      </div>
-
-    </div>
-  </header>
 
   <!-- MAIN WRAPPER FOR LANDING -->
   <main id="main-content-flow">
