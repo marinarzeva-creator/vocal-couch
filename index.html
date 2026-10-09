@@ -1868,18 +1868,63 @@
       }
     }
 
-    function handleFormSubmit(event) {
+   async function handleFormSubmit(event) {
       event.preventDefault();
+
+      // ================= НАСТРОЙКИ TELEGRAM =================
+      const BOT_TOKEN = '8604092135:AAFhi5HY3Gg0H6182lSeX2gHXUydsfhpBRs'; // Например: '7891234567:AAF_xyz...'
+      const CHAT_ID = '532226153';     // Например: '987654321'
+      // =====================================================
+
+      const submitBtn = document.getElementById('submit-btn');
+      const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+
+      // Блокируем кнопку на время отправки, чтобы избежать повторных кликов
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span>Відправляємо...</span> <i class="fa-solid fa-spinner fa-spin text-xs"></i>';
+      }
+
+      // 1. Сбор данных из формы
+      const name = document.getElementById('student-name')?.value.trim() || 'Не вказано';
+      const phone = document.getElementById('student-phone')?.value.trim() || 'Не вказано';
       
-      const name = document.getElementById('student-name').value.trim();
-      const phone = document.getElementById('student-phone').value.trim();
-      const goal = document.getElementById('student-goal')?.value || '';
-      const messenger = document.querySelector('input[name="messenger"]:checked')?.value || 'telegram';
+      const goalSelect = document.getElementById('student-goal');
+      const goalText = goalSelect ? goalSelect.options[goalSelect.selectedIndex]?.text : 'Не вказано';
+      
+      const messengerInput = document.querySelector('input[name="messenger"]:checked');
+      const messenger = messengerInput ? messengerInput.value.toUpperCase() : 'TELEGRAM';
 
-      // (Здесь код отправки заявки в Telegram бота)
+      // 2. Форматирование сообщения для Telegram
+      const messageText = 
+`🔥 <b>НОВА ЗАЯВКА З САЙТУ!</b>
 
-      // Мгновенный переход на отдельную страницу Thank You
-      window.location.href = 'thank-you.html';
+👤 <b>Ім'я:</b> ${name}
+📱 <b>Телефон:</b> <code>${phone}</code>
+🎯 <b>Ціль:</b> ${goalText}
+💬 <b>Зв'язок через:</b> ${messenger}
+📍 <b>Локація:</b> Київ, Солом'янка (Кривоноса 27)
+🎁 <b>Оффер:</b> Пробний урок за 400 грн + 3 відео`;
+
+      // 3. Отправка в Telegram через Bot API
+      try {
+        await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: messageText,
+            parse_mode: 'HTML'
+          })
+        });
+      } catch (error) {
+        console.error('Помилка відправки в Telegram:', error);
+      } finally {
+        // 4. Перенаправление на страницу благодарности
+        window.location.href = 'thank-you.html';
+      }
     }
     function openLessonPlayer(id) {
       const lessons = {
