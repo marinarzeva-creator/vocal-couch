@@ -1,0 +1,7 @@
+{
+  "name": "Музичний простір Катерини Жанько | Вокал Київ",
+  "description": "Індивідуальні уроки вокалу в Києві (Солом'янка). Зніми затискачі та навчися вільно співати улюблені пісні без нудного сольфеджіо.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

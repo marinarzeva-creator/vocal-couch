@@ -1,0 +1,2329 @@
+<!DOCTYPE html>
+<html lang="uk" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Музичний простір Катерини Жанько | Уроки вокалу в Києві</title>
+  <meta name="description" content="Індивідуальні уроки вокалу в Києві (Солом'янка, вул. Максима Кривоноса 27). Пробне заняття 45 хв зі знижкою 50% — за 400 грн + 3 відеоуроки у подарунок." />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Музичний простір Катерини Жанько | Вокал без затискачів у Києві" />
+  <meta property="og:description" content="Навчись вільно та красиво співати улюблені пісні без нудного сольфеджіо. Пробний індивідуальний урок 400 грн (замість 800 грн) + 3 відеоуроки." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Plus Jakarta Sans, Cormorant Garamond & Manrope -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Manrope:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '"Manrope"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          colors: {
+            studio: {
+              cream: '#FAF7F2',
+              card: '#FFFFFF',
+              dark: '#141211',
+              charcoal: '#221F1D',
+              muted: '#716B67',
+              accent: '#BE3455',
+              terracotta: '#C85A32',
+              gold: '#D97706',
+              softPink: '#F7EDE8',
+              lavender: '#EFEBF6',
+              mint: '#EBF5F0'
+            }
+          },
+          boxShadow: {
+            'glow': '0 10px 40px -10px rgba(190, 52, 85, 0.28)',
+            'card-soft': '0 4px 30px rgba(0, 0, 0, 0.04)',
+            'subtle': '0 2px 10px rgba(0,0,0,0.03)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #FAF7F2;
+      color: #221F1D;
+      -webkit-font-smoothing: antialiased;
+    }
+    .font-cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .badge-gradient {
+      background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(247,237,232,0.8) 100%);
+    }
+    .hero-glow {
+      background: radial-gradient(circle at 50% 30%, rgba(200, 90, 50, 0.08) 0%, rgba(250, 247, 242, 0) 70%);
+    }
+    .text-gradient {
+      background: linear-gradient(135deg, #BE3455 0%, #C85A32 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .noise-bg {
+      background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0);
+      background-size: 24px 24px;
+    }
+    /* Smooth transitions */
+    .btn-press:active {
+      transform: scale(0.98);
+    }
+    /* Hide scrollbar for clean tabs */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="selection:bg-studio-accent selection:text-white noise-bg">
+
+  <!-- TOP ANNOUNCEMENT BANNER (Hormozi Scarcity + Urgency) -->
+  <div class="bg-studio-dark text-white text-xs sm:text-sm py-2 px-4 sticky top-0 z-50 border-b border-neutral-800 shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between gap-2">
+      <div class="flex items-center gap-2 truncate">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-black bg-amber-400 text-neutral-950 animate-pulse">
+          АКЦІЯ МІСЯЦЯ
+        </span>
+        <span class="truncate font-medium text-neutral-200">
+          Пробне індивідуальне заняття (45 хв) — <strong class="text-amber-400 font-bold">400 грн</strong> замість 800 грн + 3 відеоуроки у подарунок!
+        </span>
+      </div>
+      <div class="hidden md:flex items-center gap-3 shrink-0 text-xs text-neutral-400">
+        <span class="flex items-center gap-1.5 font-bold text-amber-300">
+          <i class="fa-solid fa-fire text-amber-400"></i> Залишилось 3 місця з 7
+        </span>
+        <span class="text-neutral-500">|</span>
+        <a href="#godfather-offer" class="px-2.5 py-0.5 rounded-md bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black transition-colors">
+          Зайняти місце &rarr;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN NAVIGATION -->
+  <header class="bg-white/90 backdrop-blur-md border-b border-neutral-200/80 sticky top-9 z-40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
+      
+      <!-- Logo & Brand (Text only as requested) -->
+      <a href="#" class="flex items-center group">
+        <span class="font-sans text-base sm:text-lg lg:text-xl font-black tracking-tight text-neutral-900 leading-tight group-hover:text-amber-500 transition-colors">
+          Творчій простір Катерини Жанько
+        </span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-bold text-neutral-700">
+        <a href="#about-offer" class="hover:text-studio-accent transition-colors">Чому ми</a>
+        <a href="#for-who" class="hover:text-studio-accent transition-colors">Кому підійде</a>
+        <a href="#hero-mechanism" class="hover:text-studio-accent transition-colors">Методика</a>
+        <a href="#about-kateryna" class="hover:text-studio-accent transition-colors">Про Катерину</a>
+        <a href="#reviews" class="hover:text-studio-accent transition-colors">Відгуки учнів</a>
+        <a href="#faq" class="hover:text-studio-accent transition-colors">Часті запитання</a>
+      </nav>
+
+      <!-- Right CTAs -->
+      <div class="flex items-center gap-3">
+        <a href="https://t.me/vocalcoach_zhanko" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 text-xs font-bold px-3 py-2 rounded-xl bg-neutral-100 text-neutral-800 hover:bg-neutral-200 transition-colors">
+          <i class="fa-brands fa-telegram text-sky-500 text-sm"></i>
+          <span>@vocalcoach_zhanko</span>
+        </a>
+        <button onclick="openBookingModal('header')" class="btn-press inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all duration-200 shadow-md border border-amber-300">
+          <span>Записатися за 400 грн</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER FOR LANDING -->
+  <main id="main-content-flow">
+
+    <!-- HERO SECTION (ABOVE THE FOLD - Hormozi Value Formula + Embedded Video) -->
+    <section class="relative pt-6 sm:pt-12 pb-14 sm:pb-20 overflow-hidden hero-glow">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <!-- Eyebrow: Location + Social Proof (Rareblocks-style tag) -->
+        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-5 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 shadow-subtle text-xs font-semibold text-neutral-800">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            <i class="fa-solid fa-location-dot text-studio-accent text-xs"></i>
+            <span>Київ, Солом'янка • вул. Максима Кривоноса 27</span>
+          </div>
+
+          <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-studio-softPink/80 border border-studio-accent/20 text-xs font-semibold text-studio-accent">
+            <i class="fa-solid fa-star text-amber-500"></i>
+            <span>4.9/5 • Понад 500 щасливих учнів</span>
+          </div>
+        </div>
+
+        <!-- 2-Column Split Hero (Hook + CTA on Left, Vertical Video on Right) -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+          
+          <!-- LEFT COLUMN: Hook, Value Proposition & CTA -->
+          <div class="lg:col-span-7 text-center lg:text-left">
+            
+            <!-- Main Hook Headline (Bold Sans-Serif WITHOUT serifs / БЕЗ ЗАСІЧОК) -->
+            <h1 class="font-sans text-3xl sm:text-5xl lg:text-[52px] font-black tracking-[-0.035em] text-neutral-900 leading-[1.12] mb-5">
+              Навчись вільно та гарно співати улюблені пісні <span class="text-gradient font-black">без затискачів</span> та нудного сольфеджіо
+            </h1>
+            
+            <!-- Sub-headline: Fear Removal + Biological Mechanism -->
+            <p class="text-base sm:text-lg text-neutral-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal mb-8">
+              Голос і слух — це <strong class="text-neutral-900 font-bold">керовані м’язи</strong>, а не вроджений дар для обраних. Прибираємо блоки в гортані, ставимо природне діафрагмальне дихання та розучуємо твою улюблену пісню вже з першого уроку у безпечній і теплій атмосфері.
+            </p>
+
+            <!-- Primary Action Card (Direct CTA inspired by Rareblocks conversion block) -->
+            <div class="max-w-lg mx-auto lg:mx-0 mb-6">
+              <div class="bg-white p-3 sm:p-3.5 rounded-2xl shadow-card-soft border border-neutral-200/90 flex flex-col sm:flex-row gap-3 items-stretch">
+                <div class="flex-1 flex items-center px-4 py-3 rounded-xl bg-neutral-50 border border-neutral-200 text-sm text-neutral-700">
+                  <i class="fa-regular fa-clock text-studio-accent mr-2.5"></i>
+                  <span class="font-medium text-xs sm:text-sm">Індивідуальний урок 45 хв • <strong class="text-neutral-900 font-bold">400 грн</strong> <span class="line-through text-neutral-400 font-normal ml-1">800 грн</span></span>
+                </div>
+                <button onclick="openBookingModal('hero_main')" class="btn-press bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm px-6 py-3.5 rounded-xl shadow-md border border-amber-300 transition-all flex items-center justify-center gap-2 shrink-0">
+                  <span>Забронювати за 400 грн</span>
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+              </div>
+
+              <!-- Trust Badges Under Hero CTA -->
+              <div class="grid grid-cols-3 gap-2 mt-3.5 text-center text-[11px] sm:text-xs text-neutral-500 font-medium">
+                <div class="flex items-center justify-center lg:justify-start gap-1.5">
+                  <i class="fa-solid fa-gift text-emerald-600"></i>
+                  <span>+3 відеоуроки в подарунок</span>
+                </div>
+                <div class="flex items-center justify-center gap-1.5">
+                  <i class="fa-solid fa-shield-halved text-amber-600"></i>
+                  <span>100% гарантія результату</span>
+                </div>
+                <div class="flex items-center justify-center lg:justify-end gap-1.5">
+                  <i class="fa-solid fa-user-check text-indigo-600"></i>
+                  <span>Без стресу та оцінок</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rareblocks-Style Social Proof Metrics Bar -->
+            <div class="pt-6 border-t border-neutral-200/70 flex items-center justify-center lg:justify-start gap-6 sm:gap-10 text-neutral-800">
+              <div>
+                <div class="font-sans text-2xl sm:text-3xl font-black text-neutral-900 leading-none">500+</div>
+                <div class="text-[11px] text-neutral-500 font-medium mt-1">Випускників з нуля</div>
+              </div>
+              <div class="w-px h-8 bg-neutral-200"></div>
+              <div>
+                <div class="font-sans text-2xl sm:text-3xl font-black text-studio-accent leading-none">45 хв</div>
+                <div class="text-[11px] text-neutral-500 font-medium mt-1">Перший помітний ефект</div>
+              </div>
+              <div class="w-px h-8 bg-neutral-200"></div>
+              <div>
+                <div class="font-sans text-2xl sm:text-3xl font-black text-amber-500 leading-none">4.9★</div>
+                <div class="text-[11px] text-neutral-500 font-medium mt-1">Рейтинг задоволення</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- RIGHT COLUMN: EMBEDDED VIDEO IN FIRST SCREEN (Portrait Reels Format) -->
+          <div class="lg:col-span-5">
+            <div class="relative max-w-sm sm:max-w-md mx-auto">
+              
+              <!-- Decorative Ambient Glow & Doodles (Rareblocks Inspired) -->
+              <div class="absolute -top-6 -right-6 w-36 h-36 bg-rose-200/50 rounded-full filter blur-2xl pointer-events-none"></div>
+              <div class="absolute -bottom-6 -left-6 w-36 h-36 bg-amber-200/50 rounded-full filter blur-2xl pointer-events-none"></div>
+
+              <!-- Main Video Container Card -->
+              <div class="bg-studio-dark rounded-3xl p-3 sm:p-4 shadow-2xl border-2 border-neutral-800 relative overflow-hidden text-white">
+                
+                <!-- Video Header Bar with Live Indicator -->
+                <div class="flex items-center justify-between px-2 pb-3 mb-2 border-b border-neutral-800/80">
+                  <div class="flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span class="text-xs font-bold text-neutral-200 tracking-wide uppercase">
+                      Катерина Жанько • Студія Київ
+                    </span>
+                  </div>
+                  <span class="text-[11px] font-semibold text-rose-300 bg-rose-950/60 border border-rose-800/50 px-2 py-0.5 rounded-full">
+                    ДО & ПІСЛЯ
+                  </span>
+                </div>
+
+                <!-- Video Frame (Aspect Ratio 9:16 portrait format matching uploaded reel) -->
+                <div class="relative rounded-2xl overflow-hidden bg-black aspect-[9/14] sm:aspect-[9/13] flex flex-col justify-between p-4 group select-none shadow-inner">
+                  
+                  <!-- Real HTML5 Video Element (plays uploaded / custom video if present) -->
+                  <video id="hero-native-video" 
+                         class="absolute inset-0 w-full h-full object-cover z-0" 
+                         playsinline 
+                         loop 
+                         muted 
+                         preload="auto"
+                         onplay="updateVideoPlayState(true)"
+                         onpause="updateVideoPlayState(false)">
+                    <source src="/kateryna-vocal.mp4" type="video/mp4" />
+                    <source src="/video.mp4" type="video/mp4" />
+                    <source src="kateryna-vocal.mp4" type="video/mp4" />
+                  </video>
+
+                  <!-- Simulated Studio Scene Layer (Displays real photo of Kateryna Zhanko & video scene) -->
+                  <div id="video-sim-backdrop" class="absolute inset-0 z-0 bg-gradient-to-b from-black/60 via-black/30 to-black/90 flex flex-col justify-between p-4 pointer-events-none transition-opacity duration-500">
+                    
+                    <!-- Real Photo of Kateryna in Music Studio as Video Backdrop -->
+                    <img src="kateryna-studio.jpg" 
+                         alt="Катерина Жанько уроки вокалу Київ" 
+                         class="absolute inset-0 w-full h-full object-cover object-center -z-10 brightness-90 contrast-105"
+                         onerror="this.onerror=null; this.src='/kateryna-studio.jpg';" />
+
+                    <!-- Studio Glow Gradient Overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/50 -z-10"></div>
+
+                    <!-- Animated Soundwave Equalizer -->
+                    <div id="soundwave-bar" class="absolute top-14 right-4 flex items-end gap-1 h-8 opacity-85">
+                      <div class="w-1 bg-amber-400 rounded-full h-3 animate-pulse" style="animation-duration: 0.6s"></div>
+                      <div class="w-1 bg-rose-400 rounded-full h-6 animate-pulse" style="animation-duration: 0.4s"></div>
+                      <div class="w-1 bg-yellow-300 rounded-full h-8 animate-pulse" style="animation-duration: 0.8s"></div>
+                      <div class="w-1 bg-emerald-400 rounded-full h-5 animate-pulse" style="animation-duration: 0.5s"></div>
+                      <div class="w-1 bg-amber-400 rounded-full h-2 animate-pulse" style="animation-duration: 0.7s"></div>
+                    </div>
+                  </div>
+
+                  <!-- TOP BADGES OVER VIDEO -->
+                  <div class="relative z-10 flex items-center justify-between">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-[11px] font-bold text-white border border-white/20">
+                      <i class="fa-brands fa-instagram text-rose-400"></i>
+                      <span>@vocalcoach_zhanko</span>
+                    </span>
+
+                    <button onclick="toggleAudioPreview()" id="audio-toggle-btn" class="w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-colors" title="Звук">
+                      <i id="audio-toggle-icon" class="fa-solid fa-volume-xmark text-xs"></i>
+                    </button>
+                  </div>
+
+                  <!-- CENTER ACTION: Big Play Button -->
+                  <div class="relative z-10 my-auto text-center py-4">
+                    <button onclick="toggleHeroPlay()" id="hero-play-btn" class="btn-press mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-amber-400 hover:bg-amber-300 text-neutral-950 flex items-center justify-center shadow-xl shadow-amber-400/40 transition-all duration-300 hover:scale-110 border-2 border-amber-200 group/play">
+                      <i id="hero-play-icon" class="fa-solid fa-play text-xl sm:text-2xl ml-1 text-neutral-950 group-hover/play:scale-110 transition-transform"></i>
+                    </button>
+                    
+                    <div id="video-status-text" class="text-xs text-white/95 font-black mt-3 tracking-wide drop-shadow-md bg-black/60 px-3 py-1 rounded-full inline-block backdrop-blur-sm border border-white/10">
+                      Натисни для перегляду розбору
+                    </div>
+                  </div>
+
+                  <!-- BOTTOM CONTENT: LIVE SUBTITLES & EXACT QUOTES FROM ATTACHED VIDEO -->
+                  <div class="relative z-10 space-y-2.5">
+                    
+                    <!-- Dynamic Subtitle Card matching Kateryna's speech -->
+                    <div id="caption-card" class="bg-black/80 backdrop-blur-md p-3.5 rounded-xl border border-white/15 text-left transition-all duration-300">
+                      <div class="flex items-center justify-between text-[10px] text-amber-300 font-bold uppercase tracking-wider mb-1">
+                        <span id="caption-timestamp" class="flex items-center gap-1">
+                          <i class="fa-solid fa-circle text-[6px] text-rose-500 animate-pulse"></i> Епізод 1 з 4
+                        </span>
+                        <span id="caption-title" class="text-neutral-300">Ось це наше ДО</span>
+                      </div>
+                      <p id="caption-body" class="text-xs sm:text-[13px] font-semibold text-white leading-snug">
+                        «Ось це наше ДО: скутий спів, спазм щелепи, страх не витягнути ноту...»
+                      </p>
+                    </div>
+
+                    <!-- Progress / Scrub Bar -->
+                    <div class="space-y-1">
+                      <div class="w-full bg-white/20 h-1.5 rounded-full overflow-hidden cursor-pointer" onclick="scrubVideo(event)">
+                        <div id="video-progress-fill" class="bg-gradient-to-r from-amber-400 via-rose-500 to-studio-accent h-full rounded-full transition-all duration-200" style="width: 25%"></div>
+                      </div>
+                      <div class="flex justify-between text-[10px] text-neutral-400 font-mono">
+                        <span id="timecode-current">0:00</span>
+                        <span>0:22</span>
+                      </div>
+                    </div>
+
+                    <!-- 4 Interactive Chapter Pills (Directly from user's attached video) -->
+                    <div class="grid grid-cols-4 gap-1 text-[10px] font-bold text-center pt-1">
+                      <button onclick="jumpToChapter(0)" id="chapter-0" class="py-1 px-1 rounded-lg bg-studio-accent text-white truncate transition-all">
+                        1. ДО
+                      </button>
+                      <button onclick="jumpToChapter(5)" id="chapter-1" class="py-1 px-1 rounded-lg bg-neutral-800 text-neutral-300 hover:text-white truncate transition-all">
+                        2. ПІСЛЯ
+                      </button>
+                      <button onclick="jumpToChapter(10)" id="chapter-2" class="py-1 px-1 rounded-lg bg-neutral-800 text-neutral-300 hover:text-white truncate transition-all">
+                        3. МІФ
+                      </button>
+                      <button onclick="jumpToChapter(15)" id="chapter-3" class="py-1 px-1 rounded-lg bg-neutral-800 text-neutral-300 hover:text-white truncate transition-all">
+                        4. НАВИЧКИ
+                      </button>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <!-- Bottom Helper: Replace or load video file -->
+                <div class="flex items-center justify-between pt-3 px-1 text-[11px] text-neutral-400">
+                  <span class="flex items-center gap-1.5 text-neutral-300 font-medium">
+                    <i class="fa-solid fa-microphone-lines text-studio-accent"></i>
+                    Київ, студія за фортепіано
+                  </span>
+                  
+                  <label class="cursor-pointer hover:text-white flex items-center gap-1 transition-colors underline underline-offset-2">
+                    <i class="fa-solid fa-arrow-up-from-bracket text-[10px]"></i>
+                    <span>Завантажити свій .mp4</span>
+                    <input type="file" accept="video/*" onchange="handleUserVideoUpload(event)" class="hidden" />
+                  </label>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Under-Hero 4 Advantage Pills (Clean Rareblocks Style) -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mt-10 pt-6 border-t border-neutral-200/80 max-w-5xl mx-auto">
+          <div class="flex items-center gap-3 p-3 rounded-2xl bg-white border border-neutral-200/80 shadow-subtle">
+            <div class="w-10 h-10 rounded-xl bg-studio-softPink text-studio-accent flex items-center justify-center shrink-0 text-base">
+              <i class="fa-solid fa-lungs"></i>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-bold text-neutral-900 leading-tight">Без затискачів</div>
+              <div class="text-[11px] text-neutral-500 mt-0.5">Дихання животом</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 p-3 rounded-2xl bg-white border border-neutral-200/80 shadow-subtle">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-700 flex items-center justify-center shrink-0 text-base">
+              <i class="fa-solid fa-music"></i>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-bold text-neutral-900 leading-tight">Твоя пісня одразу</div>
+              <div class="text-[11px] text-neutral-500 mt-0.5">Без нудного сольфеджіо</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 p-3 rounded-2xl bg-white border border-neutral-200/80 shadow-subtle">
+            <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-700 flex items-center justify-center shrink-0 text-base">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-bold text-neutral-900 leading-tight">Безпечний простір</div>
+              <div class="text-[11px] text-neutral-500 mt-0.5">0% критики та оцінок</div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 p-3 rounded-2xl bg-white border border-neutral-200/80 shadow-subtle">
+            <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0 text-base">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-bold text-neutral-900 leading-tight">Київ, Солом'янка</div>
+              <div class="text-[11px] text-neutral-500 mt-0.5">Кривоноса 27</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: PROBLEM IDENTIFICATION & EMPATHY (Sabri Suby Lead-In Copy) -->
+    <section id="about-offer" class="py-14 sm:py-20 bg-white border-y border-neutral-200/70">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold text-studio-accent uppercase tracking-widest bg-studio-softPink px-3 py-1 rounded-full">
+            Чи знайомі тобі ці відчуття?
+          </span>
+          <h2 class="font-sans text-3xl sm:text-5xl font-black tracking-tight text-neutral-900 mt-3 mb-4">
+            Чому більшість людей бояться співати вголос — і як це змінити
+          </h2>
+          <p class="text-sm sm:text-base text-neutral-600">
+            Якщо ти впізнаєш себе хоча б в одному з цих пунктів — ти не самотній. З цим стикалися 9 із 10 моїх учнів до знайомства зі мною.
+          </p>
+        </div>
+
+        <!-- Pain Point Grid (With Thematic Icons for each fear - NO plain red crosses) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-12">
+          
+          <!-- Fear 1: Ear / Pitch Myth -->
+          <div class="p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200/90 hover:border-amber-400 transition-colors group">
+            <div class="flex items-start gap-4">
+              <div class="w-13 h-13 rounded-2xl bg-amber-100/90 text-amber-800 border-2 border-amber-300 flex items-center justify-center shrink-0 font-bold text-xl shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-ear-listen"></i>
+              </div>
+              <div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-amber-200/70 text-amber-900 mb-2 uppercase tracking-wider">
+                  <i class="fa-solid fa-brain text-amber-700"></i> Психологічний блок
+                </span>
+                <h4 class="font-sans font-bold text-base text-neutral-900 mb-1.5">«У дитинстві сказали, що в мене немає слуху»</h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  Одне необережне слово вчительки музики або родича поставило хрест на мрії. Насправді амузія (справжня відсутність слуху) буває менш ніж у 1.5% людей на планеті. Усі інші просто не навчили м’язи зв’язок повторювати почуту частоту.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fear 2: Throat Constriction & High Notes -->
+          <div class="p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200/90 hover:border-rose-400 transition-colors group">
+            <div class="flex items-start gap-4">
+              <div class="w-13 h-13 rounded-2xl bg-rose-100/90 text-rose-700 border-2 border-rose-300 flex items-center justify-center shrink-0 font-bold text-xl shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-head-side-cough"></i>
+              </div>
+              <div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-rose-200/70 text-rose-900 mb-2 uppercase tracking-wider">
+                  <i class="fa-solid fa-hand-fist text-rose-700"></i> Фізичний затиск гортані
+                </span>
+                <h4 class="font-sans font-bold text-base text-neutral-900 mb-1.5">«Горло стискається, а голос зривається на високих нотах»</h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  Під час спроби заспівати голосно виникає першіння, кашель або напруга в шиї. Це класичний спазм гортані: коли ти тягнешся зв'язками без правильної діафрагмальної опори, голос швидко втомлюється і болить.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fear 3: Shower / Secret Singing & Karaoke Shame -->
+          <div class="p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200/90 hover:border-sky-400 transition-colors group">
+            <div class="flex items-start gap-4">
+              <div class="w-13 h-13 rounded-2xl bg-sky-100/90 text-sky-800 border-2 border-sky-300 flex items-center justify-center shrink-0 font-bold text-xl shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-car-side"></i>
+              </div>
+              <div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-sky-200/70 text-sky-900 mb-2 uppercase tracking-wider">
+                  <i class="fa-solid fa-users-slash text-sky-700"></i> Страх оцінки оточуючих
+                </span>
+                <h4 class="font-sans font-bold text-base text-neutral-900 mb-1.5">«Співаю лише наодинці в машині або під душем»</h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  У караоке з друзями або на святі страх осуду сковує тіло. Тобі здається, що всі слухають саме твої фальшиві ноти. Через сором голос звучить тихо, невпевнено і тьмяно, хоча всередині горить бажання заспівати на повні груди.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fear 4: Classical School Trauma / Boring Solfege -->
+          <div class="p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200/90 hover:border-purple-400 transition-colors group">
+            <div class="flex items-start gap-4">
+              <div class="w-13 h-13 rounded-2xl bg-purple-100/90 text-purple-800 border-2 border-purple-300 flex items-center justify-center shrink-0 font-bold text-xl shadow-sm group-hover:scale-105 transition-transform">
+                <i class="fa-solid fa-book-skull"></i>
+              </div>
+              <div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[10px] font-black bg-purple-200/70 text-purple-900 mb-2 uppercase tracking-wider">
+                  <i class="fa-solid fa-graduation-cap text-purple-700"></i> Застаріла радянська система
+                </span>
+                <h4 class="font-sans font-bold text-base text-neutral-900 mb-1.5">«Класичні музичні школи тільки лякають сольфеджіо»</h4>
+                <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+                  Складні терміни, сухі вправи, академічна постава і жодного стосунку до сучасної улюбленої поп-, інді- чи рок-пісні. Замість задоволення ти отримуєш стрес і ще більше затискачів.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Hormozi Truth Reframe Banner -->
+        <div class="bg-studio-dark text-white rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-xl">
+          <div class="relative z-10 max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold mb-3 border border-emerald-500/30">
+              <i class="fa-solid fa-check"></i>
+              <span>Правда, яку приховують старі школи</span>
+            </div>
+            <h3 class="font-sans text-2xl sm:text-3xl font-black tracking-tight mb-3">
+              Тобі не потрібен «унікальний дар». Тобі потрібна правильна біомеханіка та підтримка.
+            </h3>
+            <p class="text-sm sm:text-base text-neutral-300 leading-relaxed mb-6 font-normal">
+              Голосові зв’язки — це такі самі м’язові складки, як і біцепс. Якщо ти вмієш говорити — ти фізіологічно здатний чисто й красиво співати. Наше завдання на пробному уроці: зняти спазм щелепи, підключити діафрагму і показати тобі твій справжній об'ємний голос.
+            </p>
+            <button onclick="openBookingModal('problem_banner')" class="btn-press inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all shadow-md border border-amber-300">
+              <span>Спробувати за 400 грн (45 хв)</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+
+          <div class="absolute -right-10 -bottom-10 opacity-10 text-white text-[180px] pointer-events-none">
+            <i class="fa-solid fa-music"></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: TARGET AUDIENCE SEGMENTATION (3 Avatars) -->
+    <section id="for-who" class="py-14 sm:py-20 bg-studio-cream">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold text-studio-accent uppercase tracking-widest bg-studio-softPink px-3 py-1 rounded-full">
+            Для кого створено простір
+          </span>
+          <h2 class="font-sans text-3xl sm:text-5xl font-black tracking-tight text-neutral-900 mt-3 mb-4">
+            3 напрями — одна тепла атмосфера без оцінок
+          </h2>
+          <p class="text-sm sm:text-base text-neutral-600">
+            Обери свій запит. Ми підлаштовуємо програму під твою індивідуальну мету, а не під застарілі шаблони.
+          </p>
+        </div>
+
+        <!-- 3 Cards Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Avatar 1: Adults - Soul & Anti-Stress -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200/90 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-studio-softPink text-studio-accent flex items-center justify-center font-bold text-xl mb-6 shadow-sm">
+                <i class="fa-solid fa-spa"></i>
+              </div>
+              
+              <div class="text-xs font-bold uppercase tracking-wider text-studio-terracotta mb-1">
+                Для дорослих
+              </div>
+              <h3 class="font-sans text-xl sm:text-2xl font-black text-neutral-900 mb-3">
+                Для душі та тотального антистресу
+              </h3>
+
+              <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed mb-6">
+                Після робочих дедлайнів, нарад і міського шуму голос — це найкращий спосіб вивільнити емоції, видихнути напругу і відчути себе живим.
+              </p>
+
+              <div class="space-y-3 mb-8">
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>М'яке зняття психосоматичних блоків і затискачів у шиї</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Глибокі дихальні практики, які наповнюють енергією</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Здійснення мрії дитинства в затишній естетичній студії</span>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="openBookingModal('avatar_soul')" class="btn-press w-full py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all shadow-md border border-amber-300 flex items-center justify-center gap-2">
+              <span>Записатися для душі (400 грн)</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+
+          <!-- Avatar 2: Adults - Song as Gift / Karaoke / Wedding -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-amber-400 shadow-glow relative hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-neutral-950 text-amber-300 border border-amber-400 text-[11px] font-black tracking-wider uppercase shadow-sm">
+              Найпопулярніший запит
+            </div>
+
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xl mb-6 shadow-sm">
+                <i class="fa-solid fa-microphone-lines"></i>
+              </div>
+              
+              <div class="text-xs font-bold uppercase tracking-wider text-amber-600 mb-1">
+                Конкретна ціль
+              </div>
+              <h3 class="font-sans text-xl sm:text-2xl font-black text-neutral-900 mb-3">
+                Пісня в подарунок або фурор у караоке
+              </h3>
+
+              <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed mb-6">
+                Мрієш здивувати кохану людину піснею на весіллі, виступити на дні народження або більше не ховатися за спинами друзів у караоке.
+              </p>
+
+              <div class="space-y-3 mb-8">
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Покроковий розбір обраного треку: тональність, нюанси, дихання</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Робота з мікрофоном та сценічною впевненістю</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Готовий красивий результат за лічені заняття</span>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="openBookingModal('avatar_song')" class="btn-press w-full py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all shadow-md border border-amber-300 flex items-center justify-center gap-2">
+              <span>Підготувати пісню за 400 грн</span>
+              <i class="fa-solid fa-sparkles text-xs"></i>
+            </button>
+          </div>
+
+          <!-- Avatar 3: Kids from 6 yo -->
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200/90 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-xl mb-6 shadow-sm">
+                <i class="fa-solid fa-child-reaching"></i>
+              </div>
+              
+              <div class="text-xs font-bold uppercase tracking-wider text-indigo-600 mb-1">
+                Для батьків
+              </div>
+              <h3 class="font-sans text-xl sm:text-2xl font-black text-neutral-900 mb-3">
+                Сучасний вокал для дітей від 6 років
+              </h3>
+
+              <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed mb-6">
+                Без радянської муштри, залякування екзаменами та сухих гам. Розкриваємо природний голос і любов до музики через гру та улюблені сучасні пісні.
+              </p>
+
+              <div class="space-y-3 mb-8">
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Дбайлива постановка дихання, яка зміцнює легені та імунітет</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Розвиток артикуляції, мовлення та сміливості виступати</span>
+                </div>
+                <div class="flex items-start gap-2.5 text-xs sm:text-sm text-neutral-700">
+                  <i class="fa-solid fa-circle-check text-emerald-500 mt-1 shrink-0"></i>
+                  <span>Дитина біжить на заняття із задоволенням</span>
+                </div>
+              </div>
+            </div>
+
+            <button onclick="openBookingModal('avatar_kids')" class="btn-press w-full py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all shadow-md border border-amber-300 flex items-center justify-center gap-2">
+              <span>Записати дитину (400 грн)</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: UNIQUE HERO MECHANISM (The Science & Practice) -->
+    <section id="hero-mechanism" class="py-14 sm:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+          
+          <div class="lg:col-span-6">
+            <span class="text-xs font-bold text-studio-accent uppercase tracking-widest bg-studio-softPink px-3 py-1 rounded-full">
+              Наш унікальний підхід
+            </span>
+            <h2 class="font-sans text-3xl sm:text-5xl font-black tracking-tight text-neutral-900 mt-3 mb-5 leading-tight">
+              Ми не мучимо теорією — ми тренуємо голос як м’яз через практику
+            </h2>
+            <p class="text-sm sm:text-base text-neutral-600 leading-relaxed mb-6 font-normal">
+              У традиційних закладах учня роками змушують вчити ноти й співати абстрактні етюди. У моєму просторі діє <strong class="text-neutral-900 font-bold">авторська методика швидкого запуску голосу</strong>, заснована на сучасній анатомії вокального апарату.
+            </p>
+
+            <div class="space-y-4 mb-8">
+              
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-neutral-50 border border-neutral-100">
+                <div class="w-8 h-8 rounded-xl bg-studio-softPink text-studio-accent font-bold flex items-center justify-center shrink-0 text-sm">
+                  1
+                </div>
+                <div>
+                  <h4 class="font-sans font-bold text-sm sm:text-base text-neutral-900 mb-1">
+                    Діафрагмальна опора замість спазму горла
+                  </h4>
+                  <p class="text-xs sm:text-sm text-neutral-600">
+                    Навчаємо тіло спиратися на м'язи черевного преса. Гортань залишається абсолютно вільною, а звук стає сильним і щільним без болю та втоми.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-neutral-50 border border-neutral-100">
+                <div class="w-8 h-8 rounded-xl bg-studio-softPink text-studio-accent font-bold flex items-center justify-center shrink-0 text-sm">
+                  2
+                </div>
+                <div>
+                  <h4 class="font-sans font-bold text-sm sm:text-base text-neutral-900 mb-1">
+                    Зняття щелепного та язикового затискача
+                  </h4>
+                  <p class="text-xs sm:text-sm text-neutral-600">
+                    Спеціальні м'які вправи звільняють нижню щелепу і корінь язика. Тембр миттєво відкривається, зникає «гугнявість» та стиснутий звук.
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-neutral-50 border border-neutral-100">
+                <div class="w-8 h-8 rounded-xl bg-studio-softPink text-studio-accent font-bold flex items-center justify-center shrink-0 text-sm">
+                  3
+                </div>
+                <div>
+                  <h4 class="font-sans font-bold text-sm sm:text-base text-neutral-900 mb-1">
+                    Спів реальної пісні з 1-го уроку
+                  </h4>
+                  <p class="text-xs sm:text-sm text-neutral-600">
+                    Ти приходиш зі своїм улюбленим треком. Ми розбираємо його структуру, підбираємо комфортну тональність і відпрацьовуємо складні фрази прямо в пісні.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+            <button onclick="openBookingModal('mechanism_cta')" class="btn-press inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all shadow-md border border-amber-300">
+              <span>Спробувати методику за 400 грн</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </button>
+          </div>
+
+          <!-- Visual Demonstration Card (Comparison Table) -->
+          <div class="lg:col-span-6">
+            <div class="bg-studio-dark text-white rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden border border-neutral-800">
+              
+              <div class="flex items-center justify-between pb-4 border-b border-neutral-800 mb-6">
+                <div>
+                  <span class="text-xs text-neutral-400 uppercase tracking-widest font-semibold">Порівняння підходів</span>
+                  <h3 class="font-sans text-xl sm:text-2xl font-black mt-1 text-white">Чому учні вибирають нас</h3>
+                </div>
+                <div class="w-10 h-10 rounded-full bg-studio-accent/20 text-studio-softPink flex items-center justify-center font-bold">
+                  VS
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                
+                <!-- Row 1: Solfege -->
+                <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 flex flex-col gap-2">
+                  <div class="flex items-center justify-between text-xs font-bold">
+                    <span class="text-rose-400 flex items-center gap-1.5"><i class="fa-solid fa-book-skull"></i> Традиційна школа</span>
+                    <span class="text-amber-400 flex items-center gap-1.5"><i class="fa-solid fa-microphone-lines"></i> Простір Катерини Жанько</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4 text-xs pt-1 border-t border-neutral-800/80">
+                    <span class="text-neutral-400">Роки нудного сольфеджіо та незрозумілих знаків</span>
+                    <span class="text-neutral-200 font-medium">Анатомія голосу простою мовою + жива практика</span>
+                  </div>
+                </div>
+
+                <!-- Row 2: Fear of critique -->
+                <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 flex flex-col gap-2">
+                  <div class="flex items-center justify-between text-xs font-bold">
+                    <span class="text-rose-400 flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation"></i> Традиційна школа</span>
+                    <span class="text-emerald-400 flex items-center gap-1.5"><i class="fa-solid fa-heart-pulse"></i> Простір Катерини Жанько</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4 text-xs pt-1 border-t border-neutral-800/80">
+                    <span class="text-neutral-400">Суворі оцінки, критика та страх сфальшивити</span>
+                    <span class="text-neutral-200 font-medium">100% безпечна атмосфера: помилятися — це нормально</span>
+                  </div>
+                </div>
+
+                <!-- Row 3: Forced classical repertoire -->
+                <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 flex flex-col gap-2">
+                  <div class="flex items-center justify-between text-xs font-bold">
+                    <span class="text-rose-400 flex items-center gap-1.5"><i class="fa-solid fa-compact-disc"></i> Традиційна школа</span>
+                    <span class="text-yellow-400 flex items-center gap-1.5"><i class="fa-solid fa-fire"></i> Простір Катерини Жанько</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4 text-xs pt-1 border-t border-neutral-800/80">
+                    <span class="text-neutral-400">Спів класичних гам і нав'язаного репертуару</span>
+                    <span class="text-neutral-200 font-medium">Твої улюблені треки: від поп-музики до рок-балад</span>
+                  </div>
+                </div>
+
+                <!-- Row 4: Delayed results -->
+                <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 flex flex-col gap-2">
+                  <div class="flex items-center justify-between text-xs font-bold">
+                    <span class="text-rose-400 flex items-center gap-1.5"><i class="fa-solid fa-hourglass-end"></i> Традиційна школа</span>
+                    <span class="text-emerald-400 flex items-center gap-1.5"><i class="fa-solid fa-bolt"></i> Простір Катерини Жанько</span>
+                  </div>
+                  <div class="grid grid-cols-2 gap-4 text-xs pt-1 border-t border-neutral-800/80">
+                    <span class="text-neutral-400">Результат незрозуміло коли через рік</span>
+                    <span class="text-neutral-200 font-medium">Помітне розширення діапазону вже на 1-му уроці</span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Quote pill at bottom -->
+              <div class="mt-6 pt-4 border-t border-neutral-800 flex items-center gap-3">
+                <i class="fa-solid fa-quote-left text-studio-accent text-lg"></i>
+                <p class="text-xs text-neutral-300 italic">
+                  «Коли людина розуміє, які саме м’язи працюють, страх зникає за 15 хвилин.»
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: ABOUT FOUNDER (Proof & Authority - Катерина Жанько) -->
+    <section id="about-kateryna" class="py-14 sm:py-20 bg-studio-cream border-t border-neutral-200/80">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-neutral-200/90 shadow-card-soft">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            
+            <!-- Founder Profile Visual & Badges (With Real Photo: kateryna.jpg) -->
+            <div class="lg:col-span-5 relative">
+              <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden shadow-2xl aspect-square sm:aspect-[4/5] bg-neutral-900 group border-4 border-purple-500/30">
+                
+                <!-- Real Photo of Kateryna Zhanko -->
+                <img src="kateryna.jpg" 
+                     alt="Катерина Жанько — викладач вокалу та засновниця музичного простору" 
+                     class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" 
+                     onerror="this.onerror=null; this.src='/kateryna.jpg';" />
+
+                <!-- Text Overlay at bottom of photo -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-6 text-white pointer-events-none">
+                  <span class="text-xs font-black text-amber-300 uppercase tracking-widest mb-1 drop-shadow">
+                    Викладач вокалу & Ментор
+                  </span>
+                  <h3 class="font-sans text-2xl sm:text-3xl font-black tracking-tight text-white drop-shadow">
+                    Катерина Жанько
+                  </h3>
+                  <p class="text-xs text-neutral-300 mt-0.5">
+                    Засновниця музичного простору в Києві
+                  </p>
+                </div>
+
+              </div>
+
+              <!-- Location Pin Box Under Image -->
+              <div class="mt-4 p-3 rounded-xl bg-neutral-50 border border-neutral-200/90 text-center">
+                <span class="text-xs font-medium text-neutral-700 flex items-center justify-center gap-1.5">
+                  <i class="fa-solid fa-map-location-dot text-studio-accent"></i>
+                  Київ, Солом'янка, вул. Максима Кривоноса 27
+                </span>
+              </div>
+            </div>
+
+            <!-- Founder Bio & Philosophy -->
+            <div class="lg:col-span-7">
+              <span class="text-xs font-bold text-studio-accent uppercase tracking-widest bg-studio-softPink px-3 py-1 rounded-full">
+                Познайомимося ближче
+              </span>
+
+              <h2 class="font-sans text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-neutral-900 mt-3 mb-5">
+                «Я вірю, що кожен голос неповторний, якщо зняти з нього страх»
+              </h2>
+
+              <div class="space-y-4 text-sm sm:text-base text-neutral-600 leading-relaxed mb-6 font-normal">
+                <p>
+                  Привіт! Я — Катерина Жанько. Я створила цей музичний простір на Солом'янці, бо сама пройшла шлях від скутості та невпевненості до вільного і потужного звучання.
+                </p>
+                <p>
+                  Більшість людей, які приходять до мене, на початку кажуть: <em>«Катю, мені ведмідь на вухо наступив, я тільки хочу спробувати»</em>. А вже через місяць вони впевнено співають улюблені пісні для коханих на святах або кайфують у караоке.
+                </p>
+                <p class="font-bold text-neutral-900">
+                  Я проводжу всі заняття особисто, тому гарантую максимальну увагу, бережне ставлення до твого голосу та 0% критики.
+                </p>
+              </div>
+
+              <!-- 4 Proof Milestones -->
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-neutral-100 text-center mb-8">
+                <div class="p-3 rounded-xl bg-neutral-50">
+                  <div class="font-sans text-2xl sm:text-3xl font-black text-studio-accent">500+</div>
+                  <div class="text-[11px] text-neutral-500 font-semibold mt-0.5">Випускників</div>
+                </div>
+                <div class="p-3 rounded-xl bg-neutral-50">
+                  <div class="font-sans text-2xl sm:text-3xl font-black text-studio-accent">45 хв</div>
+                  <div class="text-[11px] text-neutral-500 font-semibold mt-0.5">Тривалість уроку</div>
+                </div>
+                <div class="p-3 rounded-xl bg-neutral-50">
+                  <div class="font-sans text-2xl sm:text-3xl font-black text-studio-accent">100%</div>
+                  <div class="text-[11px] text-neutral-500 font-semibold mt-0.5">Практики</div>
+                </div>
+                <div class="p-3 rounded-xl bg-neutral-50">
+                  <div class="font-sans text-2xl sm:text-3xl font-black text-amber-500">4.9★</div>
+                  <div class="text-[11px] text-neutral-500 font-semibold mt-0.5">Середній бал</div>
+                </div>
+              </div>
+
+              <!-- Fast Action -->
+              <div class="flex flex-col sm:flex-row gap-3">
+                <button onclick="openBookingModal('founder_section')" class="btn-press px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all shadow-md border border-amber-300 flex items-center justify-center gap-2">
+                  <span>Познайомитись на уроці за 400 грн</span>
+                  <i class="fa-solid fa-arrow-right text-xs"></i>
+                </button>
+                <a href="#reviews" class="px-5 py-3.5 rounded-xl bg-neutral-100 hover:bg-neutral-200 text-neutral-800 font-bold text-xs sm:text-sm transition-colors flex items-center justify-center gap-2">
+                  <span>Читати відгуки учнів</span>
+                  <i class="fa-solid fa-comment-dots text-xs"></i>
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: REAL STUDENT REVIEWS & SOCIAL PROOF -->
+    <section id="reviews" class="py-14 sm:py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-bold text-studio-accent uppercase tracking-widest bg-studio-softPink px-3 py-1 rounded-full">
+            Справжні історії трансформації
+          </span>
+          <h2 class="font-sans text-3xl sm:text-5xl font-black tracking-tight text-neutral-900 mt-3 mb-4">
+            Що говорять ті, хто теж боявся починати
+          </h2>
+          <p class="text-sm sm:text-base text-neutral-600">
+            Реальні скріншоти та відгуки учнів з нашого Instagram та Telegram
+          </p>
+        </div>
+
+        <!-- Reviews Grid featuring the exact attached reviews -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-start mb-12">
+          
+          <!-- REVIEW 1: Valerie (Wedding song preparation) -->
+          <div class="bg-studio-cream rounded-3xl p-6 sm:p-8 border border-neutral-200/90 shadow-card-soft relative">
+            <div class="flex items-center justify-between pb-4 border-b border-neutral-200/70 mb-5">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-studio-dark text-white font-black flex items-center justify-center font-sans text-lg shadow-sm">
+                  V
+                </div>
+                <div>
+                  <div class="font-bold text-sm text-neutral-900 flex items-center gap-1.5">
+                    Валерія
+                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] bg-purple-100 text-purple-700 font-semibold">
+                      Підготовка до весілля
+                    </span>
+                  </div>
+                  <div class="text-[11px] text-neutral-500 flex items-center gap-1">
+                    <i class="fa-brands fa-instagram text-rose-500"></i>
+                    <span>Відгук з Instagram Stories @vocalcoach_zhanko</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex text-amber-500 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Review Content -->
+            <div class="text-xs sm:text-sm text-neutral-700 leading-relaxed space-y-3 font-normal italic">
+              <p>
+                «Хочу подякувати тобі за таку класну підготовку пісні на моє весілля. Я відкрила відео з наших перших занять і просто в шоці, вже і забула що прийшла з впевненістю що голос у мене занизький і гарно заспівати в мене не вийде, адже я довго намагалася вдома і звучання було таке, що хотілося закинути цю ідею.»
+              </p>
+              <p>
+                «Але після занять з тобою з кожним разом я бачила прогрес. Не знаю як тобі це вдається, але навіть ті частини пісні, які зовсім не йдуть — після твоїх пояснень, прикладів (і навіть міні лекцій з анатомії 🤫), твоєї підтримки та настанов, усе виходить настільки гарно, що я ніколи б не подумала що так зможу!!!!!»
+              </p>
+              <p>
+                «Ти неймовірно талановитий викладач, дякую що навчила не тільки гарно співати, а і подачі, як передати сенс пісні і морально налаштувала співати перед глядачами ☺️ Завдяки тобі підготовка однієї пісні переросла в найулюбленіше хобі, якого з нетерпінням чекаю кожного тижня 💜💜💜💜💜»
+              </p>
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-neutral-200/60 flex items-center justify-between text-xs text-neutral-500">
+              <span class="flex items-center gap-1 font-medium text-emerald-600">
+                <i class="fa-solid fa-circle-check"></i> Підтверджений результат
+              </span>
+              <span>Солом'янка, Київ</span>
+            </div>
+          </div>
+
+          <!-- REVIEW 2: Telegram Student Review -->
+          <div class="bg-studio-cream rounded-3xl p-6 sm:p-8 border border-neutral-200/90 shadow-card-soft relative">
+            <div class="flex items-center justify-between pb-4 border-b border-neutral-200/70 mb-5">
+              <div class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-full bg-emerald-700 text-white font-black flex items-center justify-center font-sans text-lg shadow-sm">
+                  A
+                </div>
+                <div>
+                  <div class="font-bold text-sm text-neutral-900 flex items-center gap-1.5">
+                    Анна
+                    <span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] bg-emerald-100 text-emerald-800 font-semibold">
+                      Вокал з нуля для душі
+                    </span>
+                  </div>
+                  <div class="text-[11px] text-neutral-500 flex items-center gap-1">
+                    <i class="fa-brands fa-telegram text-sky-500"></i>
+                    <span>Повідомлення з Telegram каналу</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex text-amber-500 text-xs">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <!-- Review Content -->
+            <div class="text-xs sm:text-sm text-neutral-700 leading-relaxed space-y-3 font-normal italic">
+              <p>
+                «Дуже подобаються заняття! На уроках завжди чудова атмосфера. З кожним новим заняттям видно результат.»
+              </p>
+              <p>
+                «Викладачка знаходить до кожного правильний підхід, та все пояснює, поки не зрозумієш. Завжди присутня підтримка, завдяки чому з’являється впевненість. Дуже вдячна за уроки ❤️»
+              </p>
+            </div>
+
+            <!-- Telegram Reactions Mockup from Screenshot -->
+            <div class="mt-6 p-3 rounded-2xl bg-white border border-neutral-200/80 flex items-center gap-2 flex-wrap">
+              <span class="text-xs text-neutral-500 font-medium mr-1">Реакції учнів:</span>
+              <span class="px-2 py-0.5 rounded-full bg-neutral-100 text-xs">🤝 12</span>
+              <span class="px-2 py-0.5 rounded-full bg-neutral-100 text-xs">👍 18</span>
+              <span class="px-2 py-0.5 rounded-full bg-neutral-100 text-xs">🥰 24</span>
+              <span class="px-2 py-0.5 rounded-full bg-neutral-100 text-xs">🎉 9</span>
+              <span class="px-2 py-0.5 rounded-full bg-rose-50 text-xs text-rose-600 font-bold">❤️ 31</span>
+            </div>
+
+            <div class="mt-5 pt-3 border-t border-neutral-200/60 flex items-center justify-between text-xs text-neutral-500">
+              <span class="flex items-center gap-1 font-medium text-emerald-600">
+                <i class="fa-solid fa-circle-check"></i> Займається 4-й місяць
+              </span>
+              <span>Індивідуальні заняття</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Social Proof Stats Banner (Rareblocks Inspired) -->
+        <div class="bg-neutral-50 rounded-2xl p-6 sm:p-7 border border-neutral-200/80 flex flex-col sm:flex-row items-center justify-around gap-6">
+          <div class="flex items-center gap-3.5 w-full sm:w-auto justify-start">
+            <div class="w-12 h-12 rounded-2xl bg-studio-softPink text-studio-accent flex items-center justify-center text-xl font-bold shrink-0 shadow-sm border border-rose-100">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="text-left">
+              <div class="font-sans text-2xl font-black text-neutral-900 leading-none">98.4%</div>
+              <div class="text-xs text-neutral-500 mt-1">учнів продовжують після пробного уроку</div>
+            </div>
+          </div>
+
+          <div class="w-full sm:w-px h-px sm:h-10 bg-neutral-200"></div>
+
+          <div class="flex items-center gap-3.5 w-full sm:w-auto justify-start">
+            <div class="w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center text-xl font-bold shrink-0 shadow-sm border border-amber-200/70">
+              <i class="fa-solid fa-microphone"></i>
+            </div>
+            <div class="text-left">
+              <div class="font-sans text-2xl font-black text-neutral-900 leading-none">1-ше заняття</div>
+              <div class="text-xs text-neutral-500 mt-1">перша готова пісня вже на 45-й хвилині</div>
+            </div>
+          </div>
+
+          <div class="w-full sm:w-px h-px sm:h-10 bg-neutral-200"></div>
+
+          <div class="flex items-center gap-3.5 w-full sm:w-auto justify-start">
+            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-neutral-950 flex items-center justify-center text-xl font-black shrink-0 shadow-sm border border-amber-300">
+              <!-- Discount Price Tag Icon -->
+              <svg class="w-6 h-6 text-neutral-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                <circle cx="7" cy="7" r="1.5" fill="currentColor"></circle>
+                <path d="M12 12l4 4" stroke-width="2"></path>
+                <circle cx="15.5" cy="12.5" r="0.75" fill="currentColor"></circle>
+                <circle cx="12.5" cy="15.5" r="0.75" fill="currentColor"></circle>
+              </svg>
+            </div>
+            <div class="text-left">
+              <div class="font-sans text-2xl font-black text-neutral-900 leading-none flex items-center gap-2">
+                <span>400 грн</span>
+                <span class="text-[10px] sm:text-[11px] font-black uppercase tracking-wider bg-rose-500 text-white px-2 py-0.5 rounded-full shadow-xs">Знижка -50%</span>
+              </div>
+              <div class="text-xs text-neutral-500 mt-1">акційна ціна першого заняття (замість 800 грн)</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: GODFATHER OFFER + PRICING (Hormozi Irresistible Offer) -->
+    <section id="godfather-offer" class="py-16 sm:py-24 bg-studio-dark text-white relative overflow-hidden">
+      
+      <!-- Ambient Glow Behind Offer -->
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-studio-accent/15 rounded-full filter blur-[120px] pointer-events-none"></div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+        
+        <div class="text-center mb-10">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-studio-accent/20 border border-studio-accent/40 text-rose-300 text-xs font-bold uppercase tracking-wider mb-3">
+            <i class="fa-solid fa-fire text-amber-400"></i> Спеціальна пропозиція цього місяця
+          </div>
+          <h2 class="font-sans text-3xl sm:text-5xl font-black tracking-tight text-white mb-4 leading-tight">
+            Офер, від якого неможливо відмовитися
+          </h2>
+          <p class="text-sm sm:text-base text-neutral-300 max-w-xl mx-auto font-normal">
+            Спробуй індивідуальний урок з Катериною Жанько за півціни та забери набір практичних відеоуроків назавжди.
+          </p>
+        </div>
+
+        <!-- GODFATHER PRICING CARD -->
+        <div class="bg-neutral-900/90 rounded-3xl border-2 border-studio-accent shadow-2xl p-6 sm:p-10 backdrop-blur-xl relative">
+          
+          <!-- Top Badge -->
+          <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-neutral-800">
+            <div>
+              <span class="text-xs uppercase tracking-widest text-neutral-400 font-semibold">Формат</span>
+              <h3 class="font-sans text-2xl sm:text-3xl font-black text-white mt-0.5">
+                Повноцінне індивідуальне пробне заняття
+              </h3>
+              <div class="flex items-center gap-2.5 mt-2">
+                <div class="w-7 h-7 rounded-full overflow-hidden border-2 border-amber-400 shrink-0 bg-neutral-900">
+                  <img src="kateryna.jpg" alt="Катерина Жанько" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='/kateryna.jpg';" />
+                </div>
+                <span class="text-xs text-amber-300 font-bold">Особисто з Катериною Жанько 1-на-1 (45 хв у студії)</span>
+              </div>
+            </div>
+            
+            <!-- Price Anchor -->
+            <div class="text-right">
+              <div class="text-xs text-neutral-400">Звичайна ціна: <span class="line-through text-neutral-500 font-medium">800 грн</span></div>
+              <div class="flex items-baseline gap-1.5 mt-0.5 justify-end">
+                <span class="font-sans text-4xl sm:text-5xl font-black text-amber-400">400</span>
+                <span class="text-base text-amber-400 font-bold">грн</span>
+                <span class="text-xs font-black bg-studio-accent px-2 py-0.5 rounded-full text-white ml-2">-50%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- What's included in 45 min -->
+          <div class="py-6 border-b border-neutral-800">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-4">
+              Що входить у 45 хвилин твого заняття:
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 text-xs sm:text-sm text-neutral-200">
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 shrink-0"></i>
+                <span><strong>Діагностика голосового апарату:</strong> виявлення твого природного діапазону та тембру</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 shrink-0"></i>
+                <span><strong>Зняття затискачів:</strong> прості тілесні практики для звільнення гортані та щелепи</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 shrink-0"></i>
+                <span><strong>Постановка дихання:</strong> включення діафрагми для потужного звуку без втоми</span>
+              </div>
+              <div class="flex items-start gap-2.5">
+                <i class="fa-solid fa-circle-check text-emerald-400 mt-1 shrink-0"></i>
+                <span><strong>Практика улюбленої пісні:</strong> спів у мікрофон за фортепіано вже на першому уроці</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FREE BONUS LEAD MAGNET (Hormozi Bonus Stacking) -->
+          <div class="py-6 border-b border-neutral-800 bg-studio-accent/10 -mx-6 sm:-mx-10 px-6 sm:px-10">
+            <div class="flex items-center gap-2 mb-3">
+              <span class="w-6 h-6 rounded-full bg-studio-accent text-white flex items-center justify-center text-xs font-bold">
+                <i class="fa-solid fa-gift"></i>
+              </span>
+              <h4 class="text-sm font-bold text-white uppercase tracking-wider">
+                БОНУС ПРИ ЗАПИСІ СЬОГОДНІ: 3 відеоуроки з вокалу (Цінність 1 200 грн — БЕЗКОШТОВНО)
+              </h4>
+            </div>
+
+            <div class="space-y-2 text-xs sm:text-sm text-neutral-300">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-play text-studio-accent text-xs"></i>
+                <span><strong>Відеоурок 1:</strong> «Як дихати животом і прибрати тремтіння в голосі» (12 хв)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-play text-studio-accent text-xs"></i>
+                <span><strong>Відеоурок 2:</strong> «3 експрес-вправи для розігріву зв'язок перед співом» (8 хв)</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-play text-studio-accent text-xs"></i>
+                <span><strong>Відеоурок 3:</strong> «Секрет високих нот: як співати вгору без зриву» (10 хв)</span>
+              </div>
+            </div>
+            <div class="text-[11px] text-amber-300 mt-2 font-medium">
+              * Доступ до уроків відкривається одразу після бронювання на сторінці подяки!
+            </div>
+          </div>
+
+          <!-- SCARCITY & URGENCY INDICATOR -->
+          <div class="pt-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
+              <div class="text-center sm:text-left">
+                <div class="text-xs text-neutral-300 flex items-center gap-1.5 justify-center sm:justify-start">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span>
+                  <span class="font-semibold text-amber-300">Особистий розклад Катерини:</span>
+                </div>
+                <div class="text-xs text-neutral-400 mt-0.5">
+                  Катерина проводить усі заняття власноруч. На цей місяць залишилося лише <strong>3 вільних місця з 7</strong>.
+                </div>
+              </div>
+
+              <!-- Progress bar -->
+              <div class="w-full sm:w-48 bg-neutral-800 rounded-full h-3 overflow-hidden border border-neutral-700">
+                <div class="bg-gradient-to-r from-amber-400 to-studio-accent h-full rounded-full" style="width: 70%"></div>
+              </div>
+            </div>
+
+            <!-- Main Conversion Button (VIBRANT YELLOW WITH BLACK TEXT) -->
+            <button onclick="openBookingModal('godfather_offer_btn')" class="btn-press w-full py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-base sm:text-lg transition-all shadow-xl shadow-amber-400/30 border-2 border-amber-300 flex items-center justify-center gap-3 active:scale-95">
+              <span>Забронювати пробне заняття за 400 грн</span>
+              <i class="fa-solid fa-arrow-right text-sm"></i>
+            </button>
+
+            <!-- 100% Risk Reversal Guarantee -->
+            <div class="mt-4 text-center">
+              <p class="text-xs text-neutral-400 flex items-center justify-center gap-2">
+                <i class="fa-solid fa-shield-halved text-emerald-400"></i>
+                <span><strong>100% Гарантія повернення коштів:</strong> Якщо після 45 хв ти не відчуєш свободу в голосі — ми повернемо кошти без зайвих запитань.</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: FAQ ACCORDION -->
+    <section id="faq" class="py-14 sm:py-20 bg-studio-cream">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center mb-12">
+          <span class="text-xs font-bold text-studio-accent uppercase tracking-widest bg-studio-softPink px-3 py-1 rounded-full">
+            Відповіді на запитання
+          </span>
+          <h2 class="font-sans text-3xl sm:text-4xl font-black tracking-tight text-neutral-900 mt-3 mb-3">
+            Часті запитання
+          </h2>
+          <p class="text-sm text-neutral-600">
+            Усе, що потрібно знати перед твоїм першим візитом
+          </p>
+        </div>
+
+        <!-- Accordion items -->
+        <div class="space-y-3" id="faq-accordion">
+          
+          <!-- Q1 -->
+          <div class="bg-white rounded-2xl border border-neutral-200/90 overflow-hidden shadow-subtle">
+            <button onclick="toggleFaq(1)" class="w-full px-5 sm:px-6 py-4 sm:py-5 text-left font-bold text-sm sm:text-base text-neutral-900 flex items-center justify-between gap-4">
+              <span>Чи можна прийти, якщо я взагалі ніколи не співав(ла) і з повного нуля?</span>
+              <i id="faq-icon-1" class="fa-solid fa-chevron-down text-neutral-400 transition-transform duration-300"></i>
+            </button>
+            <div id="faq-content-1" class="px-5 sm:px-6 pb-5 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3 hidden">
+              Так, і це найкращий варіант! Понад 80% моїх учнів приходять без жодного музичного досвіду. Тобі не потрібно знати ноти, сольфеджіо чи вміти грати на інструменті. Ми почнемо з правильного дихання та простих вправ, щоб ти одразу відчув(ла) комфорт.
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="bg-white rounded-2xl border border-neutral-200/90 overflow-hidden shadow-subtle">
+            <button onclick="toggleFaq(2)" class="w-full px-5 sm:px-6 py-4 sm:py-5 text-left font-bold text-sm sm:text-base text-neutral-900 flex items-center justify-between gap-4">
+              <span>Що саме відбуватиметься на пробному уроці?</span>
+              <i id="faq-icon-2" class="fa-solid fa-chevron-down text-neutral-400 transition-transform duration-300"></i>
+            </button>
+            <div id="faq-content-2" class="px-5 sm:px-6 pb-5 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3 hidden">
+              Урок триває 45 хвилин. Спочатку ми познайомимося і визначимо твою мету (для душі, пісня на подію, караоке). Далі зробимо м'яку діагностику діапазону, прості дихальні вправи на діафрагму та спробуємо заспівати куплет і приспів обраної тобою пісні під фортепіано або мінус. Ти вийдеш з уроку з чітким розумінням своїх можливостей!
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="bg-white rounded-2xl border border-neutral-200/90 overflow-hidden shadow-subtle">
+            <button onclick="toggleFaq(3)" class="w-full px-5 sm:px-6 py-4 sm:py-5 text-left font-bold text-sm sm:text-base text-neutral-900 flex items-center justify-between gap-4">
+              <span>В якому віці не пізно починати займатися вокалом?</span>
+              <i id="faq-icon-3" class="fa-solid fa-chevron-down text-neutral-400 transition-transform duration-300"></i>
+            </button>
+            <div id="faq-content-3" class="px-5 sm:px-6 pb-5 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3 hidden">
+              Ніколи не пізно! Голосові зв'язки тренуються в будь-якому віці. До мене приходять як діти від 6 років, так і дорослі у 20, 35, 50 і навіть 60+ років. Вокал покращує вентиляцію легенів, омолоджує зв'язки та дарує потужний заряд ендорфінів.
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="bg-white rounded-2xl border border-neutral-200/90 overflow-hidden shadow-subtle">
+            <button onclick="toggleFaq(4)" class="w-full px-5 sm:px-6 py-4 sm:py-5 text-left font-bold text-sm sm:text-base text-neutral-900 flex items-center justify-between gap-4">
+              <span>Де ви знаходитесь і як до вас дістатися?</span>
+              <i id="faq-icon-4" class="fa-solid fa-chevron-down text-neutral-400 transition-transform duration-300"></i>
+            </button>
+            <div id="faq-content-2" class="px-5 sm:px-6 pb-5 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3 hidden">
+              Наша студія розташована в Києві: Солом'янський район, <strong>вул. Максима Кривоноса 27</strong>. Зручна транспортна розв'язка (поруч Солом'янська площа), є вільний паркінг для авто, затишний окремий вхід та комфортна зона очікування.
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="bg-white rounded-2xl border border-neutral-200/90 overflow-hidden shadow-subtle">
+            <button onclick="toggleFaq(5)" class="w-full px-5 sm:px-6 py-4 sm:py-5 text-left font-bold text-sm sm:text-base text-neutral-900 flex items-center justify-between gap-4">
+              <span>Що потрібно взяти з собою на заняття?</span>
+              <i id="faq-icon-5" class="fa-solid fa-chevron-down text-neutral-400 transition-transform duration-300"></i>
+            </button>
+            <div id="faq-content-5" class="px-5 sm:px-6 pb-5 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3 hidden">
+              Лише зручний одяг, у якому легко дихати животом, пляшечку негазованої води та назву 1-2 твоїх улюблених пісень, які ти хотів(ла) б заспівати. Усе інше професійне обладнання (мікрофони, фортепіано, акустична система) є в студії.
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: FINAL CTA & SABRI SUBY COST OF INACTION (P.S.) -->
+    <section class="py-16 sm:py-24 bg-white border-t border-neutral-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        
+        <span class="text-xs font-bold text-studio-accent uppercase tracking-widest bg-studio-softPink px-3 py-1 rounded-full">
+          Зроби перший крок до свого звучання
+        </span>
+
+        <h2 class="font-sans text-3xl sm:text-5xl font-black tracking-tight text-neutral-900 mt-3 mb-5 leading-tight">
+          Як забронювати свій пробний урок просто зараз:
+        </h2>
+
+        <!-- 3 Simple Steps (Sabri Suby Friction Reduction) -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto my-8 text-left">
+          
+          <div class="p-4 rounded-2xl bg-neutral-50 border border-neutral-100">
+            <div class="w-8 h-8 rounded-full bg-studio-dark text-white font-bold flex items-center justify-center text-xs mb-2">1</div>
+            <div class="font-bold text-sm text-neutral-900 mb-1">Заповни форму</div>
+            <div class="text-xs text-neutral-600">Вкажи своє ім'я та контактний номер телефону за 30 секунд.</div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-neutral-50 border border-neutral-100">
+            <div class="w-8 h-8 rounded-full bg-studio-dark text-white font-bold flex items-center justify-center text-xs mb-2">2</div>
+            <div class="font-bold text-sm text-neutral-900 mb-1">Отримай 3 відеоуроки</div>
+            <div class="text-xs text-neutral-600">Миттєвий доступ до практичних відеоуроків на сторінці подяки.</div>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-neutral-50 border border-neutral-100">
+            <div class="w-8 h-8 rounded-full bg-studio-dark text-white font-bold flex items-center justify-center text-xs mb-2">3</div>
+            <div class="font-bold text-sm text-neutral-900 mb-1">Обери зручний час</div>
+            <div class="text-xs text-neutral-600">Ми напишемо в Telegram/Viber і погодимо дату уроку.</div>
+          </div>
+
+        </div>
+
+        <!-- Big CTA Button (VIBRANT YELLOW WITH BLACK TEXT) -->
+        <div class="max-w-md mx-auto mb-10">
+          <button onclick="openBookingModal('final_cta')" class="btn-press w-full py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-base sm:text-lg transition-all shadow-xl shadow-amber-400/30 border-2 border-amber-300 flex items-center justify-center gap-2 active:scale-95">
+            <span>Забронювати урок за 400 грн</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+          <div class="text-[11px] text-neutral-500 mt-2">
+            Знижка 50% діє тільки під час поточної акції. Без ризику.
+          </div>
+        </div>
+
+        <!-- P.S. SECTION: COST OF INACTION (Alex Hormozi & Sabri Suby) -->
+        <div class="max-w-2xl mx-auto p-6 sm:p-8 rounded-3xl bg-studio-cream border border-neutral-200/90 text-left">
+          <div class="flex items-center gap-2 text-studio-accent font-bold text-xs uppercase tracking-wider mb-2">
+            <i class="fa-solid fa-feather-pointed"></i>
+            <span>P.S. Вартість бездіяльності (Cost of Inaction)</span>
+          </div>
+          <p class="text-xs sm:text-sm text-neutral-700 leading-relaxed">
+            Ти можеш закрити цю сторінку і далі співати лише пошепки або в душі, думаючи, що гарний голос — це доля когось іншого.
+          </p>
+          <p class="text-xs sm:text-sm text-neutral-700 leading-relaxed mt-2 font-medium">
+            Або вже цього тижня зробити один простий крок: прийти в теплий простір на Солом'янці, позбутися затискачів і вже через 45 хвилин почути, на що насправді здатний твій голос. Вибір завжди за тобою!
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (Rareblocks Inspired) -->
+  <footer class="bg-studio-dark text-white pt-12 pb-24 sm:pb-12 border-t border-neutral-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-neutral-800">
+        
+        <!-- Brand Info -->
+        <div class="md:col-span-5">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-full bg-amber-400 text-neutral-950 flex items-center justify-center font-sans text-base font-black shadow-sm">
+              КЖ
+            </div>
+            <div>
+              <div class="font-sans text-lg font-black text-white">Катерина Жанько</div>
+              <div class="text-xs text-neutral-400">Музичний простір та уроки вокалу</div>
+            </div>
+          </div>
+
+          <p class="text-xs text-neutral-400 leading-relaxed max-w-sm mb-4">
+            Простір розкриття природного голосу для дорослих та дітей у Києві. Сучасна методика без затискачів, стресу та нудної теорії.
+          </p>
+
+          <div class="flex items-center gap-3">
+            <a href="https://t.me/vocalcoach_zhanko" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-neutral-800 hover:bg-studio-accent text-neutral-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-full bg-neutral-800 hover:bg-studio-accent text-neutral-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="tel:+380500000000" class="w-9 h-9 rounded-full bg-neutral-800 hover:bg-studio-accent text-neutral-300 hover:text-white flex items-center justify-center transition-colors">
+              <i class="fa-solid fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Location & Contacts -->
+        <div class="md:col-span-4">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-4">Контакти та локація</h4>
+          <div class="space-y-3 text-xs text-neutral-300">
+            <div class="flex items-start gap-2.5">
+              <i class="fa-solid fa-location-dot text-studio-accent mt-0.5 shrink-0"></i>
+              <span>Київ, Солом'янський район, <strong>вул. Максима Кривоноса 27</strong> (Солом'янська площа)</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-clock text-studio-accent shrink-0"></i>
+              <span>Пн–Нд: 09:00 – 21:00 (за попереднім записом)</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-brands fa-telegram text-sky-400 shrink-0"></i>
+              <a href="https://t.me/vocalcoach_zhanko" target="_blank" class="hover:underline">Telegram: @vocalcoach_zhanko</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-4">Швидкі посилання</h4>
+          <div class="space-y-2 text-xs text-neutral-400">
+            <div><a href="#about-offer" class="hover:text-white transition-colors">Чому не потрібен талант</a></div>
+            <div><a href="#for-who" class="hover:text-white transition-colors">Програми для дорослих та дітей</a></div>
+            <div><a href="#hero-mechanism" class="hover:text-white transition-colors">Анатомія та дихання</a></div>
+            <div><a href="#reviews" class="hover:text-white transition-colors">Відгуки учнів</a></div>
+            <div><a href="#godfather-offer" class="hover:text-white transition-colors">Акція: урок за 400 грн</a></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-neutral-500 gap-3">
+        <div>
+          © 2026 Музичний простір Катерини Жанько. Всі права захищено.
+        </div>
+        <div class="flex items-center gap-4">
+          <span class="text-neutral-400">Зроблено з любов'ю до музики</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING MOBILE BOTTOM ACTION BAR (80% traffic from Instagram) -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-neutral-200 p-3 z-40 sm:hidden shadow-lg">
+    <div class="flex items-center justify-between gap-3 max-w-md mx-auto">
+      <div>
+        <div class="text-[10px] text-neutral-500 uppercase tracking-wider font-semibold">Пробний урок 45 хв</div>
+        <div class="text-sm font-bold text-neutral-900 leading-tight">
+          <span class="text-amber-500 font-black">400 грн</span> 
+          <span class="line-through text-neutral-400 text-xs font-normal">800 грн</span>
+        </div>
+      </div>
+
+      <button onclick="openBookingModal('mobile_sticky_bar')" class="btn-press flex-1 py-3 px-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs shadow-md border border-amber-300 flex items-center justify-center gap-1.5 active:scale-95">
+        <span>Записатися за 400 грн</span>
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL: BOOKING FORM -->
+  <div id="booking-modal" class="fixed inset-0 z-50 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
+    
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300" id="booking-modal-card">
+      
+      <!-- Close button -->
+      <button onclick="closeBookingModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-neutral-100 hover:bg-neutral-200 text-neutral-600 flex items-center justify-center transition-colors">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <!-- Modal Header with Kateryna Photo -->
+      <div class="mb-5">
+        <div class="flex items-center gap-3 mb-3 p-2.5 rounded-2xl bg-amber-50 border border-amber-200">
+          <div class="w-11 h-11 rounded-xl overflow-hidden shrink-0 border-2 border-amber-400 shadow-sm bg-neutral-900">
+            <img src="kateryna.jpg" alt="Катерина Жанько" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='/kateryna.jpg';" />
+          </div>
+          <div>
+            <div class="text-xs font-black text-neutral-900 leading-tight">Катерина Жанько</div>
+            <div class="text-[10px] text-amber-800 font-bold">Особистий викладач простору • Київ, Солом'янка</div>
+          </div>
+        </div>
+
+        <span class="text-[11px] font-black text-studio-accent bg-studio-softPink px-2.5 py-1 rounded-full uppercase tracking-wider">
+          Знижка 50% + 3 подарунки
+        </span>
+        <h3 class="font-sans text-2xl sm:text-3xl font-black text-neutral-900 mt-2">
+          Запис на індивідуальне заняття
+        </h3>
+        <p class="text-xs sm:text-sm text-neutral-600 mt-1">
+          Залиши свої контакти. Ми зв'яжемося для вибору зручного часу та надішлемо 3 відеоуроки.
+        </p>
+      </div>
+
+      <!-- Price Recap Pill -->
+      <div class="p-3 rounded-xl bg-neutral-50 border border-neutral-200/90 flex items-center justify-between mb-5 text-xs">
+        <span class="text-neutral-600 font-medium">Пробний урок (45 хв, Київ):</span>
+        <span class="font-bold text-neutral-900 text-sm">400 грн <span class="line-through text-neutral-400 font-normal text-xs">800 грн</span></span>
+      </div>
+
+      <!-- The Form -->
+      <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+        
+        <!-- Field 1: Name -->
+        <div>
+          <label for="student-name" class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
+            Твоє ім'я <span class="text-red-500">*</span>
+          </label>
+          <div class="relative">
+            <i class="fa-regular fa-user absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400 text-sm"></i>
+            <input type="text" id="student-name" required placeholder="Наприклад: Олена або Михайло"
+              class="w-full pl-10 pr-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm transition-all" />
+          </div>
+        </div>
+
+        <!-- Field 2: Phone -->
+        <div>
+          <label for="student-phone" class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
+            Номер телефону (Telegram / Viber) <span class="text-red-500">*</span>
+          </label>
+          <div class="relative">
+            <i class="fa-solid fa-phone absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400 text-sm"></i>
+            <input type="tel" id="student-phone" required placeholder="+380 (__) ___-__-__" value="+380 "
+              class="w-full pl-10 pr-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm transition-all" />
+          </div>
+        </div>
+
+        <!-- Field 3: Goal / Direction -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
+            Ціль заняття
+          </label>
+          <select id="student-goal" class="w-full px-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm transition-all bg-white text-neutral-800">
+            <option value="soul">Для душі та зняття стресу</option>
+            <option value="song">Підготувати конкретну пісню (весілля/свято/караоке)</option>
+            <option value="kids">Для дитини (від 6 років)</option>
+            <option value="pro">Хочу системно навчитися співати</option>
+          </select>
+        </div>
+
+        <!-- Field 4: Preferred Messenger -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
+            Де зручніше отримати підтвердження та відеоуроки?
+          </label>
+          <div class="grid grid-cols-3 gap-2">
+            <label class="flex items-center justify-center gap-1.5 p-2.5 rounded-xl border border-neutral-200 cursor-pointer text-xs font-semibold hover:bg-neutral-50 has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50 transition-all">
+              <input type="radio" name="messenger" value="telegram" checked class="hidden" />
+              <i class="fa-brands fa-telegram text-sky-500 text-sm"></i>
+              <span>Telegram</span>
+            </label>
+            <label class="flex items-center justify-center gap-1.5 p-2.5 rounded-xl border border-neutral-200 cursor-pointer text-xs font-semibold hover:bg-neutral-50 has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50 transition-all">
+              <input type="radio" name="messenger" value="viber" class="hidden" />
+              <i class="fa-brands fa-viber text-purple-600 text-sm"></i>
+              <span>Viber</span>
+            </label>
+            <label class="flex items-center justify-center gap-1.5 p-2.5 rounded-xl border border-neutral-200 cursor-pointer text-xs font-semibold hover:bg-neutral-50 has-[:checked]:border-amber-400 has-[:checked]:bg-amber-50 transition-all">
+              <input type="radio" name="messenger" value="call" class="hidden" />
+              <i class="fa-solid fa-phone text-emerald-600 text-sm"></i>
+              <span>Дзвінок</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button (VIBRANT YELLOW WITH BLACK TEXT) -->
+        <button type="submit" id="submit-btn" class="btn-press w-full py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-sm sm:text-base transition-all shadow-lg shadow-amber-400/30 border-2 border-amber-300 flex items-center justify-center gap-2 mt-4 active:scale-95">
+          <span>Надіслати заявку та отримати 3 відео</span>
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </button>
+
+        <p class="text-[11px] text-neutral-500 text-center">
+          🔒 Твої контактні дані в безпеці. Ми не надсилаємо спам.
+        </p>
+
+      </form>
+
+    </div>
+
+  </div>
+
+  <!-- HERO VIDEO MODAL -->
+  <div id="video-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
+    <div class="max-w-2xl w-full bg-studio-dark rounded-3xl overflow-hidden shadow-2xl relative border border-neutral-800">
+      
+      <div class="flex items-center justify-between p-4 border-b border-neutral-800">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
+          <span class="text-xs font-bold text-white uppercase tracking-wider">Катерина Жанько: Як працює голос</span>
+        </div>
+        <button onclick="toggleHeroVideoModal()" class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-neutral-700 text-white flex items-center justify-center">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Video Presentation Content Simulator -->
+      <div class="p-6 text-white space-y-4">
+        
+        <div class="aspect-video bg-neutral-900 rounded-2xl relative overflow-hidden flex flex-col justify-center items-center text-center p-6 border border-neutral-800">
+          <div class="w-14 h-14 rounded-full bg-amber-400 text-neutral-950 flex items-center justify-center text-xl mb-3 shadow-lg">
+            <i class="fa-solid fa-music"></i>
+          </div>
+          <h4 class="font-sans text-xl font-black text-white">«Голос — це м'яз, а не талант!»</h4>
+          <p class="text-xs text-neutral-400 max-w-md mt-2">
+            Катерина за фортепіано в студії: наочний розбір «ДО» та «ПІСЛЯ» зняття затискачів.
+          </p>
+
+          <!-- Interactive Tab Preview for "ДО" vs "ПІСЛЯ" -->
+          <div class="flex gap-2 mt-4">
+            <button onclick="showTabDemo('before')" id="demo-tab-before" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-neutral-800 text-neutral-300 hover:text-white">
+              1. Як звучить «ДО»
+            </button>
+            <button onclick="showTabDemo('after')" id="demo-tab-after" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-neutral-950">
+              2. Як звучить «ПІСЛЯ»
+            </button>
+          </div>
+        </div>
+
+        <div id="demo-explanation" class="p-4 rounded-xl bg-neutral-800/60 border border-neutral-700 text-xs text-neutral-300 leading-relaxed">
+          <strong class="text-emerald-400">Результат після:</strong> Звук вільний, опора на живіт, гортань опущена, тембр стає оксамитовим і глибоким без напруження в шиї.
+        </div>
+
+        <div class="pt-2 flex justify-end">
+          <button onclick="toggleHeroVideoModal(); openBookingModal('from_video_modal');" class="btn-press px-5 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs border border-amber-300 shadow-md transition-all active:scale-95">
+            Хочу так само — Записатися за 400 грн
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- THANK YOU PAGE / FULLSCREEN VIEW (Transitioned to seamlessly upon submission) -->
+  <div id="thank-you-view" class="fixed inset-0 z-50 bg-studio-cream overflow-y-auto hidden">
+    
+    <!-- Header of Thank You Page -->
+    <header class="bg-white border-b border-neutral-200 py-4 px-4 sticky top-0 z-30">
+      <div class="max-w-4xl mx-auto flex items-center justify-between">
+        <div class="flex items-center gap-2.5">
+          <div class="w-9 h-9 rounded-full bg-amber-400 text-neutral-950 font-sans text-sm font-black flex items-center justify-center shadow-sm">
+            КЖ
+          </div>
+          <div>
+            <div class="font-sans text-base font-black text-neutral-900 leading-none">Катерина Жанько</div>
+            <div class="text-[10px] text-neutral-500 font-semibold mt-0.5">Музичний простір • Київ</div>
+          </div>
+        </div>
+
+        <button onclick="returnToLanding()" class="text-xs font-bold text-neutral-700 hover:text-neutral-900 flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-neutral-100 transition-colors">
+          <i class="fa-solid fa-arrow-left"></i>
+          <span>Повернутися на сайт</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content of Thank You Page -->
+    <div class="max-w-3xl mx-auto px-4 py-8 sm:py-12">
+      
+      <!-- Success Banner with Kateryna Photo -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-neutral-200/90 shadow-card-soft text-center mb-8">
+        
+        <!-- Kateryna Greeting Photo Avatar -->
+        <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-amber-400 shadow-xl mx-auto mb-4 bg-neutral-900 group">
+          <img src="kateryna.jpg" alt="Катерина Жанько" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='/kateryna.jpg';" />
+          <div class="absolute bottom-0 inset-x-0 bg-amber-400 text-neutral-950 text-[9px] font-black uppercase text-center py-0.5 tracking-wider">
+            Катерина
+          </div>
+        </div>
+
+        <span class="text-xs font-black text-emerald-700 bg-emerald-50 px-3.5 py-1 rounded-full uppercase tracking-wider inline-flex items-center gap-1.5 border border-emerald-200">
+          <i class="fa-solid fa-circle-check text-emerald-500"></i> Заявку успішно прийнято!
+        </span>
+
+        <h1 class="font-sans text-3xl sm:text-5xl font-black text-neutral-900 mt-3 mb-3">
+          Вітаємо, <span id="thank-you-name" class="text-amber-500">друже</span>!
+        </h1>
+
+        <p class="text-sm sm:text-base text-neutral-600 max-w-lg mx-auto leading-relaxed mb-6">
+          Твоє індивідуальне пробне заняття зафіксовано за акційною ціною <strong class="text-neutral-900">400 грн</strong> (-50%). Я вже формую розклад і напишу тобі найближчим часом.
+        </p>
+
+        <!-- Fast Messenger Direct Link Buttons -->
+        <div class="p-4 rounded-2xl bg-neutral-50 border border-neutral-200 max-w-md mx-auto mb-6 text-left">
+          <div class="text-xs font-bold text-neutral-800 uppercase tracking-wider mb-2">
+            Хочеш обрати точний час швидше?
+          </div>
+          <p class="text-xs text-neutral-600 mb-3">
+            Напиши мені напряму в Telegram або Viber — відповім за 5–10 хвилин:
+          </p>
+          <div class="flex gap-2">
+            <a href="https://t.me/vocalcoach_zhanko" target="_blank" rel="noopener noreferrer" class="btn-press flex-1 py-2.5 px-3 rounded-xl bg-sky-500 hover:bg-sky-600 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all">
+              <i class="fa-brands fa-telegram text-sm"></i>
+              <span>Написати в Telegram</span>
+            </a>
+            <a href="viber://chat?number=%2B380000000000" class="btn-press flex-1 py-2.5 px-3 rounded-xl bg-purple-600 hover:bg-purple-700 text-white font-bold text-xs flex items-center justify-center gap-1.5 shadow-sm transition-all">
+              <i class="fa-brands fa-viber text-sm"></i>
+              <span>Написати у Viber</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Studio Address Card -->
+        <div class="flex items-center justify-center gap-2 text-xs text-neutral-500 font-medium">
+          <i class="fa-solid fa-map-pin text-studio-accent"></i>
+          <span>Чекаємо за адресою: <strong>Київ, вул. Максима Кривоноса 27</strong> (Солом'янка)</span>
+        </div>
+
+      </div>
+
+      <!-- BONUS LEAD MAGNET UNLOCKED: 3 VIDEO LESSONS -->
+      <div class="mb-10">
+        
+        <div class="flex items-center justify-between mb-4 px-1">
+          <div>
+            <span class="text-xs font-bold text-studio-accent uppercase tracking-widest">Твій обіцяний подарунок</span>
+            <h2 class="font-sans text-2xl sm:text-3xl font-black text-neutral-900 mt-0.5">
+              3 практичні відеоуроки від Катерини
+            </h2>
+          </div>
+          <span class="text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
+            Доступ активовано
+          </span>
+        </div>
+
+        <!-- Dynamic Lesson Preview Area -->
+        <div id="active-lesson-player" class="hidden mb-6 bg-studio-dark text-white rounded-3xl p-5 border border-neutral-800 shadow-xl transition-all">
+          <div class="flex items-center justify-between pb-3 border-b border-neutral-800 mb-4">
+            <span id="player-lesson-badge" class="text-xs font-black text-amber-400 uppercase tracking-wider"></span>
+            <button onclick="closeLessonPlayer()" class="text-neutral-400 hover:text-white text-xs font-bold flex items-center gap-1">
+              <i class="fa-solid fa-xmark"></i> Закрити
+            </button>
+          </div>
+          <div class="aspect-video bg-neutral-900 rounded-2xl overflow-hidden relative flex flex-col items-center justify-center p-6 text-center border border-neutral-800">
+            <img src="kateryna-studio.jpg" class="absolute inset-0 w-full h-full object-cover opacity-40 -z-10" />
+            <div class="w-14 h-14 rounded-full bg-amber-400 text-neutral-950 flex items-center justify-center text-xl mb-3 shadow-lg">
+              <i class="fa-solid fa-play ml-1"></i>
+            </div>
+            <h4 id="player-lesson-title" class="text-lg font-black text-white"></h4>
+            <p id="player-lesson-desc" class="text-xs text-neutral-300 max-w-md mt-2"></p>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- Video 1 -->
+          <div class="bg-white rounded-2xl p-5 border border-neutral-200/90 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div>
+                <span class="text-[10px] font-black text-amber-600 uppercase tracking-wider">Урок 1 • 12 хвилин</span>
+                <h3 class="font-bold text-sm sm:text-base text-neutral-900">
+                  Як дихати животом (діафрагмою) та зняти спазм у горлі
+                </h3>
+                <p class="text-xs text-neutral-500 mt-1">
+                  Практична техніка включення нижньої опори для усунення тремтіння та втоми голосу.
+                </p>
+              </div>
+            </div>
+            <button onclick="openLessonPlayer(1)" class="btn-press px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs transition-colors shrink-0 border border-amber-300 shadow-sm">
+              Дивитися урок
+            </button>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="bg-white rounded-2xl p-5 border border-neutral-200/90 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div>
+                <span class="text-[10px] font-black text-amber-600 uppercase tracking-wider">Урок 2 • 8 хвилин</span>
+                <h3 class="font-bold text-sm sm:text-base text-neutral-900">
+                  3 експрес-вправи на швидкий розігрів голосових зв'язок
+                </h3>
+                <p class="text-xs text-neutral-500 mt-1">
+                  Артикуляційна гімнастика та м'який звук «бррр» для швидкого пробудження тембру зранку.
+                </p>
+              </div>
+            </div>
+            <button onclick="openLessonPlayer(2)" class="btn-press px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs transition-colors shrink-0 border border-amber-300 shadow-sm">
+              Дивитися урок
+            </button>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="bg-white rounded-2xl p-5 border border-neutral-200/90 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <div>
+                <span class="text-[10px] font-black text-amber-600 uppercase tracking-wider">Урок 3 • 10 хвилин</span>
+                <h3 class="font-bold text-sm sm:text-base text-neutral-900">
+                  Секрет високих нот: як брати складні фрази без надриву
+                </h3>
+                <p class="text-xs text-neutral-500 mt-1">
+                  Як працює головний резонатор та чому не треба кричати горлом на кульмінації пісні.
+                </p>
+              </div>
+            </div>
+            <button onclick="openLessonPlayer(3)" class="btn-press px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs transition-colors shrink-0 border border-amber-300 shadow-sm">
+              Дивитися урок
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Return Button -->
+      <div class="text-center pt-4">
+        <button onclick="returnToLanding()" class="text-xs font-semibold text-neutral-600 hover:text-neutral-900 underline underline-offset-4">
+          Повернутися до головної сторінки
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- SCRIPT LOGIC (Vanilla, 0 dependencies, instant speed) -->
+  <script>
+    // Initialize Lucide icons on load
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+      initHeroVideoEngine();
+    });
+
+    // ================= HERO VIDEO PLAYER CONTROLLER =================
+    const VIDEO_CHAPTERS = [
+      {
+        start: 0,
+        end: 5,
+        title: "Ось це наше ДО",
+        subtitle: "«Ось це наше ДО: скутий звук у мікрофон, напруга в щелепі, страх не витягнути ноту...»",
+        step: "Епізод 1 з 4"
+      },
+      {
+        start: 5,
+        end: 10,
+        title: "А це ПІСЛЯ: наше!",
+        subtitle: "«А це після: НАШЕ! Вільний, глибокий тембр без затискачів, впевненість та кайф у голосі!»",
+        step: "Епізод 2 з 4"
+      },
+      {
+        start: 10,
+        end: 15,
+        title: "Міф про талант",
+        subtitle: "«Більшість думають, що голос це талант (він або є, або нема). Але насправді це брехня!»",
+        step: "Епізод 3 з 4"
+      },
+      {
+        start: 15,
+        end: 22,
+        title: "Чому ти навчишся",
+        subtitle: "«Зі мною ти навчишся: знімати затискання в голосі, співати гучно без страху та бути впевненим у караоке!»",
+        step: "Епізод 4 з 4"
+      }
+    ];
+
+    let currentVideoTime = 0;
+    const totalVideoDuration = 22;
+    let isPlaying = false;
+    let videoTimer = null;
+    let audioSynthContext = null;
+    let isAudioPlaying = false;
+
+    function initHeroVideoEngine() {
+      const video = document.getElementById('hero-native-video');
+      if (video) {
+        video.addEventListener('timeupdate', () => {
+          if (video.duration) {
+            updateTimelineUI(video.currentTime, video.duration);
+          }
+        });
+        video.addEventListener('ended', () => {
+          updateVideoPlayState(false);
+          currentVideoTime = 0;
+        });
+      }
+      updateTimelineUI(0, totalVideoDuration);
+    }
+
+    function toggleHeroPlay() {
+      const video = document.getElementById('hero-native-video');
+      
+      // If video element can play local media
+      if (video && video.readyState >= 2) {
+        if (video.paused) {
+          video.play().then(() => updateVideoPlayState(true)).catch(() => runSimulatedPlayback());
+        } else {
+          video.pause();
+          updateVideoPlayState(false);
+        }
+      } else {
+        // Run interactive studio reel simulation
+        if (isPlaying) {
+          pauseSimulation();
+        } else {
+          runSimulatedPlayback();
+        }
+      }
+    }
+
+    function runSimulatedPlayback() {
+      isPlaying = true;
+      updateVideoPlayState(true);
+      
+      clearInterval(videoTimer);
+      videoTimer = setInterval(() => {
+        currentVideoTime += 0.25;
+        if (currentVideoTime >= totalVideoDuration) {
+          currentVideoTime = 0;
+        }
+        updateTimelineUI(currentVideoTime, totalVideoDuration);
+      }, 250);
+    }
+
+    function pauseSimulation() {
+      isPlaying = false;
+      clearInterval(videoTimer);
+      updateVideoPlayState(false);
+    }
+
+    function updateVideoPlayState(playing) {
+      isPlaying = playing;
+      const playIcon = document.getElementById('hero-play-icon');
+      const statusText = document.getElementById('video-status-text');
+      const playBtn = document.getElementById('hero-play-btn');
+
+      if (playing) {
+        playIcon.className = 'fa-solid fa-pause text-xl sm:text-2xl text-white';
+        statusText.textContent = 'Відтворюється відео-розбір...';
+        playBtn.classList.remove('animate-pulse');
+        document.getElementById('video-sim-backdrop').classList.add('opacity-90');
+      } else {
+        playIcon.className = 'fa-solid fa-play text-xl sm:text-2xl ml-1 text-white';
+        statusText.textContent = 'Натисни для перегляду розбору';
+      }
+    }
+
+    function jumpToChapter(sec) {
+      currentVideoTime = sec;
+      const video = document.getElementById('hero-native-video');
+      if (video && video.readyState >= 2) {
+        video.currentTime = sec;
+        video.play();
+        updateVideoPlayState(true);
+      } else {
+        updateTimelineUI(sec, totalVideoDuration);
+        if (!isPlaying) {
+          runSimulatedPlayback();
+        }
+      }
+    }
+
+    function scrubVideo(event) {
+      const rect = event.currentTarget.getBoundingClientRect();
+      const clickX = event.clientX - rect.left;
+      const pct = Math.max(0, Math.min(1, clickX / rect.width));
+      const targetTime = pct * totalVideoDuration;
+      
+      jumpToChapter(targetTime);
+    }
+
+    function updateTimelineUI(time, duration) {
+      currentVideoTime = time;
+      const pct = (time / duration) * 100;
+      
+      // Update progress fill
+      const fill = document.getElementById('video-progress-fill');
+      if (fill) fill.style.width = pct + '%';
+
+      // Update timecode text
+      const tc = document.getElementById('timecode-current');
+      if (tc) {
+        const mins = Math.floor(time / 60);
+        const secs = Math.floor(time % 60);
+        tc.textContent = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+      }
+
+      // Find active chapter
+      let activeChapter = VIDEO_CHAPTERS[0];
+      let activeIndex = 0;
+      for (let i = 0; i < VIDEO_CHAPTERS.length; i++) {
+        if (time >= VIDEO_CHAPTERS[i].start && time < VIDEO_CHAPTERS[i].end) {
+          activeChapter = VIDEO_CHAPTERS[i];
+          activeIndex = i;
+          break;
+        }
+      }
+
+      // Update subtitles
+      const capTimestamp = document.getElementById('caption-timestamp');
+      const capTitle = document.getElementById('caption-title');
+      const capBody = document.getElementById('caption-body');
+
+      if (capTimestamp) capTimestamp.innerHTML = `<i class="fa-solid fa-circle text-[6px] text-rose-500 animate-pulse"></i> ${activeChapter.step}`;
+      if (capTitle) capTitle.textContent = activeChapter.title;
+      if (capBody) capBody.textContent = activeChapter.subtitle;
+
+      // Update active chapter button highlights
+      for (let i = 0; i < 4; i++) {
+        const btn = document.getElementById(`chapter-${i}`);
+        if (btn) {
+          if (i === activeIndex) {
+            btn.className = 'py-1 px-1 rounded-lg bg-studio-accent text-white truncate shadow-sm transition-all';
+          } else {
+            btn.className = 'py-1 px-1 rounded-lg bg-neutral-800 text-neutral-300 hover:text-white truncate transition-all';
+          }
+        }
+      }
+    }
+
+    // Toggle Web Audio API synthesizer for studio piano chords preview
+    function toggleAudioPreview() {
+      const btn = document.getElementById('audio-toggle-btn');
+      const icon = document.getElementById('audio-toggle-icon');
+      const video = document.getElementById('hero-native-video');
+
+      if (!isAudioPlaying) {
+        isAudioPlaying = true;
+        if (video) video.muted = false;
+        icon.className = 'fa-solid fa-volume-high text-xs text-rose-400';
+        btn.classList.add('bg-white', 'text-black');
+        btn.classList.remove('bg-black/60', 'text-white');
+        playStudioPianoChord();
+      } else {
+        isAudioPlaying = false;
+        if (video) video.muted = true;
+        icon.className = 'fa-solid fa-volume-xmark text-xs text-white';
+        btn.classList.remove('bg-white', 'text-black');
+        btn.classList.add('bg-black/60', 'text-white');
+      }
+    }
+
+    function playStudioPianoChord() {
+      try {
+        const AudioContext = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContext) return;
+        if (!audioSynthContext) {
+          audioSynthContext = new AudioContext();
+        }
+        if (audioSynthContext.state === 'suspended') {
+          audioSynthContext.resume();
+        }
+
+        const freqs = [261.63, 329.63, 392.00, 523.25]; // C major piano voicing
+        freqs.forEach((freq, idx) => {
+          const osc = audioSynthContext.createOscillator();
+          const gain = audioSynthContext.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(freq, audioSynthContext.currentTime + idx * 0.08);
+
+          gain.gain.setValueAtTime(0, audioSynthContext.currentTime);
+          gain.gain.linearRampToValueAtTime(0.08, audioSynthContext.currentTime + idx * 0.08 + 0.05);
+          gain.gain.exponentialRampToValueAtTime(0.0001, audioSynthContext.currentTime + 2.5);
+
+          osc.connect(gain);
+          gain.connect(audioSynthContext.destination);
+
+          osc.start(audioSynthContext.currentTime + idx * 0.08);
+          osc.stop(audioSynthContext.currentTime + 3);
+        });
+      } catch (e) {
+        console.log('Audio chord feedback:', e);
+      }
+    }
+
+    // Direct local mp4 file loader
+    function handleUserVideoUpload(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      const video = document.getElementById('hero-native-video');
+      const blobUrl = URL.createObjectURL(file);
+      video.src = blobUrl;
+      video.muted = false;
+      video.play().then(() => {
+        updateVideoPlayState(true);
+        // Hide simulated backdrop when real video is active
+        const backdrop = document.getElementById('video-sim-backdrop');
+        if (backdrop) backdrop.style.opacity = '0';
+      }).catch(err => {
+        console.log('Upload playback started:', err);
+      });
+    }
+
+    // MODAL HANDLERS
+    function openBookingModal(source) {
+      console.log('Open booking modal triggered from:', source);
+      const modal = document.getElementById('booking-modal');
+      const card = document.getElementById('booking-modal-card');
+      
+      modal.classList.remove('hidden');
+      // Trigger smooth animation
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        card.classList.remove('scale-95');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById('booking-modal');
+      const card = document.getElementById('booking-modal-card');
+      
+      modal.classList.add('opacity-0');
+      card.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    // Close on outside backdrop click
+    document.getElementById('booking-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeBookingModal();
+      }
+    });
+
+    // VIDEO MODAL HANDLER
+    function toggleHeroVideoModal() {
+      const modal = document.getElementById('video-modal');
+      if (modal.classList.contains('hidden')) {
+        modal.classList.remove('hidden');
+        setTimeout(() => modal.classList.remove('opacity-0'), 10);
+        document.body.style.overflow = 'hidden';
+      } else {
+        modal.classList.add('opacity-0');
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          document.body.style.overflow = '';
+        }, 300);
+      }
+    }
+
+    function showTabDemo(type) {
+      const btnBefore = document.getElementById('demo-tab-before');
+      const btnAfter = document.getElementById('demo-tab-after');
+      const expl = document.getElementById('demo-explanation');
+
+      if (type === 'before') {
+        btnBefore.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-studio-accent text-white';
+        btnAfter.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-neutral-800 text-neutral-300 hover:text-white';
+        expl.innerHTML = '<strong class="text-rose-400">Звучання ДО:</strong> Затиснута нижня щелепа, повітря не доходить до діафрагми, голос звучить глухо, на високих нотах з\'являється хрип або зрив через страх оцінки.';
+      } else {
+        btnAfter.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-studio-accent text-white';
+        btnBefore.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-neutral-800 text-neutral-300 hover:text-white';
+        expl.innerHTML = '<strong class="text-emerald-400">Звучання ПІСЛЯ (45 хв практики):</strong> Звук вільний, опора на живіт, гортань опущена, тембр стає оксамитовим і глибоким без напруження в шиї.';
+      }
+    }
+
+    // FAQ ACCORDION HANDLER
+    function toggleFaq(id) {
+      const content = document.getElementById('faq-content-' + id);
+      const icon = document.getElementById('faq-icon-' + id);
+      
+      const isHidden = content.classList.contains('hidden');
+      
+      // Close all other FAQs
+      for (let i = 1; i <= 5; i++) {
+        const item = document.getElementById('faq-content-' + i);
+        const itemIcon = document.getElementById('faq-icon-' + i);
+        if (item && itemIcon) {
+          item.classList.add('hidden');
+          itemIcon.classList.remove('rotate-180');
+        }
+      }
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        icon.classList.add('rotate-180');
+      }
+    }
+
+    // FORM SUBMISSION & THANK YOU VIEW
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      
+      const name = document.getElementById('student-name').value.trim();
+      const phone = document.getElementById('student-phone').value.trim();
+      const goal = document.getElementById('student-goal').value;
+      const messenger = document.querySelector('input[name="messenger"]:checked')?.value || 'telegram';
+
+      // Simulation of Telegram bot notification
+      console.log('🔥 [LEAD GENERATED - 400 UAH TRIPWIRE OFFER]');
+      console.log('Ім\'я учня:', name);
+      console.log('Телефон:', phone);
+      console.log('Ціль:', goal);
+      console.log('Бажаний месенджер:', messenger);
+      console.log('Локація: Київ, вул. Максима Кривоноса 27');
+      console.log('Бонуси: 3 відеоуроки з вокалу активовано.');
+
+      // Update name in thank-you page
+      const thankYouName = document.getElementById('thank-you-name');
+      if (thankYouName && name) {
+        thankYouName.textContent = name;
+      }
+
+      // Close modal
+      closeBookingModal();
+
+      // Show Thank You View
+      setTimeout(() => {
+        document.getElementById('thank-you-view').classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 350);
+    }
+
+    function openLessonPlayer(id) {
+      const lessons = {
+        1: {
+          badge: 'Урок 1 • 12 хвилин',
+          title: 'Як дихати животом (діафрагмою) та зняти спазм у горлі',
+          desc: 'Катерина демонструє техніку розслаблення щелепи та включення черевного дихання для впевненого і об\'ємного звучання.'
+        },
+        2: {
+          badge: 'Урок 2 • 8 хвилин',
+          title: '3 експрес-вправи на швидкий розігрів голосових зв\'язок',
+          desc: 'Артикуляційна розминка разом з Катериною біля фортепіано — м\'який звук «бррр» і глісандо для швидкої готовності до співу.'
+        },
+        3: {
+          badge: 'Урок 3 • 10 хвилин',
+          title: 'Секрет високих нот: як брати складні фрази без надриву',
+          desc: 'Спеціальний розбір головного резонатора: як брати високі кульмінаційні ноти легко, без крику та втоми в шиї.'
+        }
+      };
+
+      const data = lessons[id] || lessons[1];
+      const player = document.getElementById('active-lesson-player');
+      document.getElementById('player-lesson-badge').textContent = data.badge;
+      document.getElementById('player-lesson-title').textContent = data.title;
+      document.getElementById('player-lesson-desc').textContent = data.desc;
+      
+      player.classList.remove('hidden');
+      player.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function closeLessonPlayer() {
+      const player = document.getElementById('active-lesson-player');
+      if (player) player.classList.add('hidden');
+    }
+
+    function returnToLanding() {
+      document.getElementById('thank-you-view').classList.add('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
