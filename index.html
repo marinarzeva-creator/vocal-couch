@@ -12,7 +12,7 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Google Fonts: Plus Jakarta Sans, Cormorant Garamond & Manrope -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Manrope:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
@@ -95,11 +95,18 @@
       -ms-overflow-style: none;
       scrollbar-width: none;
     }
+    
+    /* Play button overlay */
+    .play-overlay-hidden {
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+    }
   </style>
 </head>
 <body class="selection:bg-studio-accent selection:text-white noise-bg">
 
-  <!-- TOP ANNOUNCEMENT BANNER (Hormozi Scarcity + Urgency) -->
+  <!-- TOP ANNOUNCEMENT BANNER -->
   <div class="bg-studio-dark text-white text-xs sm:text-sm py-2 px-4 sticky top-0 z-50 border-b border-neutral-800 shadow-sm">
     <div class="max-w-6xl mx-auto flex items-center justify-between gap-2">
       <div class="flex items-center gap-2 truncate">
@@ -126,7 +133,7 @@
   <header class="bg-white/90 backdrop-blur-md border-b border-neutral-200/80 sticky top-9 z-40">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between">
       
-      <!-- Logo & Brand (Text only as requested) -->
+      <!-- Logo & Brand -->
       <a href="#" class="flex items-center group">
         <span class="font-sans text-base sm:text-lg lg:text-xl font-black tracking-tight text-neutral-900 leading-tight group-hover:text-amber-500 transition-colors">
           Творчій простір Катерини Жанько
@@ -161,11 +168,11 @@
   <!-- MAIN WRAPPER FOR LANDING -->
   <main id="main-content-flow">
 
-    <!-- HERO SECTION (ABOVE THE FOLD - Hormozi Value Formula + Embedded Video) -->
+    <!-- HERO SECTION -->
     <section class="relative pt-6 sm:pt-12 pb-14 sm:pb-20 overflow-hidden hero-glow">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
-        <!-- Eyebrow: Location + Social Proof (Rareblocks-style tag) -->
+        <!-- Eyebrow -->
         <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-3 mb-5 text-center lg:text-left">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-neutral-200/90 shadow-subtle text-xs font-semibold text-neutral-800">
             <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
@@ -179,23 +186,18 @@
           </div>
         </div>
 
-        <!-- 2-Column Split Hero (Hook + CTA on Left, Vertical Video on Right) -->
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          <!-- LEFT COLUMN: Hook, Value Proposition & CTA -->
+          <!-- LEFT COLUMN -->
           <div class="lg:col-span-7 text-center lg:text-left">
-            
-            <!-- Main Hook Headline (Bold Sans-Serif WITHOUT serifs / БЕЗ ЗАСІЧОК) -->
             <h1 class="font-sans text-3xl sm:text-5xl lg:text-[52px] font-black tracking-[-0.035em] text-neutral-900 leading-[1.12] mb-5">
               Навчись вільно та гарно співати улюблені пісні <span class="text-gradient font-black">без затискачів</span> та нудного сольфеджіо
             </h1>
             
-            <!-- Sub-headline: Fear Removal + Biological Mechanism -->
             <p class="text-base sm:text-lg text-neutral-600 max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal mb-8">
               Голос і слух — це <strong class="text-neutral-900 font-bold">керовані м’язи</strong>, а не вроджений дар для обраних. Прибираємо блоки в гортані, ставимо природне діафрагмальне дихання та розучуємо твою улюблену пісню вже з першого уроку у безпечній і теплій атмосфері.
             </p>
 
-            <!-- Primary Action Card (Direct CTA inspired by Rareblocks conversion block) -->
             <div class="max-w-lg mx-auto lg:mx-0 mb-6">
               <div class="bg-white p-3 sm:p-3.5 rounded-2xl shadow-card-soft border border-neutral-200/90 flex flex-col sm:flex-row gap-3 items-stretch">
                 <div class="flex-1 flex items-center px-4 py-3 rounded-xl bg-neutral-50 border border-neutral-200 text-sm text-neutral-700">
@@ -208,7 +210,7 @@
                 </button>
               </div>
 
-              <!-- Trust Badges Under Hero CTA -->
+              <!-- Trust Badges -->
               <div class="grid grid-cols-3 gap-2 mt-3.5 text-center text-[11px] sm:text-xs text-neutral-500 font-medium">
                 <div class="flex items-center justify-center lg:justify-start gap-1.5">
                   <i class="fa-solid fa-gift text-emerald-600"></i>
@@ -225,7 +227,7 @@
               </div>
             </div>
 
-            <!-- Rareblocks-Style Social Proof Metrics Bar -->
+            <!-- Social Proof Metrics Bar -->
             <div class="pt-6 border-t border-neutral-200/70 flex items-center justify-center lg:justify-start gap-6 sm:gap-10 text-neutral-800">
               <div>
                 <div class="font-sans text-2xl sm:text-3xl font-black text-neutral-900 leading-none">500+</div>
@@ -245,18 +247,18 @@
 
           </div>
 
-          <!-- RIGHT COLUMN: EMBEDDED VIDEO IN FIRST SCREEN (Portrait Reels Format) -->
+          <!-- RIGHT COLUMN: EMBEDDED VIDEO -->
           <div class="lg:col-span-5">
             <div class="relative max-w-sm sm:max-w-md mx-auto">
               
-              <!-- Decorative Ambient Glow & Doodles (Rareblocks Inspired) -->
+              <!-- Decorative Ambient Glow -->
               <div class="absolute -top-6 -right-6 w-36 h-36 bg-rose-200/50 rounded-full filter blur-2xl pointer-events-none"></div>
               <div class="absolute -bottom-6 -left-6 w-36 h-36 bg-amber-200/50 rounded-full filter blur-2xl pointer-events-none"></div>
 
               <!-- Main Video Container Card -->
               <div class="bg-studio-dark rounded-3xl p-3 sm:p-4 shadow-2xl border-2 border-neutral-800 relative overflow-hidden text-white">
                 
-                <!-- Video Header Bar with Live Indicator -->
+                <!-- Video Header Bar -->
                 <div class="flex items-center justify-between px-2 pb-3 mb-2 border-b border-neutral-800/80">
                   <div class="flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -269,72 +271,53 @@
                   </span>
                 </div>
 
-                <!-- Video Frame (Aspect Ratio 9:16 portrait format matching uploaded reel) -->
-                <div class="relative rounded-2xl overflow-hidden bg-black aspect-[9/14] sm:aspect-[9/13] flex flex-col justify-between p-4 group select-none shadow-inner">
+                <!-- Video Frame -->
+                <div class="relative rounded-2xl overflow-hidden bg-black aspect-[9/14] sm:aspect-[9/13] flex flex-col justify-between group select-none shadow-inner">
                   
-                  <!-- Real HTML5 Video Element (plays uploaded / custom video if present) -->
+                  <!-- Real HTML5 Video Element -->
                   <video id="hero-native-video" 
                          class="absolute inset-0 w-full h-full object-cover z-0" 
                          playsinline 
                          loop 
                          muted 
                          preload="auto"
-                         onplay="updateVideoPlayState(true)"
-                         onpause="updateVideoPlayState(false)">
-                    <source src="/kateryna-vocal.mp4" type="video/mp4" />
-                    <source src="/video.mp4" type="video/mp4" />
-                    <source src="kateryna-vocal.mp4" type="video/mp4" />
+                         poster="kateryna.jpg">
+                    <source src="video.mp4" type="video/mp4" />
+                    Ваш браузер не підтримує відео.
                   </video>
 
-                  <!-- Simulated Studio Scene Layer (Displays real photo of Kateryna Zhanko & video scene) -->
-                  <div id="video-sim-backdrop" class="absolute inset-0 z-0 bg-gradient-to-b from-black/60 via-black/30 to-black/90 flex flex-col justify-between p-4 pointer-events-none transition-opacity duration-500">
-                    
-                    <!-- Real Photo of Kateryna in Music Studio as Video Backdrop -->
-                   <video class="w-full h-auto rounded-2xl shadow-xl object-cover" autoplay loop muted playsinline>
-    <source src="video.mp4" type="video/mp4">
-</video>
-
-                    <!-- Studio Glow Gradient Overlay -->
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/25 to-black/50 -z-10"></div>
-
-                    <!-- Animated Soundwave Equalizer -->
-                    <div id="soundwave-bar" class="absolute top-14 right-4 flex items-end gap-1 h-8 opacity-85">
-                      <div class="w-1 bg-amber-400 rounded-full h-3 animate-pulse" style="animation-duration: 0.6s"></div>
-                      <div class="w-1 bg-rose-400 rounded-full h-6 animate-pulse" style="animation-duration: 0.4s"></div>
-                      <div class="w-1 bg-yellow-300 rounded-full h-8 animate-pulse" style="animation-duration: 0.8s"></div>
-                      <div class="w-1 bg-emerald-400 rounded-full h-5 animate-pulse" style="animation-duration: 0.5s"></div>
-                      <div class="w-1 bg-amber-400 rounded-full h-2 animate-pulse" style="animation-duration: 0.7s"></div>
+                  <!-- Play Button Overlay -->
+                  <div id="play-button-overlay" class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-black/40 transition-opacity duration-300">
+                    <button onclick="toggleHeroPlay()" id="hero-play-btn" class="btn-press mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-amber-400 hover:bg-amber-300 text-neutral-950 flex items-center justify-center shadow-xl shadow-amber-400/40 transition-all duration-300 hover:scale-110 border-2 border-amber-200 group/play">
+                      <i id="hero-play-icon" class="fa-solid fa-play text-xl sm:text-2xl ml-1 text-neutral-950 group-hover/play:scale-110 transition-transform"></i>
+                    </button>
+                    <div id="video-status-text" class="text-xs text-white/95 font-black mt-3 tracking-wide drop-shadow-md bg-black/60 px-3 py-1 rounded-full inline-block backdrop-blur-sm border border-white/10 pointer-events-none">
+                      Натисни для перегляду розбору
                     </div>
                   </div>
+                  
+                  <!-- Clickable area to toggle play/pause when running -->
+                  <div id="video-click-area" class="absolute inset-0 z-0 cursor-pointer hidden" onclick="toggleHeroPlay()"></div>
 
                   <!-- TOP BADGES OVER VIDEO -->
-                  <div class="relative z-10 flex items-center justify-between">
-                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-[11px] font-bold text-white border border-white/20">
+                  <div class="relative z-20 flex items-center justify-between p-4 pointer-events-none">
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/60 backdrop-blur-md text-[11px] font-bold text-white border border-white/20 pointer-events-auto">
                       <i class="fa-brands fa-instagram text-rose-400"></i>
                       <span>@vocalcoach_zhanko</span>
                     </span>
 
-                    <button onclick="toggleAudioPreview()" id="audio-toggle-btn" class="w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-colors" title="Звук">
+                    <button onclick="toggleAudioPreview(event)" id="audio-toggle-btn" class="w-8 h-8 rounded-full bg-black/60 backdrop-blur-md text-white border border-white/20 flex items-center justify-center hover:bg-white hover:text-black transition-colors pointer-events-auto" title="Звук">
                       <i id="audio-toggle-icon" class="fa-solid fa-volume-xmark text-xs"></i>
                     </button>
                   </div>
+                  
+                  <!-- Spacer to push bottom content down -->
+                  <div class="flex-grow pointer-events-none"></div>
 
-                  <!-- CENTER ACTION: Big Play Button -->
-                  <div class="relative z-10 my-auto text-center py-4">
-                    <button onclick="toggleHeroPlay()" id="hero-play-btn" class="btn-press mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-amber-400 hover:bg-amber-300 text-neutral-950 flex items-center justify-center shadow-xl shadow-amber-400/40 transition-all duration-300 hover:scale-110 border-2 border-amber-200 group/play">
-                      <i id="hero-play-icon" class="fa-solid fa-play text-xl sm:text-2xl ml-1 text-neutral-950 group-hover/play:scale-110 transition-transform"></i>
-                    </button>
+                  <!-- BOTTOM CONTENT -->
+                  <div class="relative z-20 space-y-2.5 p-4 pointer-events-none">
                     
-                    <div id="video-status-text" class="text-xs text-white/95 font-black mt-3 tracking-wide drop-shadow-md bg-black/60 px-3 py-1 rounded-full inline-block backdrop-blur-sm border border-white/10">
-                      Натисни для перегляду розбору
-                    </div>
-                  </div>
-
-                  <!-- BOTTOM CONTENT: LIVE SUBTITLES & EXACT QUOTES FROM ATTACHED VIDEO -->
-                  <div class="relative z-10 space-y-2.5">
-                    
-                    <!-- Dynamic Subtitle Card matching Kateryna's speech -->
-                    <div id="caption-card" class="bg-black/80 backdrop-blur-md p-3.5 rounded-xl border border-white/15 text-left transition-all duration-300">
+                    <div id="caption-card" class="bg-black/80 backdrop-blur-md p-3.5 rounded-xl border border-white/15 text-left transition-all duration-300 pointer-events-auto">
                       <div class="flex items-center justify-between text-[10px] text-amber-300 font-bold uppercase tracking-wider mb-1">
                         <span id="caption-timestamp" class="flex items-center gap-1">
                           <i class="fa-solid fa-circle text-[6px] text-rose-500 animate-pulse"></i> Епізод 1 з 4
@@ -346,19 +329,17 @@
                       </p>
                     </div>
 
-                    <!-- Progress / Scrub Bar -->
-                    <div class="space-y-1">
+                    <div class="space-y-1 pointer-events-auto">
                       <div class="w-full bg-white/20 h-1.5 rounded-full overflow-hidden cursor-pointer" onclick="scrubVideo(event)">
-                        <div id="video-progress-fill" class="bg-gradient-to-r from-amber-400 via-rose-500 to-studio-accent h-full rounded-full transition-all duration-200" style="width: 25%"></div>
+                        <div id="video-progress-fill" class="bg-gradient-to-r from-amber-400 via-rose-500 to-studio-accent h-full rounded-full transition-all duration-200" style="width: 0%"></div>
                       </div>
                       <div class="flex justify-between text-[10px] text-neutral-400 font-mono">
                         <span id="timecode-current">0:00</span>
-                        <span>0:22</span>
+                        <span id="timecode-total">0:00</span>
                       </div>
                     </div>
 
-                    <!-- 4 Interactive Chapter Pills (Directly from user's attached video) -->
-                    <div class="grid grid-cols-4 gap-1 text-[10px] font-bold text-center pt-1">
+                    <div class="grid grid-cols-4 gap-1 text-[10px] font-bold text-center pt-1 pointer-events-auto">
                       <button onclick="jumpToChapter(0)" id="chapter-0" class="py-1 px-1 rounded-lg bg-studio-accent text-white truncate transition-all">
                         1. ДО
                       </button>
@@ -377,18 +358,12 @@
 
                 </div>
 
-                <!-- Bottom Helper: Replace or load video file -->
+                <!-- Bottom Helper -->
                 <div class="flex items-center justify-between pt-3 px-1 text-[11px] text-neutral-400">
                   <span class="flex items-center gap-1.5 text-neutral-300 font-medium">
                     <i class="fa-solid fa-microphone-lines text-studio-accent"></i>
                     Київ, студія за фортепіано
                   </span>
-                  
-                  <label class="cursor-pointer hover:text-white flex items-center gap-1 transition-colors underline underline-offset-2">
-                    <i class="fa-solid fa-arrow-up-from-bracket text-[10px]"></i>
-                    <span>Завантажити свій .mp4</span>
-                    <input type="file" accept="video/*" onchange="handleUserVideoUpload(event)" class="hidden" />
-                  </label>
                 </div>
 
               </div>
@@ -398,7 +373,7 @@
 
         </div>
 
-        <!-- Under-Hero 4 Advantage Pills (Clean Rareblocks Style) -->
+        <!-- Under-Hero 4 Advantage Pills -->
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 mt-10 pt-6 border-t border-neutral-200/80 max-w-5xl mx-auto">
           <div class="flex items-center gap-3 p-3 rounded-2xl bg-white border border-neutral-200/80 shadow-subtle">
             <div class="w-10 h-10 rounded-xl bg-studio-softPink text-studio-accent flex items-center justify-center shrink-0 text-base">
@@ -444,7 +419,7 @@
       </div>
     </section>
 
-    <!-- SECTION: PROBLEM IDENTIFICATION & EMPATHY (Sabri Suby Lead-In Copy) -->
+    <!-- SECTION: PROBLEM IDENTIFICATION & EMPATHY -->
     <section id="about-offer" class="py-14 sm:py-20 bg-white border-y border-neutral-200/70">
       <div class="max-w-5xl mx-auto px-4 sm:px-6">
         
@@ -460,10 +435,9 @@
           </p>
         </div>
 
-        <!-- Pain Point Grid (With Thematic Icons for each fear - NO plain red crosses) -->
+        <!-- Pain Point Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-12">
           
-          <!-- Fear 1: Ear / Pitch Myth -->
           <div class="p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200/90 hover:border-amber-400 transition-colors group">
             <div class="flex items-start gap-4">
               <div class="w-13 h-13 rounded-2xl bg-amber-100/90 text-amber-800 border-2 border-amber-300 flex items-center justify-center shrink-0 font-bold text-xl shadow-sm group-hover:scale-105 transition-transform">
@@ -481,7 +455,6 @@
             </div>
           </div>
 
-          <!-- Fear 2: Throat Constriction & High Notes -->
           <div class="p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200/90 hover:border-rose-400 transition-colors group">
             <div class="flex items-start gap-4">
               <div class="w-13 h-13 rounded-2xl bg-rose-100/90 text-rose-700 border-2 border-rose-300 flex items-center justify-center shrink-0 font-bold text-xl shadow-sm group-hover:scale-105 transition-transform">
@@ -499,7 +472,6 @@
             </div>
           </div>
 
-          <!-- Fear 3: Shower / Secret Singing & Karaoke Shame -->
           <div class="p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200/90 hover:border-sky-400 transition-colors group">
             <div class="flex items-start gap-4">
               <div class="w-13 h-13 rounded-2xl bg-sky-100/90 text-sky-800 border-2 border-sky-300 flex items-center justify-center shrink-0 font-bold text-xl shadow-sm group-hover:scale-105 transition-transform">
@@ -517,7 +489,6 @@
             </div>
           </div>
 
-          <!-- Fear 4: Classical School Trauma / Boring Solfege -->
           <div class="p-5 sm:p-6 rounded-2xl bg-neutral-50 border border-neutral-200/90 hover:border-purple-400 transition-colors group">
             <div class="flex items-start gap-4">
               <div class="w-13 h-13 rounded-2xl bg-purple-100/90 text-purple-800 border-2 border-purple-300 flex items-center justify-center shrink-0 font-bold text-xl shadow-sm group-hover:scale-105 transition-transform">
@@ -537,7 +508,6 @@
 
         </div>
 
-        <!-- Hormozi Truth Reframe Banner -->
         <div class="bg-studio-dark text-white rounded-3xl p-6 sm:p-10 relative overflow-hidden shadow-xl">
           <div class="relative z-10 max-w-3xl">
             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-bold mb-3 border border-emerald-500/30">
@@ -564,7 +534,7 @@
       </div>
     </section>
 
-    <!-- SECTION: TARGET AUDIENCE SEGMENTATION (3 Avatars) -->
+    <!-- SECTION: TARGET AUDIENCE SEGMENTATION -->
     <section id="for-who" class="py-14 sm:py-20 bg-studio-cream">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
@@ -580,10 +550,8 @@
           </p>
         </div>
 
-        <!-- 3 Cards Layout -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           
-          <!-- Avatar 1: Adults - Soul & Anti-Stress -->
           <div class="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200/90 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-2xl bg-studio-softPink text-studio-accent flex items-center justify-center font-bold text-xl mb-6 shadow-sm">
@@ -623,7 +591,6 @@
             </button>
           </div>
 
-          <!-- Avatar 2: Adults - Song as Gift / Karaoke / Wedding -->
           <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-amber-400 shadow-glow relative hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
             
             <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-neutral-950 text-amber-300 border border-amber-400 text-[11px] font-black tracking-wider uppercase shadow-sm">
@@ -668,7 +635,6 @@
             </button>
           </div>
 
-          <!-- Avatar 3: Kids from 6 yo -->
           <div class="bg-white rounded-3xl p-6 sm:p-8 border border-neutral-200/90 shadow-card-soft hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
             <div>
               <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-700 flex items-center justify-center font-bold text-xl mb-6 shadow-sm">
@@ -713,7 +679,7 @@
       </div>
     </section>
 
-    <!-- SECTION: UNIQUE HERO MECHANISM (The Science & Practice) -->
+    <!-- SECTION: UNIQUE HERO MECHANISM -->
     <section id="hero-mechanism" class="py-14 sm:py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
@@ -782,7 +748,7 @@
             </button>
           </div>
 
-          <!-- Visual Demonstration Card (Comparison Table) -->
+          <!-- Visual Demonstration Card -->
           <div class="lg:col-span-6">
             <div class="bg-studio-dark text-white rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden border border-neutral-800">
               
@@ -797,8 +763,6 @@
               </div>
 
               <div class="space-y-4">
-                
-                <!-- Row 1: Solfege -->
                 <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 flex flex-col gap-2">
                   <div class="flex items-center justify-between text-xs font-bold">
                     <span class="text-rose-400 flex items-center gap-1.5"><i class="fa-solid fa-book-skull"></i> Традиційна школа</span>
@@ -810,7 +774,6 @@
                   </div>
                 </div>
 
-                <!-- Row 2: Fear of critique -->
                 <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 flex flex-col gap-2">
                   <div class="flex items-center justify-between text-xs font-bold">
                     <span class="text-rose-400 flex items-center gap-1.5"><i class="fa-solid fa-triangle-exclamation"></i> Традиційна школа</span>
@@ -822,7 +785,6 @@
                   </div>
                 </div>
 
-                <!-- Row 3: Forced classical repertoire -->
                 <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 flex flex-col gap-2">
                   <div class="flex items-center justify-between text-xs font-bold">
                     <span class="text-rose-400 flex items-center gap-1.5"><i class="fa-solid fa-compact-disc"></i> Традиційна школа</span>
@@ -834,7 +796,6 @@
                   </div>
                 </div>
 
-                <!-- Row 4: Delayed results -->
                 <div class="p-4 rounded-2xl bg-neutral-900/90 border border-neutral-800 flex flex-col gap-2">
                   <div class="flex items-center justify-between text-xs font-bold">
                     <span class="text-rose-400 flex items-center gap-1.5"><i class="fa-solid fa-hourglass-end"></i> Традиційна школа</span>
@@ -848,7 +809,6 @@
 
               </div>
 
-              <!-- Quote pill at bottom -->
               <div class="mt-6 pt-4 border-t border-neutral-800 flex items-center gap-3">
                 <i class="fa-solid fa-quote-left text-studio-accent text-lg"></i>
                 <p class="text-xs text-neutral-300 italic">
@@ -864,24 +824,20 @@
       </div>
     </section>
 
-    <!-- SECTION: ABOUT FOUNDER (Proof & Authority - Катерина Жанько) -->
+    <!-- SECTION: ABOUT FOUNDER -->
     <section id="about-kateryna" class="py-14 sm:py-20 bg-studio-cream border-t border-neutral-200/80">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
         <div class="bg-white rounded-3xl p-6 sm:p-10 lg:p-12 border border-neutral-200/90 shadow-card-soft">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
             
-            <!-- Founder Profile Visual & Badges (With Real Photo: kateryna.jpg) -->
             <div class="lg:col-span-5 relative">
               <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden shadow-2xl aspect-square sm:aspect-[4/5] bg-neutral-900 group border-4 border-purple-500/30">
-                
-                <!-- Real Photo of Kateryna Zhanko -->
                 <img src="kateryna.jpg" 
                      alt="Катерина Жанько — викладач вокалу та засновниця музичного простору" 
                      class="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105" 
                      onerror="this.onerror=null; this.src='/kateryna.jpg';" />
 
-                <!-- Text Overlay at bottom of photo -->
                 <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent flex flex-col justify-end p-6 text-white pointer-events-none">
                   <span class="text-xs font-black text-amber-300 uppercase tracking-widest mb-1 drop-shadow">
                     Викладач вокалу & Ментор
@@ -893,10 +849,8 @@
                     Засновниця музичного простору в Києві
                   </p>
                 </div>
-
               </div>
 
-              <!-- Location Pin Box Under Image -->
               <div class="mt-4 p-3 rounded-xl bg-neutral-50 border border-neutral-200/90 text-center">
                 <span class="text-xs font-medium text-neutral-700 flex items-center justify-center gap-1.5">
                   <i class="fa-solid fa-map-location-dot text-studio-accent"></i>
@@ -905,7 +859,6 @@
               </div>
             </div>
 
-            <!-- Founder Bio & Philosophy -->
             <div class="lg:col-span-7">
               <span class="text-xs font-bold text-studio-accent uppercase tracking-widest bg-studio-softPink px-3 py-1 rounded-full">
                 Познайомимося ближче
@@ -927,7 +880,6 @@
                 </p>
               </div>
 
-              <!-- 4 Proof Milestones -->
               <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-neutral-100 text-center mb-8">
                 <div class="p-3 rounded-xl bg-neutral-50">
                   <div class="font-sans text-2xl sm:text-3xl font-black text-studio-accent">500+</div>
@@ -947,7 +899,6 @@
                 </div>
               </div>
 
-              <!-- Fast Action -->
               <div class="flex flex-col sm:flex-row gap-3">
                 <button onclick="openBookingModal('founder_section')" class="btn-press px-6 py-3.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs sm:text-sm transition-all shadow-md border border-amber-300 flex items-center justify-center gap-2">
                   <span>Познайомитись на уроці за 400 грн</span>
@@ -967,7 +918,7 @@
       </div>
     </section>
 
-    <!-- SECTION: REAL STUDENT REVIEWS & SOCIAL PROOF -->
+    <!-- SECTION: REAL STUDENT REVIEWS -->
     <section id="reviews" class="py-14 sm:py-20 bg-white">
       <div class="max-w-6xl mx-auto px-4 sm:px-6">
         
@@ -983,10 +934,8 @@
           </p>
         </div>
 
-        <!-- Reviews Grid featuring the exact attached reviews -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-start mb-12">
           
-          <!-- REVIEW 1: Valerie (Wedding song preparation) -->
           <div class="bg-studio-cream rounded-3xl p-6 sm:p-8 border border-neutral-200/90 shadow-card-soft relative">
             <div class="flex items-center justify-between pb-4 border-b border-neutral-200/70 mb-5">
               <div class="flex items-center gap-3">
@@ -1015,16 +964,12 @@
               </div>
             </div>
 
-            <!-- Review Content -->
             <div class="text-xs sm:text-sm text-neutral-700 leading-relaxed space-y-3 font-normal italic">
               <p>
-                «Хочу подякувати тобі за таку класну підготовку пісні на моє весілля. Я відкрила відео з наших перших занять і просто в шоці, вже і забула що прийшла з впевненістю що голос у мене занизький і гарно заспівати в мене не вийде, адже я довго намагалася вдома і звучання було таке, що хотілося закинути цю ідею.»
+                «Хочу подякувати тобі за таку класну підготовку пісні на моє весілля. Я відкрила відео з наших перших занять і просто в шоці, вже і забула що прийшла з впевненістю що голос у мене занизький і гарно заспівати в мене не вийде...»
               </p>
               <p>
                 «Але після занять з тобою з кожним разом я бачила прогрес. Не знаю як тобі це вдається, але навіть ті частини пісні, які зовсім не йдуть — після твоїх пояснень, прикладів (і навіть міні лекцій з анатомії 🤫), твоєї підтримки та настанов, усе виходить настільки гарно, що я ніколи б не подумала що так зможу!!!!!»
-              </p>
-              <p>
-                «Ти неймовірно талановитий викладач, дякую що навчила не тільки гарно співати, а і подачі, як передати сенс пісні і морально налаштувала співати перед глядачами ☺️ Завдяки тобі підготовка однієї пісні переросла в найулюбленіше хобі, якого з нетерпінням чекаю кожного тижня 💜💜💜💜💜»
               </p>
             </div>
 
@@ -1036,7 +981,6 @@
             </div>
           </div>
 
-          <!-- REVIEW 2: Telegram Student Review -->
           <div class="bg-studio-cream rounded-3xl p-6 sm:p-8 border border-neutral-200/90 shadow-card-soft relative">
             <div class="flex items-center justify-between pb-4 border-b border-neutral-200/70 mb-5">
               <div class="flex items-center gap-3">
@@ -1052,7 +996,7 @@
                   </div>
                   <div class="text-[11px] text-neutral-500 flex items-center gap-1">
                     <i class="fa-brands fa-telegram text-sky-500"></i>
-                    <span>Повідомлення з Telegram каналу</span>
+                    <span>Повідомлення з Telegram</span>
                   </div>
                 </div>
               </div>
@@ -1065,7 +1009,6 @@
               </div>
             </div>
 
-            <!-- Review Content -->
             <div class="text-xs sm:text-sm text-neutral-700 leading-relaxed space-y-3 font-normal italic">
               <p>
                 «Дуже подобаються заняття! На уроках завжди чудова атмосфера. З кожним новим заняттям видно результат.»
@@ -1075,13 +1018,10 @@
               </p>
             </div>
 
-            <!-- Telegram Reactions Mockup from Screenshot -->
             <div class="mt-6 p-3 rounded-2xl bg-white border border-neutral-200/80 flex items-center gap-2 flex-wrap">
               <span class="text-xs text-neutral-500 font-medium mr-1">Реакції учнів:</span>
-              <span class="px-2 py-0.5 rounded-full bg-neutral-100 text-xs">🤝 12</span>
               <span class="px-2 py-0.5 rounded-full bg-neutral-100 text-xs">👍 18</span>
               <span class="px-2 py-0.5 rounded-full bg-neutral-100 text-xs">🥰 24</span>
-              <span class="px-2 py-0.5 rounded-full bg-neutral-100 text-xs">🎉 9</span>
               <span class="px-2 py-0.5 rounded-full bg-rose-50 text-xs text-rose-600 font-bold">❤️ 31</span>
             </div>
 
@@ -1095,7 +1035,7 @@
 
         </div>
 
-        <!-- Social Proof Stats Banner (Rareblocks Inspired) -->
+        <!-- Social Proof Stats Banner -->
         <div class="bg-neutral-50 rounded-2xl p-6 sm:p-7 border border-neutral-200/80 flex flex-col sm:flex-row items-center justify-around gap-6">
           <div class="flex items-center gap-3.5 w-full sm:w-auto justify-start">
             <div class="w-12 h-12 rounded-2xl bg-studio-softPink text-studio-accent flex items-center justify-center text-xl font-bold shrink-0 shadow-sm border border-rose-100">
@@ -1123,7 +1063,6 @@
 
           <div class="flex items-center gap-3.5 w-full sm:w-auto justify-start">
             <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-neutral-950 flex items-center justify-center text-xl font-black shrink-0 shadow-sm border border-amber-300">
-              <!-- Discount Price Tag Icon -->
               <svg class="w-6 h-6 text-neutral-950" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
                 <circle cx="7" cy="7" r="1.5" fill="currentColor"></circle>
@@ -1145,10 +1084,9 @@
       </div>
     </section>
 
-    <!-- SECTION: GODFATHER OFFER + PRICING (Hormozi Irresistible Offer) -->
+    <!-- SECTION: GODFATHER OFFER + PRICING -->
     <section id="godfather-offer" class="py-16 sm:py-24 bg-studio-dark text-white relative overflow-hidden">
       
-      <!-- Ambient Glow Behind Offer -->
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-studio-accent/15 rounded-full filter blur-[120px] pointer-events-none"></div>
 
       <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
@@ -1165,10 +1103,8 @@
           </p>
         </div>
 
-        <!-- GODFATHER PRICING CARD -->
         <div class="bg-neutral-900/90 rounded-3xl border-2 border-studio-accent shadow-2xl p-6 sm:p-10 backdrop-blur-xl relative">
           
-          <!-- Top Badge -->
           <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-neutral-800">
             <div>
               <span class="text-xs uppercase tracking-widest text-neutral-400 font-semibold">Формат</span>
@@ -1183,7 +1119,6 @@
               </div>
             </div>
             
-            <!-- Price Anchor -->
             <div class="text-right">
               <div class="text-xs text-neutral-400">Звичайна ціна: <span class="line-through text-neutral-500 font-medium">800 грн</span></div>
               <div class="flex items-baseline gap-1.5 mt-0.5 justify-end">
@@ -1194,7 +1129,6 @@
             </div>
           </div>
 
-          <!-- What's included in 45 min -->
           <div class="py-6 border-b border-neutral-800">
             <h4 class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-4">
               Що входить у 45 хвилин твого заняття:
@@ -1219,7 +1153,7 @@
             </div>
           </div>
 
-          <!-- FREE BONUS LEAD MAGNET (Hormozi Bonus Stacking) -->
+          <!-- FREE BONUS LEAD MAGNET -->
           <div class="py-6 border-b border-neutral-800 bg-studio-accent/10 -mx-6 sm:-mx-10 px-6 sm:px-10">
             <div class="flex items-center gap-2 mb-3">
               <span class="w-6 h-6 rounded-full bg-studio-accent text-white flex items-center justify-center text-xs font-bold">
@@ -1249,7 +1183,6 @@
             </div>
           </div>
 
-          <!-- SCARCITY & URGENCY INDICATOR -->
           <div class="pt-6">
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
               <div class="text-center sm:text-left">
@@ -1262,19 +1195,16 @@
                 </div>
               </div>
 
-              <!-- Progress bar -->
               <div class="w-full sm:w-48 bg-neutral-800 rounded-full h-3 overflow-hidden border border-neutral-700">
                 <div class="bg-gradient-to-r from-amber-400 to-studio-accent h-full rounded-full" style="width: 70%"></div>
               </div>
             </div>
 
-            <!-- Main Conversion Button (VIBRANT YELLOW WITH BLACK TEXT) -->
             <button onclick="openBookingModal('godfather_offer_btn')" class="btn-press w-full py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-base sm:text-lg transition-all shadow-xl shadow-amber-400/30 border-2 border-amber-300 flex items-center justify-center gap-3 active:scale-95">
               <span>Забронювати пробне заняття за 400 грн</span>
               <i class="fa-solid fa-arrow-right text-sm"></i>
             </button>
 
-            <!-- 100% Risk Reversal Guarantee -->
             <div class="mt-4 text-center">
               <p class="text-xs text-neutral-400 flex items-center justify-center gap-2">
                 <i class="fa-solid fa-shield-halved text-emerald-400"></i>
@@ -1304,7 +1234,6 @@
           </p>
         </div>
 
-        <!-- Accordion items -->
         <div class="space-y-3" id="faq-accordion">
           
           <!-- Q1 -->
@@ -1346,7 +1275,7 @@
               <span>Де ви знаходитесь і як до вас дістатися?</span>
               <i id="faq-icon-4" class="fa-solid fa-chevron-down text-neutral-400 transition-transform duration-300"></i>
             </button>
-            <div id="faq-content-2" class="px-5 sm:px-6 pb-5 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3 hidden">
+            <div id="faq-content-4" class="px-5 sm:px-6 pb-5 text-xs sm:text-sm text-neutral-600 leading-relaxed border-t border-neutral-100 pt-3 hidden">
               Наша студія розташована в Києві: Солом'янський район, <strong>вул. Максима Кривоноса 27</strong>. Зручна транспортна розв'язка (поруч Солом'янська площа), є вільний паркінг для авто, затишний окремий вхід та комфортна зона очікування.
             </div>
           </div>
@@ -1367,7 +1296,7 @@
       </div>
     </section>
 
-    <!-- SECTION: FINAL CTA & SABRI SUBY COST OF INACTION (P.S.) -->
+    <!-- SECTION: FINAL CTA -->
     <section class="py-16 sm:py-24 bg-white border-t border-neutral-200">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         
@@ -1379,7 +1308,6 @@
           Як забронювати свій пробний урок просто зараз:
         </h2>
 
-        <!-- 3 Simple Steps (Sabri Suby Friction Reduction) -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto my-8 text-left">
           
           <div class="p-4 rounded-2xl bg-neutral-50 border border-neutral-100">
@@ -1402,7 +1330,6 @@
 
         </div>
 
-        <!-- Big CTA Button (VIBRANT YELLOW WITH BLACK TEXT) -->
         <div class="max-w-md mx-auto mb-10">
           <button onclick="openBookingModal('final_cta')" class="btn-press w-full py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-base sm:text-lg transition-all shadow-xl shadow-amber-400/30 border-2 border-amber-300 flex items-center justify-center gap-2 active:scale-95">
             <span>Забронювати урок за 400 грн</span>
@@ -1413,7 +1340,6 @@
           </div>
         </div>
 
-        <!-- P.S. SECTION: COST OF INACTION (Alex Hormozi & Sabri Suby) -->
         <div class="max-w-2xl mx-auto p-6 sm:p-8 rounded-3xl bg-studio-cream border border-neutral-200/90 text-left">
           <div class="flex items-center gap-2 text-studio-accent font-bold text-xs uppercase tracking-wider mb-2">
             <i class="fa-solid fa-feather-pointed"></i>
@@ -1432,13 +1358,12 @@
 
   </main>
 
-  <!-- FOOTER (Rareblocks Inspired) -->
+  <!-- FOOTER -->
   <footer class="bg-studio-dark text-white pt-12 pb-24 sm:pb-12 border-t border-neutral-800">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
       
       <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-neutral-800">
         
-        <!-- Brand Info -->
         <div class="md:col-span-5">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-10 h-10 rounded-full bg-amber-400 text-neutral-950 flex items-center justify-center font-sans text-base font-black shadow-sm">
@@ -1467,13 +1392,12 @@
           </div>
         </div>
 
-        <!-- Location & Contacts -->
         <div class="md:col-span-4">
           <h4 class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-4">Контакти та локація</h4>
           <div class="space-y-3 text-xs text-neutral-300">
             <div class="flex items-start gap-2.5">
               <i class="fa-solid fa-location-dot text-studio-accent mt-0.5 shrink-0"></i>
-              <span>Київ, Солом'янський район, <strong>вул. Максима Кривоноса 27</strong> (Солом'янська площа)</span>
+              <span>Київ, Солом'янський район, <strong>вул. Максима Кривоноса 27</strong> (Солом'янка)</span>
             </div>
             <div class="flex items-center gap-2.5">
               <i class="fa-solid fa-clock text-studio-accent shrink-0"></i>
@@ -1486,7 +1410,6 @@
           </div>
         </div>
 
-        <!-- Quick Links -->
         <div class="md:col-span-3">
           <h4 class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-4">Швидкі посилання</h4>
           <div class="space-y-2 text-xs text-neutral-400">
@@ -1512,7 +1435,7 @@
     </div>
   </footer>
 
-  <!-- FLOATING MOBILE BOTTOM ACTION BAR (80% traffic from Instagram) -->
+  <!-- FLOATING MOBILE BOTTOM ACTION BAR -->
   <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-neutral-200 p-3 z-40 sm:hidden shadow-lg">
     <div class="flex items-center justify-between gap-3 max-w-md mx-auto">
       <div>
@@ -1535,12 +1458,10 @@
     
     <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto transform scale-95 transition-transform duration-300" id="booking-modal-card">
       
-      <!-- Close button -->
       <button onclick="closeBookingModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-neutral-100 hover:bg-neutral-200 text-neutral-600 flex items-center justify-center transition-colors">
         <i class="fa-solid fa-xmark text-sm"></i>
       </button>
 
-      <!-- Modal Header with Kateryna Photo -->
       <div class="mb-5">
         <div class="flex items-center gap-3 mb-3 p-2.5 rounded-2xl bg-amber-50 border border-amber-200">
           <div class="w-11 h-11 rounded-xl overflow-hidden shrink-0 border-2 border-amber-400 shadow-sm bg-neutral-900">
@@ -1563,16 +1484,13 @@
         </p>
       </div>
 
-      <!-- Price Recap Pill -->
       <div class="p-3 rounded-xl bg-neutral-50 border border-neutral-200/90 flex items-center justify-between mb-5 text-xs">
         <span class="text-neutral-600 font-medium">Пробний урок (45 хв, Київ):</span>
         <span class="font-bold text-neutral-900 text-sm">400 грн <span class="line-through text-neutral-400 font-normal text-xs">800 грн</span></span>
       </div>
 
-      <!-- The Form -->
       <form id="booking-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
         
-        <!-- Field 1: Name -->
         <div>
           <label for="student-name" class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
             Твоє ім'я <span class="text-red-500">*</span>
@@ -1584,7 +1502,6 @@
           </div>
         </div>
 
-        <!-- Field 2: Phone -->
         <div>
           <label for="student-phone" class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
             Номер телефону (Telegram / Viber) <span class="text-red-500">*</span>
@@ -1596,7 +1513,6 @@
           </div>
         </div>
 
-        <!-- Field 3: Goal / Direction -->
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
             Ціль заняття
@@ -1609,7 +1525,6 @@
           </select>
         </div>
 
-        <!-- Field 4: Preferred Messenger -->
         <div>
           <label class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
             Де зручніше отримати підтвердження та відеоуроки?
@@ -1633,7 +1548,6 @@
           </div>
         </div>
 
-        <!-- Submit Button (VIBRANT YELLOW WITH BLACK TEXT) -->
         <button type="submit" id="submit-btn" class="btn-press w-full py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-sm sm:text-base transition-all shadow-lg shadow-amber-400/30 border-2 border-amber-300 flex items-center justify-center gap-2 mt-4 active:scale-95">
           <span>Надіслати заявку та отримати 3 відео</span>
           <i class="fa-solid fa-arrow-right text-xs"></i>
@@ -1649,62 +1563,9 @@
 
   </div>
 
-  <!-- HERO VIDEO MODAL -->
-  <div id="video-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 hidden opacity-0 transition-opacity duration-300">
-    <div class="max-w-2xl w-full bg-studio-dark rounded-3xl overflow-hidden shadow-2xl relative border border-neutral-800">
-      
-      <div class="flex items-center justify-between p-4 border-b border-neutral-800">
-        <div class="flex items-center gap-2">
-          <span class="w-3 h-3 rounded-full bg-amber-400 animate-pulse"></span>
-          <span class="text-xs font-bold text-white uppercase tracking-wider">Катерина Жанько: Як працює голос</span>
-        </div>
-        <button onclick="toggleHeroVideoModal()" class="w-8 h-8 rounded-full bg-neutral-800 hover:bg-neutral-700 text-white flex items-center justify-center">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-      </div>
-
-      <!-- Video Presentation Content Simulator -->
-      <div class="p-6 text-white space-y-4">
-        
-        <div class="aspect-video bg-neutral-900 rounded-2xl relative overflow-hidden flex flex-col justify-center items-center text-center p-6 border border-neutral-800">
-          <div class="w-14 h-14 rounded-full bg-amber-400 text-neutral-950 flex items-center justify-center text-xl mb-3 shadow-lg">
-            <i class="fa-solid fa-music"></i>
-          </div>
-          <h4 class="font-sans text-xl font-black text-white">«Голос — це м'яз, а не талант!»</h4>
-          <p class="text-xs text-neutral-400 max-w-md mt-2">
-            Катерина за фортепіано в студії: наочний розбір «ДО» та «ПІСЛЯ» зняття затискачів.
-          </p>
-
-          <!-- Interactive Tab Preview for "ДО" vs "ПІСЛЯ" -->
-          <div class="flex gap-2 mt-4">
-            <button onclick="showTabDemo('before')" id="demo-tab-before" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-neutral-800 text-neutral-300 hover:text-white">
-              1. Як звучить «ДО»
-            </button>
-            <button onclick="showTabDemo('after')" id="demo-tab-after" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-400 text-neutral-950">
-              2. Як звучить «ПІСЛЯ»
-            </button>
-          </div>
-        </div>
-
-        <div id="demo-explanation" class="p-4 rounded-xl bg-neutral-800/60 border border-neutral-700 text-xs text-neutral-300 leading-relaxed">
-          <strong class="text-emerald-400">Результат після:</strong> Звук вільний, опора на живіт, гортань опущена, тембр стає оксамитовим і глибоким без напруження в шиї.
-        </div>
-
-        <div class="pt-2 flex justify-end">
-          <button onclick="toggleHeroVideoModal(); openBookingModal('from_video_modal');" class="btn-press px-5 py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-neutral-950 font-black text-xs border border-amber-300 shadow-md transition-all active:scale-95">
-            Хочу так само — Записатися за 400 грн
-          </button>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-
-  <!-- THANK YOU PAGE / FULLSCREEN VIEW (Transitioned to seamlessly upon submission) -->
+  <!-- THANK YOU PAGE / FULLSCREEN VIEW -->
   <div id="thank-you-view" class="fixed inset-0 z-50 bg-studio-cream overflow-y-auto hidden">
     
-    <!-- Header of Thank You Page -->
     <header class="bg-white border-b border-neutral-200 py-4 px-4 sticky top-0 z-30">
       <div class="max-w-4xl mx-auto flex items-center justify-between">
         <div class="flex items-center gap-2.5">
@@ -1724,13 +1585,10 @@
       </div>
     </header>
 
-    <!-- Main Content of Thank You Page -->
     <div class="max-w-3xl mx-auto px-4 py-8 sm:py-12">
       
-      <!-- Success Banner with Kateryna Photo -->
       <div class="bg-white rounded-3xl p-6 sm:p-10 border border-neutral-200/90 shadow-card-soft text-center mb-8">
         
-        <!-- Kateryna Greeting Photo Avatar -->
         <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-amber-400 shadow-xl mx-auto mb-4 bg-neutral-900 group">
           <img src="kateryna.jpg" alt="Катерина Жанько" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='/kateryna.jpg';" />
           <div class="absolute bottom-0 inset-x-0 bg-amber-400 text-neutral-950 text-[9px] font-black uppercase text-center py-0.5 tracking-wider">
@@ -1750,7 +1608,6 @@
           Твоє індивідуальне пробне заняття зафіксовано за акційною ціною <strong class="text-neutral-900">400 грн</strong> (-50%). Я вже формую розклад і напишу тобі найближчим часом.
         </p>
 
-        <!-- Fast Messenger Direct Link Buttons -->
         <div class="p-4 rounded-2xl bg-neutral-50 border border-neutral-200 max-w-md mx-auto mb-6 text-left">
           <div class="text-xs font-bold text-neutral-800 uppercase tracking-wider mb-2">
             Хочеш обрати точний час швидше?
@@ -1770,7 +1627,6 @@
           </div>
         </div>
 
-        <!-- Studio Address Card -->
         <div class="flex items-center justify-center gap-2 text-xs text-neutral-500 font-medium">
           <i class="fa-solid fa-map-pin text-studio-accent"></i>
           <span>Чекаємо за адресою: <strong>Київ, вул. Максима Кривоноса 27</strong> (Солом'янка)</span>
@@ -1778,7 +1634,6 @@
 
       </div>
 
-      <!-- BONUS LEAD MAGNET UNLOCKED: 3 VIDEO LESSONS -->
       <div class="mb-10">
         
         <div class="flex items-center justify-between mb-4 px-1">
@@ -1793,7 +1648,6 @@
           </span>
         </div>
 
-        <!-- Dynamic Lesson Preview Area -->
         <div id="active-lesson-player" class="hidden mb-6 bg-studio-dark text-white rounded-3xl p-5 border border-neutral-800 shadow-xl transition-all">
           <div class="flex items-center justify-between pb-3 border-b border-neutral-800 mb-4">
             <span id="player-lesson-badge" class="text-xs font-black text-amber-400 uppercase tracking-wider"></span>
@@ -1813,7 +1667,6 @@
 
         <div class="space-y-4">
           
-          <!-- Video 1 -->
           <div class="bg-white rounded-2xl p-5 border border-neutral-200/90 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0">
@@ -1834,7 +1687,6 @@
             </button>
           </div>
 
-          <!-- Video 2 -->
           <div class="bg-white rounded-2xl p-5 border border-neutral-200/90 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0">
@@ -1846,7 +1698,7 @@
                   3 експрес-вправи на швидкий розігрів голосових зв'язок
                 </h3>
                 <p class="text-xs text-neutral-500 mt-1">
-                  Артикуляційна гімнастика та м'який звук «бррр» для швидкого пробудження тембру зранку.
+                  Артикуляційна гімнастика та м'який звук «бррр» для швидкої готовності до співу.
                 </p>
               </div>
             </div>
@@ -1855,7 +1707,6 @@
             </button>
           </div>
 
-          <!-- Video 3 -->
           <div class="bg-white rounded-2xl p-5 border border-neutral-200/90 shadow-sm flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between">
             <div class="flex items-start gap-4">
               <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-lg shrink-0">
@@ -1880,7 +1731,6 @@
 
       </div>
 
-      <!-- Return Button -->
       <div class="text-center pt-4">
         <button onclick="returnToLanding()" class="text-xs font-semibold text-neutral-600 hover:text-neutral-900 underline underline-offset-4">
           Повернутися до головної сторінки
@@ -1891,9 +1741,8 @@
 
   </div>
 
-  <!-- SCRIPT LOGIC (Vanilla, 0 dependencies, instant speed) -->
+  <!-- SCRIPT LOGIC -->
   <script>
-    // Initialize Lucide icons on load
     document.addEventListener('DOMContentLoaded', function () {
       if (window.lucide) {
         lucide.createIcons();
@@ -1901,7 +1750,6 @@
       initHeroVideoEngine();
     });
 
-    // ================= HERO VIDEO PLAYER CONTROLLER =================
     const VIDEO_CHAPTERS = [
       {
         start: 0,
@@ -1936,7 +1784,6 @@
     let currentVideoTime = 0;
     const totalVideoDuration = 22;
     let isPlaying = false;
-    let videoTimer = null;
     let audioSynthContext = null;
     let isAudioPlaying = false;
 
@@ -1950,7 +1797,7 @@
         });
         video.addEventListener('ended', () => {
           updateVideoPlayState(false);
-          currentVideoTime = 0;
+          video.currentTime = 0;
         });
       }
       updateTimelineUI(0, totalVideoDuration);
@@ -1959,73 +1806,35 @@
     function toggleHeroPlay() {
       const video = document.getElementById('hero-native-video');
       
-      // If video element can play local media
-      if (video && video.readyState >= 2) {
+      if (video) {
         if (video.paused) {
-          video.play().then(() => updateVideoPlayState(true)).catch(() => runSimulatedPlayback());
+          video.play().then(() => updateVideoPlayState(true)).catch(e => console.error("Error playing video:", e));
         } else {
           video.pause();
           updateVideoPlayState(false);
         }
-      } else {
-        // Run interactive studio reel simulation
-        if (isPlaying) {
-          pauseSimulation();
-        } else {
-          runSimulatedPlayback();
-        }
       }
-    }
-
-    function runSimulatedPlayback() {
-      isPlaying = true;
-      updateVideoPlayState(true);
-      
-      clearInterval(videoTimer);
-      videoTimer = setInterval(() => {
-        currentVideoTime += 0.25;
-        if (currentVideoTime >= totalVideoDuration) {
-          currentVideoTime = 0;
-        }
-        updateTimelineUI(currentVideoTime, totalVideoDuration);
-      }, 250);
-    }
-
-    function pauseSimulation() {
-      isPlaying = false;
-      clearInterval(videoTimer);
-      updateVideoPlayState(false);
     }
 
     function updateVideoPlayState(playing) {
       isPlaying = playing;
-      const playIcon = document.getElementById('hero-play-icon');
-      const statusText = document.getElementById('video-status-text');
-      const playBtn = document.getElementById('hero-play-btn');
+      const overlay = document.getElementById('play-button-overlay');
+      const clickArea = document.getElementById('video-click-area');
 
       if (playing) {
-        playIcon.className = 'fa-solid fa-pause text-xl sm:text-2xl text-white';
-        statusText.textContent = 'Відтворюється відео-розбір...';
-        playBtn.classList.remove('animate-pulse');
-        document.getElementById('video-sim-backdrop').classList.add('opacity-90');
+        overlay.classList.add('play-overlay-hidden');
+        clickArea.classList.remove('hidden');
       } else {
-        playIcon.className = 'fa-solid fa-play text-xl sm:text-2xl ml-1 text-white';
-        statusText.textContent = 'Натисни для перегляду розбору';
+        overlay.classList.remove('play-overlay-hidden');
+        clickArea.classList.add('hidden');
       }
     }
 
     function jumpToChapter(sec) {
-      currentVideoTime = sec;
       const video = document.getElementById('hero-native-video');
-      if (video && video.readyState >= 2) {
+      if (video) {
         video.currentTime = sec;
-        video.play();
-        updateVideoPlayState(true);
-      } else {
-        updateTimelineUI(sec, totalVideoDuration);
-        if (!isPlaying) {
-          runSimulatedPlayback();
-        }
+        video.play().then(() => updateVideoPlayState(true)).catch(e => console.error("Error playing video:", e));
       }
     }
 
@@ -2042,19 +1851,23 @@
       currentVideoTime = time;
       const pct = (time / duration) * 100;
       
-      // Update progress fill
       const fill = document.getElementById('video-progress-fill');
       if (fill) fill.style.width = pct + '%';
 
-      // Update timecode text
-      const tc = document.getElementById('timecode-current');
-      if (tc) {
+      const tcCurrent = document.getElementById('timecode-current');
+      const tcTotal = document.getElementById('timecode-total');
+      
+      if (tcCurrent) {
         const mins = Math.floor(time / 60);
         const secs = Math.floor(time % 60);
-        tc.textContent = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+        tcCurrent.textContent = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+      }
+      if (tcTotal) {
+        const tMins = Math.floor(duration / 60);
+        const tSecs = Math.floor(duration % 60);
+        tcTotal.textContent = `${tMins}:${tSecs < 10 ? '0' : ''}${tSecs}`;
       }
 
-      // Find active chapter
       let activeChapter = VIDEO_CHAPTERS[0];
       let activeIndex = 0;
       for (let i = 0; i < VIDEO_CHAPTERS.length; i++) {
@@ -2065,7 +1878,6 @@
         }
       }
 
-      // Update subtitles
       const capTimestamp = document.getElementById('caption-timestamp');
       const capTitle = document.getElementById('caption-title');
       const capBody = document.getElementById('caption-body');
@@ -2074,7 +1886,6 @@
       if (capTitle) capTitle.textContent = activeChapter.title;
       if (capBody) capBody.textContent = activeChapter.subtitle;
 
-      // Update active chapter button highlights
       for (let i = 0; i < 4; i++) {
         const btn = document.getElementById(`chapter-${i}`);
         if (btn) {
@@ -2087,8 +1898,8 @@
       }
     }
 
-    // Toggle Web Audio API synthesizer for studio piano chords preview
-    function toggleAudioPreview() {
+    function toggleAudioPreview(event) {
+        event.stopPropagation(); 
       const btn = document.getElementById('audio-toggle-btn');
       const icon = document.getElementById('audio-toggle-icon');
       const video = document.getElementById('hero-native-video');
@@ -2099,7 +1910,6 @@
         icon.className = 'fa-solid fa-volume-high text-xs text-rose-400';
         btn.classList.add('bg-white', 'text-black');
         btn.classList.remove('bg-black/60', 'text-white');
-        playStudioPianoChord();
       } else {
         isAudioPlaying = false;
         if (video) video.muted = true;
@@ -2109,40 +1919,6 @@
       }
     }
 
-    function playStudioPianoChord() {
-      try {
-        const AudioContext = window.AudioContext || window.webkitAudioContext;
-        if (!AudioContext) return;
-        if (!audioSynthContext) {
-          audioSynthContext = new AudioContext();
-        }
-        if (audioSynthContext.state === 'suspended') {
-          audioSynthContext.resume();
-        }
-
-        const freqs = [261.63, 329.63, 392.00, 523.25]; // C major piano voicing
-        freqs.forEach((freq, idx) => {
-          const osc = audioSynthContext.createOscillator();
-          const gain = audioSynthContext.createGain();
-          osc.type = 'triangle';
-          osc.frequency.setValueAtTime(freq, audioSynthContext.currentTime + idx * 0.08);
-
-          gain.gain.setValueAtTime(0, audioSynthContext.currentTime);
-          gain.gain.linearRampToValueAtTime(0.08, audioSynthContext.currentTime + idx * 0.08 + 0.05);
-          gain.gain.exponentialRampToValueAtTime(0.0001, audioSynthContext.currentTime + 2.5);
-
-          osc.connect(gain);
-          gain.connect(audioSynthContext.destination);
-
-          osc.start(audioSynthContext.currentTime + idx * 0.08);
-          osc.stop(audioSynthContext.currentTime + 3);
-        });
-      } catch (e) {
-        console.log('Audio chord feedback:', e);
-      }
-    }
-
-    // Direct local mp4 file loader
     function handleUserVideoUpload(event) {
       const file = event.target.files[0];
       if (!file) return;
@@ -2151,24 +1927,28 @@
       const blobUrl = URL.createObjectURL(file);
       video.src = blobUrl;
       video.muted = false;
+      isAudioPlaying = true;
+      
+      const audioBtn = document.getElementById('audio-toggle-btn');
+      const audioIcon = document.getElementById('audio-toggle-icon');
+      if(audioBtn && audioIcon){
+          audioIcon.className = 'fa-solid fa-volume-high text-xs text-rose-400';
+          audioBtn.classList.add('bg-white', 'text-black');
+          audioBtn.classList.remove('bg-black/60', 'text-white');
+      }
+
       video.play().then(() => {
         updateVideoPlayState(true);
-        // Hide simulated backdrop when real video is active
-        const backdrop = document.getElementById('video-sim-backdrop');
-        if (backdrop) backdrop.style.opacity = '0';
       }).catch(err => {
-        console.log('Upload playback started:', err);
+        console.error('Upload playback error:', err);
       });
     }
 
-    // MODAL HANDLERS
     function openBookingModal(source) {
-      console.log('Open booking modal triggered from:', source);
       const modal = document.getElementById('booking-modal');
       const card = document.getElementById('booking-modal-card');
       
       modal.classList.remove('hidden');
-      // Trigger smooth animation
       setTimeout(() => {
         modal.classList.remove('opacity-0');
         card.classList.remove('scale-95');
@@ -2188,53 +1968,18 @@
       }, 300);
     }
 
-    // Close on outside backdrop click
     document.getElementById('booking-modal').addEventListener('click', function(e) {
       if (e.target === this) {
         closeBookingModal();
       }
     });
 
-    // VIDEO MODAL HANDLER
-    function toggleHeroVideoModal() {
-      const modal = document.getElementById('video-modal');
-      if (modal.classList.contains('hidden')) {
-        modal.classList.remove('hidden');
-        setTimeout(() => modal.classList.remove('opacity-0'), 10);
-        document.body.style.overflow = 'hidden';
-      } else {
-        modal.classList.add('opacity-0');
-        setTimeout(() => {
-          modal.classList.add('hidden');
-          document.body.style.overflow = '';
-        }, 300);
-      }
-    }
-
-    function showTabDemo(type) {
-      const btnBefore = document.getElementById('demo-tab-before');
-      const btnAfter = document.getElementById('demo-tab-after');
-      const expl = document.getElementById('demo-explanation');
-
-      if (type === 'before') {
-        btnBefore.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-studio-accent text-white';
-        btnAfter.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-neutral-800 text-neutral-300 hover:text-white';
-        expl.innerHTML = '<strong class="text-rose-400">Звучання ДО:</strong> Затиснута нижня щелепа, повітря не доходить до діафрагми, голос звучить глухо, на високих нотах з\'являється хрип або зрив через страх оцінки.';
-      } else {
-        btnAfter.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-studio-accent text-white';
-        btnBefore.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-neutral-800 text-neutral-300 hover:text-white';
-        expl.innerHTML = '<strong class="text-emerald-400">Звучання ПІСЛЯ (45 хв практики):</strong> Звук вільний, опора на живіт, гортань опущена, тембр стає оксамитовим і глибоким без напруження в шиї.';
-      }
-    }
-
-    // FAQ ACCORDION HANDLER
     function toggleFaq(id) {
       const content = document.getElementById('faq-content-' + id);
       const icon = document.getElementById('faq-icon-' + id);
       
       const isHidden = content.classList.contains('hidden');
       
-      // Close all other FAQs
       for (let i = 1; i <= 5; i++) {
         const item = document.getElementById('faq-content-' + i);
         const itemIcon = document.getElementById('faq-icon-' + i);
@@ -2250,34 +1995,19 @@
       }
     }
 
-    // FORM SUBMISSION & THANK YOU VIEW
     function handleFormSubmit(event) {
       event.preventDefault();
       
       const name = document.getElementById('student-name').value.trim();
       const phone = document.getElementById('student-phone').value.trim();
-      const goal = document.getElementById('student-goal').value;
-      const messenger = document.querySelector('input[name="messenger"]:checked')?.value || 'telegram';
-
-      // Simulation of Telegram bot notification
-      console.log('🔥 [LEAD GENERATED - 400 UAH TRIPWIRE OFFER]');
-      console.log('Ім\'я учня:', name);
-      console.log('Телефон:', phone);
-      console.log('Ціль:', goal);
-      console.log('Бажаний месенджер:', messenger);
-      console.log('Локація: Київ, вул. Максима Кривоноса 27');
-      console.log('Бонуси: 3 відеоуроки з вокалу активовано.');
-
-      // Update name in thank-you page
+      
       const thankYouName = document.getElementById('thank-you-name');
       if (thankYouName && name) {
         thankYouName.textContent = name;
       }
 
-      // Close modal
       closeBookingModal();
 
-      // Show Thank You View
       setTimeout(() => {
         document.getElementById('thank-you-view').classList.remove('hidden');
         window.scrollTo({ top: 0, behavior: 'smooth' });
