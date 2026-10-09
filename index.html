@@ -1873,20 +1873,14 @@
       
       const name = document.getElementById('student-name').value.trim();
       const phone = document.getElementById('student-phone').value.trim();
-      
-      const thankYouName = document.getElementById('thank-you-name');
-      if (thankYouName && name) {
-        thankYouName.textContent = name;
-      }
+      const goal = document.getElementById('student-goal')?.value || '';
+      const messenger = document.querySelector('input[name="messenger"]:checked')?.value || 'telegram';
 
-      closeBookingModal();
+      // (Здесь код отправки заявки в Telegram бота)
 
-      setTimeout(() => {
-        document.getElementById('thank-you-view').classList.remove('hidden');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, 350);
+      // Мгновенный переход на отдельную страницу Thank You
+      window.location.href = 'thank-you.html';
     }
-
     function openLessonPlayer(id) {
       const lessons = {
         1: {
