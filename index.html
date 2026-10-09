@@ -1030,10 +1030,10 @@
       </div>
     </section>
 
-   <!-- GODFATHER PRICING CARD -->
-        <div class="bg-neutral-900/90 rounded-3xl border-2 border-studio-accent shadow-2xl p-5 sm:p-10 backdrop-blur-xl relative">
+  <!-- GODFATHER PRICING CARD -->
+        <div class="max-w-3xl mx-auto bg-neutral-900/90 rounded-3xl border-2 border-studio-accent shadow-2xl p-6 sm:p-10 backdrop-blur-xl relative">
           
-          <!-- 1. Заголовок + Ціна (Крупно і контрастно) -->
+          <!-- 1. Заголовок + Ціна (Компактно і пропорційно) -->
           <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b border-neutral-800">
             <div>
               <div class="flex items-center gap-2 mb-1.5">
@@ -1055,7 +1055,7 @@
             </div>
           </div>
 
-          <!-- 2. Що входить у 45 хвилин (Прості зрозумілі вигоди) -->
+          <!-- 2. Що входить у 45 хвилин -->
           <div class="py-6 border-b border-neutral-800">
             <div class="text-xs font-bold uppercase tracking-wider text-neutral-400 mb-4">
               Що ти отримаєш на занятті:
@@ -1080,55 +1080,64 @@
             </div>
           </div>
 
-          <!-- 3. БОНУС ПРИ ЗАПИСІ (Виділений подарунковий блок) -->
-          <div class="py-6 border-b border-neutral-800 bg-studio-accent/15 -mx-5 sm:-mx-10 px-5 sm:px-10 rounded-2xl sm:rounded-none my-2">
-            <div class="flex items-center gap-2.5 mb-3">
-              <div class="w-7 h-7 rounded-lg bg-studio-accent text-white flex items-center justify-center text-xs shrink-0 shadow-sm">
-                <i class="fa-solid fa-gift"></i>
+          <!-- 3. БОНУС ПРИ ЗАПИСІ (Акуратний блок у стовпчик з більшим шрифтом) -->
+          <div class="bg-studio-accent/15 border border-studio-accent/30 rounded-2xl p-5 sm:p-6 my-6">
+            <div class="flex items-center justify-between gap-3 mb-4">
+              <div class="flex items-center gap-2.5">
+                <div class="w-8 h-8 rounded-lg bg-studio-accent text-white flex items-center justify-center text-sm shrink-0 shadow-sm">
+                  <i class="fa-solid fa-gift"></i>
+                </div>
+                <h4 class="text-sm sm:text-base font-black text-white uppercase tracking-wider">
+                  БОНУС ПРИ ЗАПИСІ СЬОГОДНІ: 3 ВІДЕОУРОКИ З ВОКАЛУ
+                </h4>
               </div>
-              <h4 class="text-sm font-black text-white uppercase tracking-wider">
-                БОНУС ПРИ ЗАПИСІ СЬОГОДНІ: 3 відеоуроки з вокалу
-              </h4>
-              <span class="hidden sm:inline-block text-[11px] font-bold bg-amber-400 text-neutral-950 px-2 py-0.5 rounded-full ml-auto">
+              <span class="text-xs font-bold bg-amber-400 text-neutral-950 px-2.5 py-1 rounded-full shrink-0">
                 Безкоштовно
               </span>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 text-xs text-neutral-200 mt-3">
-              <div class="p-2.5 rounded-xl bg-neutral-900/60 border border-white/5 flex items-center gap-2">
-                <i class="fa-solid fa-play text-amber-400 text-[10px]"></i>
-                <span><strong>Урок 1:</strong> Дихання діафрагмою</span>
+            <!-- Список уроків у стовпчик на всіх екранах -->
+            <div class="space-y-2.5">
+              <div class="p-3 sm:p-3.5 rounded-xl bg-neutral-900/80 border border-white/10 flex items-center gap-3">
+                <i class="fa-solid fa-play text-amber-400 text-xs shrink-0"></i>
+                <span class="text-sm sm:text-base text-neutral-100">
+                  <strong class="text-white font-bold">Урок 1:</strong> Дихання діафрагмою
+                </span>
               </div>
-              <div class="p-2.5 rounded-xl bg-neutral-900/60 border border-white/5 flex items-center gap-2">
-                <i class="fa-solid fa-play text-amber-400 text-[10px]"></i>
-                <span><strong>Урок 2:</strong> Експрес-розігрів зв'язок</span>
+              <div class="p-3 sm:p-3.5 rounded-xl bg-neutral-900/80 border border-white/10 flex items-center gap-3">
+                <i class="fa-solid fa-play text-amber-400 text-xs shrink-0"></i>
+                <span class="text-sm sm:text-base text-neutral-100">
+                  <strong class="text-white font-bold">Урок 2:</strong> Експрес-розігрів зв'язок
+                </span>
               </div>
-              <div class="p-2.5 rounded-xl bg-neutral-900/60 border border-white/5 flex items-center gap-2">
-                <i class="fa-solid fa-play text-amber-400 text-[10px]"></i>
-                <span><strong>Урок 3:</strong> Секрет високих нот</span>
+              <div class="p-3 sm:p-3.5 rounded-xl bg-neutral-900/80 border border-white/10 flex items-center gap-3">
+                <i class="fa-solid fa-play text-amber-400 text-xs shrink-0"></i>
+                <span class="text-sm sm:text-base text-neutral-100">
+                  <strong class="text-white font-bold">Урок 3:</strong> Секрет високих нот
+                </span>
               </div>
             </div>
 
-            <div class="text-[11px] text-amber-300 mt-3 font-medium flex items-center gap-1.5">
-              <i class="fa-solid fa-circle-info text-xs"></i>
+            <div class="text-xs sm:text-sm text-amber-300 mt-4 font-medium flex items-center gap-2">
+              <i class="fa-solid fa-circle-info text-sm shrink-0"></i>
               <span>Доступ до уроків відкриється автоматично одразу після відправки заявки.</span>
             </div>
           </div>
 
           <!-- 4. Дефіцит + Кнопка дії -->
-          <div class="pt-6">
+          <div class="pt-2">
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4 mb-6">
               <div class="text-center sm:text-left">
-                <div class="text-xs text-neutral-300 flex items-center gap-1.5 justify-center sm:justify-start">
+                <div class="text-xs sm:text-sm text-neutral-300 flex items-center gap-1.5 justify-center sm:justify-start">
                   <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-ping"></span>
                   <span class="font-semibold text-amber-300">Розклад студії на цей тиждень:</span>
                 </div>
-                <div class="text-xs text-neutral-400 mt-0.5">
+                <div class="text-xs sm:text-sm text-neutral-400 mt-1">
                   Катерина проводить усі уроки власноруч. Залишилося лише <strong>3 вільних місця з 7</strong>.
                 </div>
               </div>
 
-              <div class="w-full sm:w-48 bg-neutral-800 rounded-full h-3 overflow-hidden border border-neutral-700">
+              <div class="w-full sm:w-48 bg-neutral-800 rounded-full h-3 overflow-hidden border border-neutral-700 shrink-0">
                 <div class="bg-gradient-to-r from-amber-400 to-studio-accent h-full rounded-full" style="width: 70%"></div>
               </div>
             </div>
@@ -1141,7 +1150,7 @@
 
             <!-- 100% Гарантія повернення -->
             <div class="mt-4 text-center">
-              <p class="text-xs text-neutral-400 flex items-center justify-center gap-2">
+              <p class="text-xs sm:text-sm text-neutral-400 flex items-center justify-center gap-2">
                 <i class="fa-solid fa-shield-halved text-emerald-400"></i>
                 <span><strong>100% Гарантія повернення коштів:</strong> якщо після 45 хв ви не відчуєте свободу в голосі — повертаємо 400 грн без зайвих питань.</span>
               </p>
@@ -1149,9 +1158,6 @@
           </div>
 
         </div>
-
-      </div>
-    </section>
 
     <!-- SECTION: FAQ ACCORDION -->
     <section id="faq" class="py-14 sm:py-20 bg-studio-cream">
