@@ -1458,15 +1458,19 @@ src="https://www.facebook.com/tr?id=2203832336899911&ev=PageView&noscript=1"
           </div>
         </div>
 
-       <div>
+      <div>
           <label for="student-phone" class="block text-xs font-bold uppercase tracking-wider text-neutral-700 mb-1.5">
             Номер телефону (Telegram / Viber) <span class="text-red-500">*</span>
           </label>
           <div class="relative">
             <i class="fa-solid fa-phone absolute left-3.5 top-1/2 -translate-y-1/2 text-neutral-400 text-sm"></i>
             <input type="tel" id="student-phone" required placeholder="+380 (__) ___-__-__" value="+380 "
+              minlength="13" maxlength="13"
+              pattern="^\+380\d{9}$"
+              title="Будь ласка, введіть повний номер (13 символів)"
               class="w-full pl-10 pr-4 py-3 rounded-xl border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent text-sm transition-all"
-              oninput="this.value = this.value.replace(/[^0-9+]/g, ''); if(this.value.length > 13) this.value = this.value.slice(0, 13);" />
+              oninput="this.setCustomValidity(''); this.value = this.value.replace(/[^0-9+]/g, ''); if(this.value.length > 13) this.value = this.value.slice(0, 13);"
+              oninvalid="this.setCustomValidity('Будь ласка, введіть повний номер телефону (наприклад: +380501234567)')" />
           </div>
         </div>
 
