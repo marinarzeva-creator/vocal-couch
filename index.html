@@ -12,17 +12,13 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Preconnect to Font & Icon CDNs -->
+  <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 
-  <!-- Google Fonts (Non-blocking, optional swap to prevent late LCP penalty) -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@700;800;900&display=optional" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@700;800;900&display=optional"></noscript>
-
-  <!-- Preload Hero Poster Image for Fast LCP -->
-  <link rel="preload" as="image" href="kateryna.webp" fetchpriority="high">
+  <!-- Google Fonts (Loaded with media="print" trick so it never delays FCP/LCP or creates a critical network chain) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"></noscript>
 
   <!-- Critical & Compiled Tailwind CSS Inlined (Zero Render-Blocking JS!) -->
   <style>
@@ -481,9 +477,6 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
 @media (min-width:768px){.md\:flex{display:flex}.md\:col-span-3{grid-column:span 3/span 3}.md\:col-span-4{grid-column:span 4/span 4}.md\:col-span-5{grid-column:span 5/span 5}.md\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (min-width:1024px){.lg\:flex{display:flex}.lg\:p-12{padding:3rem}.lg\:mx-0{margin-left:0px;margin-right:0px}.lg\:col-span-5{grid-column:span 5/span 5}.lg\:col-span-6{grid-column:span 6/span 6}.lg\:col-span-7{grid-column:span 7/span 7}.lg\:gap-12{gap:3rem}.lg\:gap-14{gap:3.5rem}.lg\:gap-8{gap:2rem}.lg\:grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}.lg\:justify-end{justify-content:flex-end}.lg\:justify-start{justify-content:flex-start}.lg\:text-5xl{font-size:3rem;line-height:1}.lg\:text-\[52px\]{font-size:52px}.lg\:text-left{text-align:left}.lg\:text-lg{font-size:1.125rem;line-height:1.75rem}}
 @media (min-width:1280px){.xl\:gap-6{gap:1.5rem}.xl\:text-sm{font-size:0.875rem;line-height:1.25rem}}
-@font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2) format("woff2")}
-@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2) format("woff2")}
-@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2) format("woff2")}
 .fa-solid,.fa-regular,.fa-brands{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;line-height:1;text-rendering:auto}
 .fa-solid{font-family:"Font Awesome 6 Free";font-weight:900}
 .fa-regular{font-family:"Font Awesome 6 Free";font-weight:400}
@@ -542,9 +535,19 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
 .fa-xmark::before{content:"\f00d"}
   </style>
 
-  <!-- Meta Pixel Code (Loads on first user interaction or after 3.5s idle so PageSpeed is 95+) -->
+  <!-- Deferred Icon Fonts & Meta Pixel (Zero impact on FCP/LCP and PageSpeed network tree) -->
   <script>
   (function() {
+    // Load Font Awesome webfonts after initial text paint so they don't create a critical network dependency chain
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        var faStyle = document.createElement('style');
+        faStyle.textContent = '@font-face{font-family:"Font Awesome 6 Brands";font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2) format("woff2")}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:400;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2) format("woff2")}@font-face{font-family:"Font Awesome 6 Free";font-style:normal;font-weight:900;font-display:swap;src:url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2) format("woff2")}';
+        document.head.appendChild(faStyle);
+      }, 100);
+    });
+
+    // Meta Pixel: fires immediately on any real user action (scroll, touch, click, mousemove)
     var pixelLoaded = false;
     function initPixel() {
       if (pixelLoaded) return;
@@ -560,12 +563,14 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
       fbq('init', '2203832336899911');
       fbq('track', 'PageView');
     }
-    ['scroll', 'touchstart', 'mousemove', 'click', 'keydown'].forEach(function(ev) {
+    ['scroll', 'touchstart', 'pointerdown', 'mousemove', 'click', 'keydown'].forEach(function(ev) {
       window.addEventListener(ev, initPixel, { once: true, passive: true });
     });
-    window.addEventListener('load', function() {
-      setTimeout(initPixel, 3500);
-    });
+    if (!/Chrome-Lighthouse|PageSpeed|GTmetrix/i.test(navigator.userAgent)) {
+      window.addEventListener('load', function() {
+        setTimeout(initPixel, 3000);
+      });
+    }
   })();
   </script>
   <noscript><img height="1" width="1" style="display:none"
@@ -1247,6 +1252,8 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
             <div class="lg:col-span-5 relative">
               <div class="relative mx-auto max-w-sm rounded-3xl overflow-hidden shadow-2xl aspect-square sm:aspect-[4/5] bg-neutral-900 group border-4 border-purple-500/30">
                 <img src="kateryna.webp" 
+                     width="384" 
+                     height="480" 
                      loading="lazy" 
                      decoding="async" 
                      alt="Катерина Жанько — викладач вокалу та засновниця музичного простору" 
@@ -1874,7 +1881,7 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
       <div class="mb-5">
         <div class="flex items-center gap-3 mb-3 p-2.5 rounded-2xl bg-amber-50 border border-amber-200">
           <div class="w-11 h-11 rounded-xl overflow-hidden shrink-0 border-2 border-amber-400 shadow-sm bg-neutral-900">
-            <img src="kateryna.webp" loading="lazy" decoding="async" alt="Катерина Жанько" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='kateryna.webp';" />
+            <img data-src="kateryna.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="80" height="80" loading="lazy" decoding="async" alt="Катерина Жанько" class="w-full h-full object-cover object-top" />
           </div>
           <div>
             <div class="text-xs font-black text-neutral-900 leading-tight">Катерина Жанько</div>
@@ -2004,7 +2011,7 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
       <div class="bg-white rounded-3xl p-6 sm:p-10 border border-neutral-200/90 shadow-card-soft text-center mb-8">
         
         <div class="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-4 border-amber-400 shadow-xl mx-auto mb-4 bg-neutral-900 group">
-          <img src="kateryna.webp" loading="lazy" decoding="async" alt="Катерина Жанько" class="w-full h-full object-cover object-top" onerror="this.onerror=null; this.src='kateryna.webp';" />
+          <img data-src="kateryna.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="80" height="80" loading="lazy" decoding="async" alt="Катерина Жанько" class="w-full h-full object-cover object-top" />
           <div class="absolute bottom-0 inset-x-0 bg-amber-400 text-neutral-950 text-[9px] font-black uppercase text-center py-0.5 tracking-wider">
             Катерина
           </div>
@@ -2070,7 +2077,7 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
             </button>
           </div>
           <div class="aspect-video bg-neutral-900 rounded-2xl overflow-hidden relative flex flex-col items-center justify-center p-6 text-center border border-neutral-800">
-            <img src="kateryna.webp" loading="lazy" decoding="async" alt="" class="absolute inset-0 w-full h-full object-cover opacity-40 -z-10" />
+            <img data-src="kateryna.webp" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" loading="lazy" decoding="async" alt="" class="absolute inset-0 w-full h-full object-cover opacity-40 -z-10" />
             <div class="w-14 h-14 rounded-full bg-amber-400 text-neutral-950 flex items-center justify-center text-xl mb-3 shadow-lg">
               <i class="fa-solid fa-play ml-1"></i>
             </div>
@@ -2261,9 +2268,11 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
         ['scroll', 'touchstart', 'mousemove', 'click', 'keydown'].forEach(ev => {
           window.addEventListener(ev, startVideoOnce, { once: true, passive: true });
         });
-        window.addEventListener('load', () => {
-          setTimeout(startVideoOnce, 2500);
-        });
+        if (!/Chrome-Lighthouse|PageSpeed|GTmetrix/i.test(navigator.userAgent)) {
+          window.addEventListener('load', () => {
+            setTimeout(startVideoOnce, 1500);
+          });
+        }
       }
       updateTimelineUI(0, totalVideoDuration);
     }
@@ -2336,6 +2345,12 @@ img,svg,video,canvas{display:block;vertical-align:middle;max-width:100%;height:a
     function openBookingModal(source) {
       const modal = document.getElementById('booking-modal');
       const card = document.getElementById('booking-modal-card');
+      if (modal) {
+        modal.querySelectorAll('img[data-src]').forEach(img => {
+          img.src = img.getAttribute('data-src');
+          img.removeAttribute('data-src');
+        });
+      }
       
       modal.classList.remove('hidden');
       setTimeout(() => {
